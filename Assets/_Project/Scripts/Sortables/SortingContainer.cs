@@ -1,19 +1,21 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class SortingContainer : MonoBehaviour
 {
-    [SerializeField] private List<SortingType> _sortingTypes;
+    [SerializeField] private SortingType _sortingType;
     [Space]
     [SerializeField] private UnityEvent _onCorrectSort;
     [SerializeField] private UnityEvent _onIncorrectSort;
+    [SerializeField] private UnityEvent<SortingType> _onTypeChanged;
 
-	public void Sort(Sortable pSortable)
+    //TODO: Error Handling
+
+    public void Sort(Sortable pSortable)
     {
         if (pSortable == null || pSortable.sortingType == null) return;
 
-		if (_sortingTypes.Contains(pSortable.sortingType))
+        if (_sortingType == pSortable.sortingType)
         {
             _onCorrectSort?.Invoke();
         }
@@ -30,5 +32,17 @@ public class SortingContainer : MonoBehaviour
         if (sortable == null) return;
 
         Sort(sortable);
+    }
+
+    public void SetSortingTypes(SortingType pSortingType)
+    {
+        if (pSortingType == null)
+        {
+            DebugUtil.Log($"Specified list of sorting types is invalid in '{nameof(SetSortingTypes)}'. Source object: '{gameObject.name}'.", LogType.ERROR);
+            return;
+        }
+
+        _sortingType = pSortingType;
+        _onTypeChanged?.Invoke(pSortingType);
     }
 }

@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc44502067f5e524a9d1d900b72793d9, type: 3}
-  m_Name: SortingTypeValid
+  m_Name: SortingType ROM 04
   m_EditorClassIdentifier: 
-  <typeName>k__BackingField: Valid
+  <typeName>k__BackingField: ROM 04
+  <material>k__BackingField: {fileID: 2100000, guid: dceb719cfb83f0542b2fa75d4fb3e8bb, type: 2}
