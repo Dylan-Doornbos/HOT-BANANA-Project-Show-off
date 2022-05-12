@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3994757957937514081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2728920666825230404, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44cf591138b7b2845ac82bf6aa82cbfb, type: 2}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230406, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728920666825230410, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: <sortingType>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: d6511a3644fc6a74cab68d3334a7fc59, type: 2}
+    - target: {fileID: 2728920666825230411, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: m_Name
+      value: ROM Cube 02
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 92751408f508629488dc5a94e664783c, type: 3}
+--- !u!1 &1346340794466881066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2728920666825230411, guid: 92751408f508629488dc5a94e664783c, type: 3}
+  m_PrefabInstance: {fileID: 3994757957937514081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4222618243170640173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346340794466881066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e15a81bb651e948ace3218176cdc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
