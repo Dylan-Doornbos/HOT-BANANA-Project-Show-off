@@ -10,6 +10,7 @@ public class SortingContainer : MonoBehaviour
     [SerializeField] private UnityEvent<SortingType> _onTypeChanged;
 
     //TODO: Error Handling
+    //TODO: Implement onTrigger detection
 
     public void Sort(Sortable pSortable)
     {
