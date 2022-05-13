@@ -8,13 +8,8 @@ public class RotateInteractor : XRBaseInteractable
     [SerializeField] GameObject _hitArea;
 
     private XRRayInteractor _interactor = null;
-    private Quaternion _originalRotation;
 
-    protected override void Awake()
-    {
-        base.Awake();
-        _originalRotation = transform.localRotation;
-    }
+    //TODO: Disable all colliders while rotating the object
 
     private void Update()
     {
@@ -37,10 +32,7 @@ public class RotateInteractor : XRBaseInteractable
                 break;
         }
 
-        var rotation = Quaternion.LookRotation(lookPos);
-        rotation = rotation * _originalRotation;
-
-        transform.localRotation = Quaternion.Slerp(transform.rotation, rotation, 0.8f);
+        transform.LookAt(transform.position - lookPos);
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
