@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2728920666825230407}
   - component: {fileID: 2728920666825230404}
   - component: {fileID: 2728920666825230405}
-  - component: {fileID: 2728920666825230410}
   - component: {fileID: 2728920666825230400}
   - component: {fileID: 2728920666825230401}
+  - component: {fileID: 4156576554754317707}
   m_Layer: 0
   m_Name: ROM Cube 01
   m_TagString: Untagged
@@ -98,19 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2728920666825230410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728920666825230411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351cfcd934ee00144a5767ece4f8393b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <sortingType>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
 --- !u!54 &2728920666825230400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -242,3 +229,16 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &4156576554754317707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728920666825230411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9afa83df1377f42ab64893e17c1087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <detectionType>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}

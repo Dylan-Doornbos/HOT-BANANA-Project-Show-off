@@ -63,26 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ROM Cube 04
       objectReference: {fileID: 0}
+    - target: {fileID: 4156576554754317707, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: <detectionType>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: cefcab55c317ef24b8e4adc5bb3a1824, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 92751408f508629488dc5a94e664783c, type: 3}
---- !u!1 &1197172852819453709 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2728920666825230411, guid: 92751408f508629488dc5a94e664783c, type: 3}
-  m_PrefabInstance: {fileID: 3837670233978203974}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8139104939125252204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197172852819453709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e15a81bb651e948ace3218176cdc75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
