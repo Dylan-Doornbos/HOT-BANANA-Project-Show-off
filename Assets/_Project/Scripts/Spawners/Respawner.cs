@@ -20,7 +20,7 @@ public class Respawner : MonoBehaviour
 
         if (_spawner != null)
         {
-            _spawner.onObjectSpawned.AddListener(setupObjectRespawning);
+            _spawner.onObjectSpawned.AddListener(markObjectForRespawning);
         }
     }
 
@@ -28,7 +28,7 @@ public class Respawner : MonoBehaviour
     /// Registers to the spawned object's "OnDestroyed" event so when the spawned object is destroyed, the spawner spawns a new object.
     /// </summary>
     /// <param name="spawnedObject"></param>
-    private void setupObjectRespawning(GameObject spawnedObject)
+    private void markObjectForRespawning(GameObject spawnedObject)
     {
         if (spawnedObject == null) return;
 
