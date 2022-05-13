@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 96737100372008844}
   - component: {fileID: 96737100372008847}
   - component: {fileID: 96737100372008846}
-  - component: {fileID: 96737100372008833}
   - component: {fileID: 96737100372008843}
   - component: {fileID: 96737100372008842}
+  - component: {fileID: -605712790934424169}
   m_Layer: 0
   m_Name: Sorting Cube (Valid)
   m_TagString: Untagged
@@ -98,19 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &96737100372008833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96737100372008832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351cfcd934ee00144a5767ece4f8393b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <sortingType>k__BackingField: {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}
 --- !u!54 &96737100372008843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -242,3 +229,16 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &-605712790934424169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96737100372008832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9afa83df1377f42ab64893e17c1087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <detectionType>k__BackingField: {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}

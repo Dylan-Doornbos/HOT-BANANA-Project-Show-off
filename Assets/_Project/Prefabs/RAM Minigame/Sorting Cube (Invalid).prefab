@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -605712790934424169, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
+      propertyPath: <detectionType>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e4a8d51707d85a4ab0e5fd476f21980, type: 2}
     - target: {fileID: 96737100372008832, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
       propertyPath: m_Name
       value: Sorting Cube (Invalid)
