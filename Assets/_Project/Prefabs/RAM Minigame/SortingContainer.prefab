@@ -9734,8 +9734,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9183647687058831145}
   - component: {fileID: 9183647687058831144}
+  - component: {fileID: 2365528332388786028}
   - component: {fileID: 9183647687058831143}
-  - component: {fileID: -2694954129064078344}
   - component: {fileID: 815088075454001287}
   m_Layer: 0
   m_Name: SortingContainer
@@ -9774,6 +9774,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2365528332388786028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9183647687058831146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7528c15ed81661f408f24fa9be85340a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detectOnTriggerEnter: 1
+  _detectOnTriggerExit: 0
 --- !u!114 &9183647687058831143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9786,9 +9800,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211cc25fa605d3e4ea2ee1d00d848469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sortingTypes:
-  - {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}
-  _onCorrectSort:
+  _typeToDetect: {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}
+  _detectIncorrectTypes: 1
+  _onAnyTypeDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 815088075454001287}
+        m_TargetAssemblyTypeName: ObjectDeleter, Assembly-CSharp
+        m_MethodName: SafeDelete
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onCorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5928668655608294840}
@@ -9803,7 +9832,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onIncorrectSort:
+  _onIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4707328582763790284}
@@ -9818,49 +9847,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-2694954129064078344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9183647687058831146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c2ee59070f0bc74b83dd46c0c8aa437, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onTriggerEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9183647687058831143}
-        m_TargetAssemblyTypeName: SortingContainer, Assembly-CSharp
-        m_MethodName: Sort
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 815088075454001287}
-        m_TargetAssemblyTypeName: ObjectDeleter, Assembly-CSharp
-        m_MethodName: SafeDelete
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onTriggerStay:
-    m_PersistentCalls:
-      m_Calls: []
-  _onTriggerExit:
+  _onTypeChanged:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &815088075454001287

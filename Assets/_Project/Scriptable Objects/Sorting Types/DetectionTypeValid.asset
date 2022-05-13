@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc44502067f5e524a9d1d900b72793d9, type: 3}
-  m_Name: SortingTypeInvalid
+  m_Name: DetectionTypeValid
   m_EditorClassIdentifier: 
-  <typeName>k__BackingField: Invalid
-  <material>k__BackingField: {fileID: 2100000, guid: db8ea6fb2c532b842a60c39c59d819f0, type: 2}
+  <typeName>k__BackingField: Valid
+  <material>k__BackingField: {fileID: 2100000, guid: 8ef2c4bcb75ab6d47966e0ba35a18cfa, type: 2}

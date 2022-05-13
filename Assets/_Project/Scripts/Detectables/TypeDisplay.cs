@@ -1,27 +1,27 @@
 using UnityEngine;
 using TMPro;
 
-public class DisplayTypeInformation : MonoBehaviour
+public class TypeDisplay : MonoBehaviour
 {
     [Header("Optional")]
     [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private TextMeshProUGUI _txtTypeName;
 
-    public void DisplayMaterial(SortingType pType)
+    public void DisplayMaterial(DetectionType pType)
     {
         if (!isTypeValid(pType) || _meshRenderer == null) return;
 
         _meshRenderer.sharedMaterial = pType.material;
     }
 
-    public void DisplayName(SortingType pType)
+    public void DisplayName(DetectionType pType)
     {
         if (!isTypeValid(pType) || _txtTypeName == null) return;
 
         _txtTypeName.text = pType.typeName;
     }
 
-    public void DisplayAll(SortingType pType)
+    public void DisplayInformation(DetectionType pType)
     {
         if (!isTypeValid(pType)) return;
 
@@ -29,11 +29,11 @@ public class DisplayTypeInformation : MonoBehaviour
         DisplayName(pType);
     }
 
-    private bool isTypeValid(SortingType pType)
+    private bool isTypeValid(DetectionType pType)
     {
         if(pType == null)
         {
-            DebugUtil.Log($"Sorting type is invalid in '{nameof(isTypeValid)}' on '{nameof(DisplayTypeInformation)}'. Source object: '{gameObject.name}'.", LogType.ERROR);
+            DebugUtil.Log($"Sorting type is invalid in '{nameof(isTypeValid)}' on '{nameof(TypeDisplay)}'. Source object: '{gameObject.name}'.", LogType.ERROR);
             return false;
         }
         
