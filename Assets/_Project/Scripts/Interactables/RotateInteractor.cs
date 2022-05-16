@@ -1,38 +1,39 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class RotateInteractor : XRBaseInteractable
 {
-    [Tooltip("Rotation is in local space")]
-    [SerializeField] RotationMode _rotationAxis;
     [SerializeField] GameObject _hitArea;
 
     private XRRayInteractor _interactor = null;
+    protected Vector3 rotateAxis;
+    private Vector3 rightDirection;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        rotateAxis = -transform.right;
+        rightDirection = transform.forward;
+    }
 
     //TODO: Disable all colliders while rotating the object
 
-    private void Update()
+    protected virtual void Update()
     {
         if (_interactor == null) return;
         if (!_interactor.TryGetCurrent3DRaycastHit(out RaycastHit hit)) return;
         if (_hitArea != null && _hitArea != hit.collider.gameObject) return;
 
-        var lookPos = hit.point - transform.position;
+        Vector3 lookDirection = hit.point - transform.position;
 
-        switch (_rotationAxis)
-        {
-            case RotationMode.xAxis:
-                lookPos.x = 0;
-                break;
-            case RotationMode.yAxis:
-                lookPos.y = 0;
-                break;
-            case RotationMode.zAxis:
-                lookPos.z = 0;
-                break;
-        }
+        float dot = Vector3.Dot(lookDirection, rotateAxis);
 
-        transform.LookAt(transform.position - lookPos);
+        lookDirection -= dot * rotateAxis;
+
+        Vector3 newUp = Quaternion.AngleAxis(90, rotateAxis) * lookDirection;
+
+        transform.rotation = Quaternion.LookRotation(lookDirection, newUp);
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
@@ -45,12 +46,5 @@ public class RotateInteractor : XRBaseInteractable
     {
         base.OnSelectExited(args);
         _interactor = null;
-    }
-
-    public enum RotationMode
-    {
-        xAxis,
-        yAxis,
-        zAxis
     }
 }
