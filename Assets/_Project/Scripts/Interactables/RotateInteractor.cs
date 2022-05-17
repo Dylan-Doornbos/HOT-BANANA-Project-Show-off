@@ -1,23 +1,32 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class RotateInteractor : XRBaseInteractable
+[RequireComponent(typeof(Rotator))]
+public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
 {
     [SerializeField] GameObject _hitArea;
 
     private XRRayInteractor _interactor = null;
-    protected Vector3 rotateAxis;
-    private Vector3 rightDirection;
+    private List<Collider> _childColliders = new List<Collider>();
+    protected T _rotator;
+
+    private string _invalidRotatorError => string.Format("Object of type '{0}' could not be found on game object '{1}'.", typeof(T), gameObject.name);
 
     protected override void Awake()
     {
         base.Awake();
-        rotateAxis = -transform.right;
-        rightDirection = transform.forward;
-    }
+        _rotator = GetComponent<T>();
 
-    //TODO: Disable all colliders while rotating the object
+        if (_rotator == null)
+        {
+            DebugUtil.Log(_invalidRotatorError, LogType.ERROR);
+        }
+
+        _childColliders = GetComponentsInChildren<Collider>().ToList();
+        _childColliders.AddRange(GetComponents<Collider>());
+    }
 
     protected virtual void Update()
     {
@@ -27,24 +36,34 @@ public class RotateInteractor : XRBaseInteractable
 
         Vector3 lookDirection = hit.point - transform.position;
 
-        float dot = Vector3.Dot(lookDirection, rotateAxis);
-
-        lookDirection -= dot * rotateAxis;
-
-        Vector3 newUp = Quaternion.AngleAxis(90, rotateAxis) * lookDirection;
-
-        transform.rotation = Quaternion.LookRotation(lookDirection, newUp);
+        _rotator.SetRotation(lookDirection);
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
         _interactor = args.interactorObject as XRRayInteractor;
+        toggleColliders(false);
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
         _interactor = null;
+        toggleColliders(true);
+    }
+
+    /// <summary>
+    /// Toggles all the colliders on the child objects.
+    /// </summary>
+    /// <param name="pAreEnabled"></param>
+    private void toggleColliders(bool pAreEnabled)
+    {
+        if (_childColliders == null || _childColliders.Count == 0) return;
+
+        foreach(Collider collider in _childColliders)
+        {
+            collider.enabled = pAreEnabled;
+        }
     }
 }

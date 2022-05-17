@@ -1,52 +1,43 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class Clock : MonoBehaviour
 {
-    [SerializeField] Dial _hourHand;
-    [SerializeField] Dial _minuteHand;
-    [SerializeField] int _minuteSteps = 5;
+    public static int totalHours = 12;
+    public static int totalMinutes = 60;
+
+    [field: SerializeField] public int minuteSteps { get; private set; } = 5;
 
     public int hours { get; private set; }
     public int minutes { get; private set; }
     public UnityEvent onTimeChanged;
-    
-    private int _movingDialsCount = 0;
 
-    private void Start()
+    public virtual void SetTime(int pHours, int pMinutes)
     {
-        _hourHand.selectEntered.AddListener(onDialsStartMoving);
-        _minuteHand.selectEntered.AddListener(onDialsStartMoving);
+        //Make sure the minutes follow the specified minute step increments
+        pMinutes = Mathf.RoundToInt((pMinutes / (float)minuteSteps)) * minuteSteps;
 
-        _hourHand.selectExited.AddListener(onDialsStopMoving);
-        _minuteHand.selectExited.AddListener(onDialsStopMoving);
-    }
+        if (pHours == totalHours) pHours = 0;
+        if (pMinutes == totalMinutes) pMinutes = 0;
 
-    private void Update()
-    {
-        //if (_movingDialsCount <= 0) return;
+        //Don't update the time if it hasn't changed
+        if (hours == pHours && minutes == pMinutes) return;
 
-        SetTime();
+        hours = pHours;
+        minutes = pMinutes;
         onTimeChanged?.Invoke();
     }
 
-    private void onDialsStartMoving(SelectEnterEventArgs pArgs)
+    private void setTime(int pHours, int pMinutes)
     {
-        _movingDialsCount++;
+
     }
 
-    private void onDialsStopMoving(SelectExitEventArgs pArgs)
+    public virtual void RandomizeTime()
     {
-        _movingDialsCount--;
-    }
+        int hours = Random.Range(0, totalHours);
+        int minutes = Random.Range(0, totalMinutes);
 
-    public void SetTime()
-    {
-        hours = Mathf.RoundToInt(_hourHand.GetProgress() * 24);
-        DebugUtil.Log(hours.ToString(), LogType.NORMAL);
-        minutes = Mathf.FloorToInt(_minuteHand.GetProgress() * 60);
-        minutes = Mathf.FloorToInt((minutes / (float)_minuteSteps)) * _minuteSteps;
+        SetTime(hours, minutes);
     }
 }
