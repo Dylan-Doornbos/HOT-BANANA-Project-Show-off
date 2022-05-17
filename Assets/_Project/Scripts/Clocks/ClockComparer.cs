@@ -27,6 +27,9 @@ public class ClockComparer : MonoBehaviour
         _clockB.onTimeChanged.RemoveListener(compareClocks);
     }
 
+    /// <summary>
+    /// Checks if the specified clocks have the same time
+    /// </summary>
     private void compareClocks()
     {
         if (_clockA.hours == _clockB.hours && _clockA.minutes == _clockB.minutes)

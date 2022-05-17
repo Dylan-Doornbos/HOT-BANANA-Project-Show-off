@@ -1,42 +1,27 @@
 using UnityEngine;
 
-public class Dial : RotateInteractor
+[RequireComponent(typeof(SingleAxisRotator))]
+public class Dial : RotateInteractor<SingleAxisRotator>
 {
-    private Vector3 upDirection;
-    private Vector3 rightDirection;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        upDirection = transform.up;
-        rightDirection = transform.forward;
-    }
-
-    private float getAngle()
-    {
-        float angle = Vector3.Angle(transform.up, upDirection);
-
-        float dot = Vector3.Dot(rightDirection, transform.up);
-
-        if (dot < 0)
-        {
-            angle = 360 - angle;
-        }
-
-        return angle;
-    }
-
+    /// <summary>
+    /// Returns the progress of the dial as a value between 0 and 1 where 0 = 0% and 1 = 100%
+    /// </summary>
+    /// <returns></returns>
     public float GetProgress()
     {
-        return getAngle() / 360f;
+        return _rotator.GetAngle() / 360f;
     }
 
+    /// <summary>
+    /// Sets the progress of the dial.
+    /// </summary>
+    /// <param name="pProgress">The progress between 0 and 1 where 0 = 0% and 1 = 100%</param>
     public void SetProgress(float pProgress)
     {
+        if (_rotator == null) return;
+
         float angle = pProgress * 360;
 
-        Vector3 newForward = Quaternion.AngleAxis(angle, _rotateAxis) * _forwardDirection;
-
-        SetRotation(newForward);
+        _rotator.SetRotation(angle);
     }
 }
