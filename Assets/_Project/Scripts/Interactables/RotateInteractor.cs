@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class RotateInteractor : XRBaseInteractable
@@ -7,14 +6,14 @@ public class RotateInteractor : XRBaseInteractable
     [SerializeField] GameObject _hitArea;
 
     private XRRayInteractor _interactor = null;
-    protected Vector3 rotateAxis;
-    private Vector3 rightDirection;
+    protected Vector3 _rotateAxis;
+    protected Vector3 _forwardDirection;
 
     protected override void Awake()
     {
         base.Awake();
-        rotateAxis = -transform.right;
-        rightDirection = transform.forward;
+        _rotateAxis = -transform.right;
+        _forwardDirection = transform.forward;
     }
 
     //TODO: Disable all colliders while rotating the object
@@ -27,13 +26,22 @@ public class RotateInteractor : XRBaseInteractable
 
         Vector3 lookDirection = hit.point - transform.position;
 
-        float dot = Vector3.Dot(lookDirection, rotateAxis);
+        float dot = Vector3.Dot(lookDirection, _rotateAxis);
 
-        lookDirection -= dot * rotateAxis;
+        lookDirection -= dot * _rotateAxis;
 
-        Vector3 newUp = Quaternion.AngleAxis(90, rotateAxis) * lookDirection;
+        Vector3 newUp = Quaternion.AngleAxis(90, _rotateAxis) * lookDirection;
 
         transform.rotation = Quaternion.LookRotation(lookDirection, newUp);
+    }
+
+    public void SetRotation(Vector3 pLookDirection)
+    {
+        float dot = Vector3.Dot(pLookDirection, _rotateAxis);
+        pLookDirection -= dot * _rotateAxis;
+        Vector3 newUp = Quaternion.AngleAxis(90, _rotateAxis) * pLookDirection;
+
+        transform.rotation = Quaternion.LookRotation(pLookDirection, newUp);
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)

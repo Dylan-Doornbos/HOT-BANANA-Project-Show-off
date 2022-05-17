@@ -30,4 +30,13 @@ public class Dial : RotateInteractor
     {
         return getAngle() / 360f;
     }
+
+    public void SetProgress(float pProgress)
+    {
+        float angle = pProgress * 360;
+
+        Vector3 newForward = Quaternion.AngleAxis(angle, _rotateAxis) * _forwardDirection;
+
+        SetRotation(newForward);
+    }
 }

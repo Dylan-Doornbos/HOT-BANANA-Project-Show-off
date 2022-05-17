@@ -6,7 +6,7 @@ public class ClockUI : MonoBehaviour
     [SerializeField] Clock _clock;
     [SerializeField] TextMeshProUGUI _txtTime;
 
-    private void Start()
+    private void Awake()
     {
         _clock.onTimeChanged.AddListener(updateUI);
     }
