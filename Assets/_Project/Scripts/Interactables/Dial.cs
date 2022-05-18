@@ -3,13 +3,18 @@ using UnityEngine;
 [RequireComponent(typeof(SingleAxisRotator))]
 public class Dial : RotateInteractor<SingleAxisRotator>
 {
+    public void SetSteps(int pSteps)
+    {
+        _rotator.SetPrecision(_rotator.maxRotation / (float)pSteps);
+    }
+
     /// <summary>
     /// Returns the progress of the dial as a value between 0 and 1 where 0 = 0% and 1 = 100%
     /// </summary>
     /// <returns></returns>
     public float GetProgress()
     {
-        return _rotator.GetAngle() / 360f;
+        return _rotator.GetAngle() / _rotator.maxRotation;
     }
 
     /// <summary>
@@ -20,7 +25,9 @@ public class Dial : RotateInteractor<SingleAxisRotator>
     {
         if (_rotator == null) return;
 
-        float angle = pProgress * 360;
+        pProgress = Mathf.Clamp(pProgress, 0, 1);
+
+        float angle = pProgress * _rotator.maxRotation;
 
         _rotator.SetRotation(angle);
     }

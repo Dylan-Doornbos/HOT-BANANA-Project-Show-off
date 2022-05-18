@@ -16,25 +16,28 @@ public class InteractiveClock : Clock
 
         _hourHand.selectExited.AddListener(onDialsStopMoving);
         _minuteHand.selectExited.AddListener(onDialsStopMoving);
+
+        _hourHand.SetSteps(totalHours);
+        _minuteHand.SetSteps(totalMinutes / minuteStepSize);
     }
 
     private void Update()
     {
         if (_movingDialsCount <= 0) return;
 
-        int hours = Mathf.RoundToInt(_hourHand.GetProgress() * totalHours);
-        int minutes = Mathf.FloorToInt(_minuteHand.GetProgress() * totalMinutes);
+        int newHours = Mathf.RoundToInt(_hourHand.GetProgress() * totalHours);
+        int newMinutes = Mathf.FloorToInt(_minuteHand.GetProgress() * totalMinutes);
 
-        SetTime(hours, minutes);
+        TrySetTime(newHours, newMinutes);
     }
 
-    public override void SetTime(int pHours, int pMinutes)
+    protected override void setTime(int pHours, int pMinutes)
     {
-        base.SetTime(pHours, pMinutes);
+        base.setTime(pHours, pMinutes);
 
+        //Update the hour and minute hand to match the current time
         _hourHand.SetProgress(hours / (float)totalHours);
         _minuteHand.SetProgress(minutes / (float)totalMinutes);
-
     }
 
     private void onDialsStartMoving(SelectEnterEventArgs pArgs)
