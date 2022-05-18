@@ -52,4 +52,8 @@ public class TypeDetector : MonoBehaviour, IDetector
         _typeToDetect = pDetectionType;
         _onTypeChanged?.Invoke(pDetectionType);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Detect(other.gameObject);
+    }
 }

@@ -682,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7221b598087d0a1478b197f5685d4b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <minuteSteps>k__BackingField: 5
+  <minuteStepSize>k__BackingField: 5
   onTimeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8663e4809e30b24a92aae0f745b8035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <minuteSteps>k__BackingField: 5
+  <minuteStepSize>k__BackingField: 5
   onTimeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1151,7 +1151,6 @@ GameObject:
   - component: {fileID: 394775455}
   - component: {fileID: 394775459}
   - component: {fileID: 394775456}
-  - component: {fileID: 394775457}
   - component: {fileID: 394775458}
   - component: {fileID: 394775460}
   m_Layer: 0
@@ -1190,20 +1189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5cf08bfe016dc409182f55ae902dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &394775457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394775454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7528c15ed81661f408f24fa9be85340a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _detectOnTriggerEnter: 1
-  _detectOnTriggerExit: 0
 --- !u!114 &394775458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2111,7 +2096,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: db8ea6fb2c532b842a60c39c59d819f0, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2365528332388786028, guid: d40391b5d39a5f045a983b48b9ac1710, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d40391b5d39a5f045a983b48b9ac1710, type: 3}
 --- !u!4 &918297493 stripped
 Transform:
@@ -13309,7 +13295,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SortingContainer (Valid)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2365528332388786028, guid: d40391b5d39a5f045a983b48b9ac1710, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d40391b5d39a5f045a983b48b9ac1710, type: 3}
 --- !u!4 &1856472971 stripped
 Transform:
