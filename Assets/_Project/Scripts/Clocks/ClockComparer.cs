@@ -9,9 +9,9 @@ public class ClockComparer : MonoBehaviour
 
     private void Awake()
     {
-        if (_clockA.minuteSteps != _clockB.minuteSteps)
+        if (_clockA.minuteStepSize != _clockB.minuteStepSize)
         {
-            DebugUtil.Log($"'{nameof(_clockA)}' and '{nameof(_clockB)}' have different '{nameof(Clock.minuteSteps)}'. Clocks might not be able to be the same time. Source object: '{gameObject.name}'", LogType.WARNING);
+            DebugUtil.Log($"'{nameof(_clockA)}' and '{nameof(_clockB)}' have different '{nameof(Clock.minuteStepSize)}'. Clocks might not be able to be the same time. Source object: '{gameObject.name}'", LogType.WARNING);
         }
     }
 

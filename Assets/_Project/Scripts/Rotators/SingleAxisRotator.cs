@@ -3,12 +3,16 @@ using UnityEngine;
 public class SingleAxisRotator : Rotator
 {
     public Vector3 rotateAxis { get; private set; }
-    public Vector3 forwardDirection { get; private set; }
+    public Vector3 defaultForwardDirection { get; private set; }
+    public Vector3 defaultLeftDirection { get; private set; }
+    public float maxRotation { get; private set; } = 360;
+    public float precisionInDegrees { get; private set; } = 1;
 
     private void Awake()
     {
-        rotateAxis = -transform.right;
-        forwardDirection = transform.forward;
+        rotateAxis = -transform.right.normalized;
+        defaultForwardDirection = transform.forward.normalized;
+        defaultLeftDirection = transform.up.normalized;
     }
 
     /// <summary>
@@ -17,16 +21,17 @@ public class SingleAxisRotator : Rotator
     /// <returns></returns>
     public float GetAngle()
     {
-        float angle = Vector3.Angle(transform.forward, forwardDirection);
+        return getRelativeAngle(transform.forward);
+    }
 
-        float dot = Vector3.Dot(forwardDirection, transform.up);
-
-        if (dot < 0)
-        {
-            angle = 360 - angle;
-        }
-
-        return angle;
+    /// <summary>
+    /// Sets the precision of the rotator in degrees so it can only be rotated to angles that are divisible by this precision number.
+    /// </summary>
+    /// <param name="pDegrees"></param>
+    public void SetPrecision(float pDegrees)
+    {
+        precisionInDegrees = pDegrees;
+        SetRotation(GetAngle());
     }
 
     /// <summary>
@@ -35,15 +40,43 @@ public class SingleAxisRotator : Rotator
     /// <param name="pAngle">The angle to rotate at</param>
     public void SetRotation(float pAngle)
     {
-        Vector3 lookDirection = Quaternion.AngleAxis(pAngle, -rotateAxis) * forwardDirection;
-        SetRotation(lookDirection);
+        //Snap the angle to fit the precision
+        float angle = Mathf.RoundToInt(pAngle / precisionInDegrees) * precisionInDegrees;
+
+        Vector3 newForwardDirection = Quaternion.AngleAxis(angle, -rotateAxis) * defaultForwardDirection;
+        Vector3 newLeftDirection = Quaternion.AngleAxis(-90, -rotateAxis) * newForwardDirection;
+
+        transform.rotation = Quaternion.LookRotation(newForwardDirection, newLeftDirection);
     }
 
     public override void SetRotation(Vector3 pLookDirection)
     {
-        float dot = Vector3.Dot(pLookDirection, rotateAxis);
+        //Modifies the look direction to make sure it's on the same plane as the rotate axis
+        float dot = Vector3.Dot(pLookDirection.normalized, rotateAxis);
         pLookDirection -= dot * rotateAxis;
-        Vector3 newUp = Quaternion.AngleAxis(-90, -rotateAxis) * pLookDirection;
-        transform.rotation = Quaternion.LookRotation(pLookDirection, newUp);
+
+        float angle = getRelativeAngle(pLookDirection);
+
+        SetRotation(angle);
+    }
+
+    /// <summary>
+    /// Gets the relative angle between the given vector and the default forward vector.
+    /// </summary>
+    /// <param name="pLookDirection"></param>
+    /// <returns></returns>
+    private float getRelativeAngle(Vector3 pLookDirection)
+    {
+        //Returns an angle between 0 and 180 regardless of the whether the lookDirection points to the left or right
+        float angle = Vector3.Angle(pLookDirection, defaultForwardDirection);
+
+        //Converts the angle to a value between 180 and 360 if the lookDirection points to the left
+        float dot = Vector3.Dot(pLookDirection, defaultLeftDirection);
+        if(dot > 0)
+        {
+            angle = 360 - angle;
+        }
+
+        return angle;
     }
 }
