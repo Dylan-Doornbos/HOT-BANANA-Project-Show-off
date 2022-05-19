@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow-Emission 2
+  m_Name: Glow-Emission 5
   m_Shader: {fileID: -6465566751694194690, guid: c781f5236472e6c47b1963c402bdd214, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -42,11 +42,11 @@ Material:
     m_Ints: []
     m_Floats:
     - AOC: 1
-    - Emission_Strength: 0
+    - Emission_Strength: 1.04
     - Fresnel_Power: 0
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
-    - Base_Color: {r: 15.999998, g: 0.83769625, b: 0, a: 0}
-    - _Emission: {r: 1.4142135, g: 0.34939393, b: 0, a: 1}
+    - Base_Color: {r: 1.9766746, g: 1.9766746, b: 1.9766746, a: 0}
+    - _Emission: {r: 1.4142135, g: 0, b: 0.47348374, a: 1}
   m_BuildTextureStacks: []

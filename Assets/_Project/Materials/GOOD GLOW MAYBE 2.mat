@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow-Emission 1
-  m_Shader: {fileID: -6465566751694194690, guid: c781f5236472e6c47b1963c402bdd214, type: 3}
+  m_Name: GOOD GLOW MAYBE 2
+  m_Shader: {fileID: -6465566751694194690, guid: f7d254e123cd5514fa40ee9bf0b68954, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_ed355a4a6996416ea210bba1c3a349f0_Texture_1:
+    - _Texture2DAsset_1544636a41fd4b4ba471a2f7b68ca597_Out_0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -37,10 +37,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - AOC: 1
+    - AOC: 0.47
+    - Emission_Strength: 1.58
+    - Flicker_speed: 0.03
+    - Fresnel_Power: 0
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
-    - Base_Color: {r: 2, g: 2, b: 2, a: 0}
-    - _Emission: {r: 8, g: 0, b: 3.0431373, a: 1}
+    - _Color: {r: 3.9999995, g: 3.9999995, b: 3.9999995, a: 0}
+    - _Emission: {r: 1, g: 0.0399733, b: 0, a: 0}
   m_BuildTextureStacks: []

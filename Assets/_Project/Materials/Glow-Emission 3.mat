@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Image:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_ed355a4a6996416ea210bba1c3a349f0_Texture_1:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,9 +42,11 @@ Material:
     m_Ints: []
     m_Floats:
     - AOC: 1
+    - Emission_Strength: 0.22
+    - Fresnel_Power: 0
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
-    - Base_Color: {r: 2, g: 2, b: 2, a: 0}
-    - _Emission: {r: 0, g: 6.807843, b: 8, a: 1}
+    - Base_Color: {r: 2.6082377, g: 2.6082377, b: 2.6082377, a: 0}
+    - _Emission: {r: 0, g: 1.2090139, b: 1.4142135, a: 1}
   m_BuildTextureStacks: []
