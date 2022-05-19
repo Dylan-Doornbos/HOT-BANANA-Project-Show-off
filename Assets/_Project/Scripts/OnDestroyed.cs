@@ -8,25 +8,14 @@ public class OnDestroyed : MonoBehaviour
 
     private bool _isQuitting = false;
 
-    private void Awake()
-    {
-        SceneManager.activeSceneChanged += onSceneChanged;
-    }
-
     private void OnApplicationQuit()
-    {
-        _isQuitting = true;
-    }
-
-    private void onSceneChanged(Scene oldScene, Scene newScene)
     {
         _isQuitting = true;
     }
 
     private void OnDestroy()
     {
-        SceneManager.activeSceneChanged -= onSceneChanged;
-        if(!_isQuitting)
+        if(!_isQuitting && gameObject.scene.isLoaded)
         {
             onDestroyed?.Invoke();
         }

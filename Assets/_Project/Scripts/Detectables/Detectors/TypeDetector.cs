@@ -34,9 +34,7 @@ public class TypeDetector : MonoBehaviour, IDetector
 
     public void Detect(GameObject pObject)
     {
-        TypeDetectable detectable = pObject.GetComponent<TypeDetectable>();
-
-        if (detectable == null) return;
+        if (!pObject.TryGetComponent(out TypeDetectable detectable)) return;
 
         Detect(detectable);
     }
