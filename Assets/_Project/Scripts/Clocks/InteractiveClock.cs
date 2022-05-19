@@ -9,14 +9,26 @@ public class InteractiveClock : Clock
 
     private int _movingDialsCount = 0;
 
-    private void Awake()
+    private void OnEnable()
     {
         _hourHand.selectEntered.AddListener(onDialsStartMoving);
         _minuteHand.selectEntered.AddListener(onDialsStartMoving);
 
         _hourHand.selectExited.AddListener(onDialsStopMoving);
         _minuteHand.selectExited.AddListener(onDialsStopMoving);
+    }
 
+    private void OnDisable()
+    {
+        _hourHand.selectEntered.RemoveListener(onDialsStartMoving);
+        _minuteHand.selectEntered.RemoveListener(onDialsStartMoving);
+
+        _hourHand.selectExited.RemoveListener(onDialsStopMoving);
+        _minuteHand.selectExited.RemoveListener(onDialsStopMoving);
+    }
+
+    private void Start()
+    {
         _hourHand.SetSteps(totalHours);
         _minuteHand.SetSteps(totalMinutes / minuteStepSize);
     }
