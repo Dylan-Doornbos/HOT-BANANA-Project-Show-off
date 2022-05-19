@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow-Emission
+  m_Name: Glow-Emission 1
   m_Shader: {fileID: -6465566751694194690, guid: c781f5236472e6c47b1963c402bdd214, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2D_ed355a4a6996416ea210bba1c3a349f0_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -37,6 +41,6 @@ Material:
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
-    - Base_Color: {r: 1.1920171, g: 0.66620463, b: 0, a: 0}
-    - _Emission: {r: 1.216786, g: 0.50964856, b: 0.178377, a: 0}
+    - Base_Color: {r: 2, g: 2, b: 2, a: 0}
+    - _Emission: {r: 8, g: 0, b: 3.0431373, a: 1}
   m_BuildTextureStacks: []
