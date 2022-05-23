@@ -5,7 +5,7 @@ public class CountdownUIText : CountdownUI
 {
     [SerializeField] TextMeshProUGUI _txtTime;
 
-    protected override void onCountdownTimeChanged()
+    protected override void updateUI()
     {
         int minutes = Mathf.Clamp(Mathf.FloorToInt(_countdown.timeLeft / 60f), 0, 60);
         int seconds = Mathf.CeilToInt(_countdown.timeLeft % 60);

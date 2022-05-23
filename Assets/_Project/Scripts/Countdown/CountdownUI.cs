@@ -6,13 +6,18 @@ public abstract class CountdownUI : MonoBehaviour
 
     private void Start()
     {
-        onCountdownTimeChanged();
+        updateUI();
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        if (_countdown.isCounting) onCountdownTimeChanged();
+        _countdown.onTimeChanged += updateUI;
     }
 
-    protected abstract void onCountdownTimeChanged();
+    private void OnDisable()
+    {
+        _countdown.onTimeChanged -= updateUI;
+    }
+
+    protected abstract void updateUI();
 }

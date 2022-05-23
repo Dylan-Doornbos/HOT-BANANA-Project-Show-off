@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +8,8 @@ public class Countdown : MonoBehaviour
     [SerializeField] bool _startImmediately = false;
     [SerializeField] UnityEvent _onCountdownStarted;
     [SerializeField] UnityEvent _onCountdownFinished;
+
+    public event Action onTimeChanged;
 
     public float timeLeft { get; private set; }
     public bool isCounting { get; private set; }
@@ -21,22 +24,18 @@ public class Countdown : MonoBehaviour
     {
         if (isCounting && timeLeft > 0)
         {
-            timeLeft -= Time.deltaTime;
-
+            setTime(timeLeft - Time.deltaTime);
             if (timeLeft <= 0) _onCountdownFinished?.Invoke();
         }
     }
 
-    public void StartCountdown()
+    public void Begin()
     {
-        if (!isCounting)
-        {
-            isCounting = true;
-            _onCountdownStarted?.Invoke();
-        }
+        Reset();
+        Continue();
     }
 
-    public void PauseCountdown()
+    public void Pause()
     {
         if(isCounting)
         {
@@ -44,8 +43,23 @@ public class Countdown : MonoBehaviour
         }
     }
 
+    public void Continue()
+    {
+        if(!isCounting)
+        {
+            isCounting = true;
+        }
+    }
+
     public void Reset()
     {
-        timeLeft = _durationInSeconds;
+        Pause();
+        setTime(_durationInSeconds);
+    }
+
+    private void setTime(float pTime)
+    {
+        timeLeft = pTime;
+        onTimeChanged?.Invoke();
     }
 }

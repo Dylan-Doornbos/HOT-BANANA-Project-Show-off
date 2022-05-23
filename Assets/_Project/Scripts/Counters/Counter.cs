@@ -1,11 +1,24 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class Counter : MonoBehaviour
+public class Counter : MonoBehaviour
 {
     public UnityEvent onCounterIncreased;
 
     public int count { get; protected set; }
 
-    public abstract void IncreaseCounter(int pAmount);
+    public void IncreaseCounter(int pAmount)
+    {
+        setCount(count + pAmount);
+    }
+
+    public void Reset()
+    {
+        setCount(0);
+    }
+    private void setCount(int pCount)
+    {
+        count = pCount;
+        onCounterIncreased?.Invoke();
+    }
 }
