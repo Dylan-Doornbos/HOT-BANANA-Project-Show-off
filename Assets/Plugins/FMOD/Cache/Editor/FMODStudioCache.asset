@@ -1,5 +1,149 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8962554357295778073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_RAM
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_RAM
+  Guid:
+    Data1: -1281075625
+    Data2: 1328330844
+    Data3: 1026114481
+    Data4: -1894925677
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4413433947385027296}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 84480
+--- !u!114 &-4413433947385027296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_RAM/Music intensity RAM
+  m_EditorClassIdentifier: 
+  Name: Music intensity RAM
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2136366627
+    data2: 393519365
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  Exists: 1
+--- !u!114 &-3409108515842890005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_CPU/Music intensity ROM
+  m_EditorClassIdentifier: 
+  Name: Music intensity ROM
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2251336101
+    data2: 4119451055
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  Exists: 1
+--- !u!114 &-3006219457709854219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_CPU
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_CPU
+  Guid:
+    Data1: -1761070099
+    Data2: 1333325730
+    Data3: 1444421803
+    Data4: -1333724368
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3409108515842890005}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 109520
+--- !u!114 &-538355939479252228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_RTC/Music intensity RTC
+  m_EditorClassIdentifier: 
+  Name: Music intensity RTC
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 4113616072
+    data2: 3385507640
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +156,199 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 1236816450981642692}
+  - {fileID: 6607923898339601524}
+  EditorEvents:
+  - {fileID: 6815699938272343327}
+  - {fileID: 4546022803702581464}
+  - {fileID: -8962554357295778073}
+  - {fileID: 855545371215419550}
+  - {fileID: 8146594322122629972}
+  - {fileID: -3006219457709854219}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: 6607923898339601524}
+  StringsBanks:
+  - {fileID: 1236816450981642692}
+  cacheTime: 637888997724169438
   cacheVersion: 10
+--- !u!114 &855545371215419550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_ROM
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_ROM
+  Guid:
+    Data1: -2010908260
+    Data2: 1205068300
+    Data3: -1910135927
+    Data4: -1514307444
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7777592485313952335}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 115211
+--- !u!114 &1236816450981642692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD PROJECT/PROJECT_SHOWOFF_FMOD_PROJECT/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637888997724169438
+  FileSizes:
+  - Name: Desktop
+    Value: 1146
+  Exists: 1
+--- !u!114 &4546022803702581464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCES/ROM_AMBIENCE
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCES/ROM_AMBIENCE
+  Guid:
+    Data1: -813148901
+    Data2: 1195461062
+    Data3: 1095978915
+    Data4: 1990276823
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34000
+--- !u!114 &6607923898339601524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD PROJECT/PROJECT_SHOWOFF_FMOD_PROJECT/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637888997724149499
+  FileSizes:
+  - Name: Desktop
+    Value: 4862368
+  Exists: 1
+--- !u!114 &6815699938272343327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_RTC
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_RTC
+  Guid:
+    Data1: 510165760
+    Data2: 1185862424
+    Data3: -1737099900
+    Data4: 1825615271
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -538355939479252228}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100012
+--- !u!114 &7777592485313952335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_ROM/Music intensity ROM
+  m_EditorClassIdentifier: 
+  Name: Music intensity ROM
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2251336101
+    data2: 4119451055
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  Exists: 1
+--- !u!114 &8146594322122629972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCES/RAM_AMBIENCE
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCES/RAM_AMBIENCE
+  Guid:
+    Data1: -1395644473
+    Data2: 1098739298
+    Data3: 391598991
+    Data4: -1089145138
+  Banks:
+  - {fileID: 6607923898339601524}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18000
