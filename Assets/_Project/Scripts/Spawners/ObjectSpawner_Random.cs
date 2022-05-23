@@ -25,9 +25,9 @@ public class ObjectSpawner_Random : ObjectSpawner
         }
     }
 
-    protected override bool spawn(out GameObject pSpawnedObject)
+    protected override bool tryGetObjectToSpawn(out GameObject pObjectToSpawn)
     {
-        pSpawnedObject = null;
+        pObjectToSpawn = null;
 
         if (_objectsToSpawn == null || _objectsToSpawn.Count == 0)
         {
@@ -37,8 +37,7 @@ public class ObjectSpawner_Random : ObjectSpawner
 
         int index = Random.Range(0, _objectsToSpawn.Count);
 
-        pSpawnedObject = Instantiate(_objectsToSpawn[index], _spawnPointOverride.position, Quaternion.identity);
-
+        pObjectToSpawn = _objectsToSpawn[index];
         return true;
     }
 }

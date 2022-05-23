@@ -4,25 +4,29 @@ using UnityEngine.Events;
 public abstract class ObjectSpawner : MonoBehaviour
 {
     [Header("Optional")]
-    [Tooltip("If left empty, the current game object will be used.")]
-    [SerializeField] protected Transform _spawnPointOverride;
+    [Tooltip("Defines where the objects will spawn.\nIf left empty, the current game object will be used.")]
+    [SerializeField] protected Transform _spawnPosition;
+    [Tooltip("Defines the GameObject the objects will be spawned in.\nIf left empty, the current game object will be used.")]
+    [SerializeField] protected Transform _spawnedObjParent;
     [Space]
     [SerializeField] public UnityEvent<GameObject> onObjectSpawned;
 
     protected virtual void Awake()
     {
-        if (_spawnPointOverride == null) _spawnPointOverride = gameObject.transform;
+        if (_spawnPosition == null) _spawnPosition = transform;
+        if (_spawnedObjParent == null) _spawnedObjParent = transform;
     }
 
     public void Spawn()
     {
-        if(spawn(out GameObject objSpawned))
+        if(tryGetObjectToSpawn(out GameObject objectToSpawn))
         {
-            onObjectSpawned?.Invoke(objSpawned);
+            GameObject spawnedObject = Instantiate(objectToSpawn, _spawnPosition.position, Quaternion.identity, _spawnedObjParent);
+            onObjectSpawned?.Invoke(spawnedObject);
         }
     }
 
-    protected abstract bool spawn(out GameObject objectSpawned);
+    protected abstract bool tryGetObjectToSpawn(out GameObject pObjectToSpawn);
 
     protected void spawnObject(GameObject obj)
     {

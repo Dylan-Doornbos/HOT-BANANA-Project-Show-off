@@ -5,6 +5,7 @@ public class Countdown : MonoBehaviour
 {
     [SerializeField] float _durationInSeconds = 1;
     [SerializeField] bool _startImmediately = false;
+    [SerializeField] UnityEvent _onCountdownStarted;
     [SerializeField] UnityEvent _onCountdownFinished;
 
     public float timeLeft { get; private set; }
@@ -13,12 +14,12 @@ public class Countdown : MonoBehaviour
     private void Awake()
     {
         isCounting = _startImmediately;
-        Restart();
+        Reset();
     }
 
     private void Update()
     {
-        if(isCounting && timeLeft > 0)
+        if (isCounting && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
 
@@ -28,15 +29,22 @@ public class Countdown : MonoBehaviour
 
     public void StartCountdown()
     {
-        isCounting = true;
+        if (!isCounting)
+        {
+            isCounting = true;
+            _onCountdownStarted?.Invoke();
+        }
     }
 
     public void PauseCountdown()
     {
-        isCounting = false;
+        if(isCounting)
+        {
+            isCounting = false;
+        }
     }
 
-    public void Restart()
+    public void Reset()
     {
         timeLeft = _durationInSeconds;
     }
