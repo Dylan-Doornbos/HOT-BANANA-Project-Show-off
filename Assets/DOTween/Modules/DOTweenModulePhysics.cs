@@ -140,13 +140,13 @@ namespace DG.Tweening
         /// <param name="resolution">The resolution of the path (useless in case of Linear paths): higher resolutions make for more detailed curved paths but are more expensive.
         /// Defaults to 10, but a value of 5 is usually enough if you don't have dramatic long curves between waypoints</param>
         /// <param name="gizmoColor">The color of the path (shown when gizmos are active in the Play panel and the tween is running)</param>
-        public static TweenerCore<Vector3, Path, PathOptions> DOPath(
+        public static TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> DOPath(
             this Rigidbody target, Vector3[] path, float duration, PathType pathType = PathType.Linear,
             PathMode pathMode = PathMode.Full3D, int resolution = 10, Color? gizmoColor = null
         )
         {
             if (resolution < 1) resolution = 1;
-            TweenerCore<Vector3, Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => target.position, target.MovePosition, new Path(pathType, path, resolution, gizmoColor), duration)
+            TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => target.position, target.MovePosition, new Plugins.Core.PathCore.Path(pathType, path, resolution, gizmoColor), duration)
                 .SetTarget(target).SetUpdate(UpdateType.Fixed);
 
             t.plugOptions.isRigidbody = true;
@@ -165,14 +165,14 @@ namespace DG.Tweening
         /// <param name="resolution">The resolution of the path: higher resolutions make for more detailed curved paths but are more expensive.
         /// Defaults to 10, but a value of 5 is usually enough if you don't have dramatic long curves between waypoints</param>
         /// <param name="gizmoColor">The color of the path (shown when gizmos are active in the Play panel and the tween is running)</param>
-        public static TweenerCore<Vector3, Path, PathOptions> DOLocalPath(
+        public static TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> DOLocalPath(
             this Rigidbody target, Vector3[] path, float duration, PathType pathType = PathType.Linear,
             PathMode pathMode = PathMode.Full3D, int resolution = 10, Color? gizmoColor = null
         )
         {
             if (resolution < 1) resolution = 1;
             Transform trans = target.transform;
-            TweenerCore<Vector3, Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => trans.localPosition, x => target.MovePosition(trans.parent == null ? x : trans.parent.TransformPoint(x)), new Path(pathType, path, resolution, gizmoColor), duration)
+            TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => trans.localPosition, x => target.MovePosition(trans.parent == null ? x : trans.parent.TransformPoint(x)), new Plugins.Core.PathCore.Path(pathType, path, resolution, gizmoColor), duration)
                 .SetTarget(target).SetUpdate(UpdateType.Fixed);
 
             t.plugOptions.isRigidbody = true;
@@ -181,23 +181,23 @@ namespace DG.Tweening
             return t;
         }
         // Used by path editor when creating the actual tween, so it can pass a pre-compiled path
-        internal static TweenerCore<Vector3, Path, PathOptions> DOPath(
-            this Rigidbody target, Path path, float duration, PathMode pathMode = PathMode.Full3D
+        internal static TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> DOPath(
+            this Rigidbody target, Plugins.Core.PathCore.Path path, float duration, PathMode pathMode = PathMode.Full3D
         )
         {
-            TweenerCore<Vector3, Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => target.position, target.MovePosition, path, duration)
+            TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => target.position, target.MovePosition, path, duration)
                 .SetTarget(target);
 
             t.plugOptions.isRigidbody = true;
             t.plugOptions.mode = pathMode;
             return t;
         }
-        internal static TweenerCore<Vector3, Path, PathOptions> DOLocalPath(
-            this Rigidbody target, Path path, float duration, PathMode pathMode = PathMode.Full3D
+        internal static TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> DOLocalPath(
+            this Rigidbody target, Plugins.Core.PathCore.Path path, float duration, PathMode pathMode = PathMode.Full3D
         )
         {
             Transform trans = target.transform;
-            TweenerCore<Vector3, Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => trans.localPosition, x => target.MovePosition(trans.parent == null ? x : trans.parent.TransformPoint(x)), path, duration)
+            TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> t = DOTween.To(PathPlugin.Get(), () => trans.localPosition, x => target.MovePosition(trans.parent == null ? x : trans.parent.TransformPoint(x)), path, duration)
                 .SetTarget(target);
 
             t.plugOptions.isRigidbody = true;

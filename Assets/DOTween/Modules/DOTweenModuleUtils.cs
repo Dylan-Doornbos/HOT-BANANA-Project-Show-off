@@ -126,10 +126,10 @@ namespace DG.Tweening
 #if UNITY_2018_1_OR_NEWER
             [UnityEngine.Scripting.Preserve]
 #endif
-            public static TweenerCore<Vector3, Path, PathOptions> CreateDOTweenPathTween(
-                MonoBehaviour target, bool tweenRigidbody, bool isLocal, Path path, float duration, PathMode pathMode
+            public static TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> CreateDOTweenPathTween(
+                MonoBehaviour target, bool tweenRigidbody, bool isLocal, Plugins.Core.PathCore.Path path, float duration, PathMode pathMode
             ){
-                TweenerCore<Vector3, Path, PathOptions> t = null;
+                TweenerCore<Vector3, Plugins.Core.PathCore.Path, PathOptions> t = null;
                 bool rBodyFoundAndTweened = false;
 #if true // PHYSICS_MARKER
                 if (tweenRigidbody) {
