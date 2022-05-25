@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
@@ -10,7 +11,11 @@ public class PathMovement : MonoBehaviour
 
     [Header("Properties")]
     [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _waypointWaitTime = 1;
+    [SerializeField] private Ease _easing;
+    [SerializeField] private bool _curvedPath;
     [SerializeField] private bool _rotateUpDown;
+    [SerializeField] private bool _loop = false;
 
     private Vector3 _lastPosition;
     private List<Vector3> _waypoints;
@@ -20,7 +25,7 @@ public class PathMovement : MonoBehaviour
     private void Start()
     {
         _waypoints = getWaypoints();
-        followPath();
+        followPath(_waypoints.ToArray());
     }
 
     private void Update()
@@ -48,24 +53,44 @@ public class PathMovement : MonoBehaviour
         return waypoints;
     }
 
-    private void followPath()
+    private void followPath(Vector3[] pPath)
     {
         float loopDuration = _path.GetDistance() / _moveSpeed;
 
         _moveTween?.Kill();
 
-        _moveTween = transform.DOPath(_waypoints.ToArray(), loopDuration, PathType.CatmullRom, PathMode.Full3D, 10,
-            new Color(0, 0, 0, 0))
-            .SetEase(Ease.Linear).OnWaypointChange(onWaypointChanged);
+        PathType pathType = _curvedPath ? PathType.CatmullRom : PathType.Linear;
 
-        _moveTween.GotoWaypoint(2, true);
+        _moveTween = transform.DOPath(pPath, loopDuration, pathType, PathMode.Full3D, 10,
+            new Color(0, 0, 0, 0))
+            .SetEase(_easing).OnWaypointChange(onWaypointChanged);
+
+        int index = _loop ? 2 : 3;
+        _moveTween.GotoWaypoint(index, true);
     }
 
-    private void onWaypointChanged(int index)
+    private void onWaypointChanged(int pIndex)
     {
-        if(index == _path.waypoints.Length + 2)
+        if(pIndex == _path.waypoints.Length + 2)
         {
-            followPath();
+            if (!_loop) _waypoints.Reverse();
+
+            followPath(_waypoints.ToArray());
         }
+        else
+        {
+            StartCoroutine(waitAtWaypoint(_waypointWaitTime, pIndex));
+        }
+    }
+
+    private IEnumerator waitAtWaypoint(float pSeconds, int pIndex)
+    {
+        _moveTween.Pause();
+
+        yield return new WaitForSeconds(pSeconds);
+
+        _moveTween.Play();
+
+        yield return null;
     }
 }
