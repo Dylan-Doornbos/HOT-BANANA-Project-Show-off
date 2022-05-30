@@ -1,26 +1,19 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectDeleter : MonoBehaviour
 {
-    private List<GameObject> _objectsToDelete = new List<GameObject>();
-
-    public void SafeDelete(GameObject obj)
+    public void SafeDelete(GameObject pObj)
     {
-        _objectsToDelete?.Add(obj);
+        Destroy(pObj);
     }
 
-    private void LateUpdate()
+    public void ForceDelete(GameObject pObj)
     {
-        if (_objectsToDelete == null || _objectsToDelete.Count == 0) return;
-
-        foreach(GameObject obj in _objectsToDelete)
+        if (pObj.TryGetComponent(out OnDestroyed component))
         {
-            if (obj == null) continue;
-
-            Destroy(obj);
+            component.Stop();
         }
-
-        _objectsToDelete.Clear();
+        
+        SafeDelete(pObj);
     }
 }

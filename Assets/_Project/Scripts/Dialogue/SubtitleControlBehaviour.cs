@@ -5,25 +5,30 @@ using UnityEngine.Playables;
 [Serializable]
 public class SubtitleControlBehaviour : PlayableBehaviour
 {
-    [SerializeField] private int _lineIndex;
-    [SerializeField] private SubtitleLines _lines;
+    [SerializeField] private LocalizedString line;
 
-    public override void ProcessFrame(Playable playable, FrameData info, object playerData)
-    {
-    }
+    private bool _hasPlayed = false;
+
+    private SubtitleController _controller;
 
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
-        if (SubtitleController.instance == null) return;
+        base.OnBehaviourPlay(playable, info);
+        _hasPlayed = false;
+    }
 
-        SubtitleController.instance.SetLine(_lines.GetLine(_lineIndex));
-        
+    public override void ProcessFrame(Playable playable, FrameData info, object playerData)
+    {
+        if (_hasPlayed) return;
+        _hasPlayed = true;
+
+        _controller = playerData as SubtitleController;
+
+        if (_controller != null) _controller.SetLine(line.line);
     }
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
-        if (SubtitleController.instance == null) return;
-
-        SubtitleController.instance.Hide();
+        if (_controller != null) _controller.Hide();
     }
 }

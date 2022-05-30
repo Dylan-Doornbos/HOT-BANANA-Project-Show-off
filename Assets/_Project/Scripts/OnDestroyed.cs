@@ -6,16 +6,21 @@ public class OnDestroyed : MonoBehaviour
 {
     [SerializeField] public UnityEvent onDestroyed = new UnityEvent();
 
-    private bool _isQuitting = false;
+    private bool _canDestroy = false;
 
     private void OnApplicationQuit()
     {
-        _isQuitting = true;
+        _canDestroy = false;
+    }
+
+    public void Stop()
+    {
+        _canDestroy = false;
     }
 
     private void OnDestroy()
     {
-        if(!_isQuitting && gameObject.scene.isLoaded)
+        if(_canDestroy && gameObject.scene.isLoaded)
         {
             onDestroyed?.Invoke();
         }

@@ -8,11 +8,19 @@ public class GameEventListener : MonoBehaviour, IGameEventListener
 
     private void OnEnable()
     {
+        if (_gameEvent == null)
+        {
+            DebugUtil.Log($"'{GetType()}' is missing a '{typeof(GameEvent)}' on '{gameObject.name}'.", LogType.WARNING);
+            return;
+        }
+        
         _gameEvent.AddListener(this);
     }
 
     private void OnDisable()
     {
+        if(_gameEvent == null) return;
+        
         _gameEvent.RemoveListener(this);
     }
 

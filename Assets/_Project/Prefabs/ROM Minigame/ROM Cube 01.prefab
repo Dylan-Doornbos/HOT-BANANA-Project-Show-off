@@ -245,6 +245,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <detectionType>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
+  _onDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1495707465996812469}
+        m_TargetAssemblyTypeName: ObjectDeleter, Assembly-CSharp
+        m_MethodName: SafeDelete
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2728920666825230411}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-7242478468084054083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +278,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1495707465996812469}
         m_TargetAssemblyTypeName: ObjectDeleter, Assembly-CSharp
-        m_MethodName: SafeDelete
+        m_MethodName: ForceDelete
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2728920666825230411}

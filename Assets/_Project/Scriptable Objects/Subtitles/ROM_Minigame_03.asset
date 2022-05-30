@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed0d84f5f7d7f9f4683fd2f4acb151f0, type: 3}
-  m_Name: Test
+  m_Name: ROM_Minigame_03
   m_EditorClassIdentifier: 
-  _lines:
-  - _english: Hello, micro worker!
-    _dutch: Hallo, micro worker!
-  - _english: There's been a problem with the micro chip.
-    _dutch: Er is een probleem met de micro chip.
-  - _english: We need your help to fix it.
-    _dutch: We hebben jouw hulp nodig om het op te lossen.
+  _line:
+    _english: We need you to help us fix it.
+    _dutch: We hebben jouw hulp nodig om dit op te lossen.
