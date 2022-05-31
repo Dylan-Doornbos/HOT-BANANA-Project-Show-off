@@ -12,6 +12,13 @@ public class GameEvent : ScriptableObject
         for(int i = _listeners.Count - 1; i >= 0; i--)
         {
             _listeners[i]?.OnEventRaised();
+            /*try
+            {
+            }
+            catch (Exception e)
+            {
+                DebugUtil.Log(e.Message, LogType.ERROR);
+            }*/
         }
     }
 

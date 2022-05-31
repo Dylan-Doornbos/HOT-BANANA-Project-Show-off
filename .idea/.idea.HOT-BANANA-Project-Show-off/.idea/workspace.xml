@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7160e1f7-0095-45de-b247-ef5f07abee91" name="Changes" comment="" />
+    <list default="true" id="7160e1f7-0095-45de-b247-ef5f07abee91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/ROM_Minigame_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/ROM_Minigame_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/LocalizedString.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/LocalizedString.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Timeline/ROM Mini Game Start.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Timeline/ROM Mini Game Start.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Movement/RotateWithMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,6 +95,9 @@
       <option name="presentableId" value="Default" />
       <updated>1653477692981</updated>
       <workItem from="1653477748996" duration="9403000" />
+      <workItem from="1653897269958" duration="9539000" />
+      <workItem from="1653934289907" duration="7669000" />
+      <workItem from="1653981571298" duration="2190000" />
     </task>
     <servers />
   </component>

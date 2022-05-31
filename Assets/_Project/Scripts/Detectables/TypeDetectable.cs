@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TypeDetectable : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class TypeDetectable : MonoBehaviour
 
     private void Awake()
     {
-        if (detectionType == null) DebugUtil.Log($"{detectionType.name} is not defined on {gameObject.name}", LogType.ERROR);
+        if (detectionType == null)
+            DebugUtil.Log($"{detectionType.name} is not defined on {gameObject.name}", LogType.ERROR);
     }
 }
