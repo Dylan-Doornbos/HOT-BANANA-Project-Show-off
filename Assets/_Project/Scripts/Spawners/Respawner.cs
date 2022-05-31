@@ -34,9 +34,9 @@ public class Respawner : MonoBehaviour
 
         OnDestroyed onDestroyedComponent = spawnedObject.GetComponent<OnDestroyed>();
 
-        if (onDestroyedComponent == null) spawnedObject.AddComponent<OnDestroyed>();
+        if (onDestroyedComponent == null)
+            onDestroyedComponent = spawnedObject.AddComponent<OnDestroyed>();
 
-        onDestroyedComponent = spawnedObject.GetComponent<OnDestroyed>();
         onDestroyedComponent.onDestroyed.AddListener(_spawner.Spawn);
     }
 }

@@ -6,5 +6,5 @@ using UnityEngine.Timeline;
 [TrackClipType(typeof(SubtitleControlClip))]
 public class SubtitleControlTrack : TrackAsset
 {
-    [SerializeField] private SubtitleLines _lines;
+    
 }

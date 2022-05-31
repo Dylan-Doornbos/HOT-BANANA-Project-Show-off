@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -14,9 +15,13 @@ public class SubtitleController : MonoBehaviour
 
     public void SetLine(string pLine)
     {
-        if (!_container.activeSelf) _container.SetActive(true);
-
+        Show();
         _txtSubtitles.text = pLine;
+    }
+
+    public void Show()
+    {
+        if(!_container.activeSelf) _container.SetActive(true);
     }
 
     public void Hide()

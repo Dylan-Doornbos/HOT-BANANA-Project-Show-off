@@ -2,51 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7160e1f7-0095-45de-b247-ef5f07abee91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/New Signal.signal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/New Signal.signal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/Test.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/Test.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlClip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlClip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Sound/Subtitle.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Sound/Subtitle.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/SubtitlesTimeline.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/SubtitlesTimeline.playable.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/New Signal.signal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/New Signal.signal.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM Cube 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM Cube 01.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/Test.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Subtitles/Test.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Detectables/TypeDetectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Detectables/TypeDetectable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/LocalizedString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/LocalizedString.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Events/GameEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Events/GameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Events/GameEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/ObjectDeleter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/ObjectDeleter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/OnDestroyed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/OnDestroyed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Spawners/Respawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Spawners/Respawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/SubtitlesTimeline.playable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/SubtitlesTimeline.playable.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlClip.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleLines.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Movement/RotateWithMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/State/WindowState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Runtime/Events/Signals/SignalAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Runtime/TimelineClip.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/LocalizedString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/6f/1b95207c/PlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Editor/State/WindowState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Runtime/TrackAsset.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/35/c87c05cf/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/75/822d77dc/Playable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/c5/d8caf3bb/PlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/c9/a29a7de3/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/cf/1625f0ad/PlayableHandle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6a104889781c465ca00c12d0953583e2143c00/ee/15bd2f6f/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.4/Runtime/Events/Signals/SignalEmitter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,17 +57,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.2659091&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe" />
@@ -86,10 +84,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9456">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20296">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9456" />
+      <option name="pid" value="20296" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -107,6 +105,7 @@
       <updated>1653477692981</updated>
       <workItem from="1653477748996" duration="9403000" />
       <workItem from="1653897269958" duration="9539000" />
+      <workItem from="1653934289907" duration="7669000" />
     </task>
     <servers />
   </component>
