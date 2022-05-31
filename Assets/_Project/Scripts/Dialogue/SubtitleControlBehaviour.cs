@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Playables;
 
 [Serializable]
@@ -23,8 +24,10 @@ public class SubtitleControlBehaviour : PlayableBehaviour
         _hasPlayed = true;
 
         _controller = playerData as SubtitleController;
+        var test = line.GetLocalizedString();
 
-        if (_controller != null) _controller.SetLine(line.line);
+        if (_controller != null) _controller.SetLine(test);
+
     }
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
