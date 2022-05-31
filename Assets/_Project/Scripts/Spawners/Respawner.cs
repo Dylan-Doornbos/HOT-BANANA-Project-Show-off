@@ -32,11 +32,10 @@ public class Respawner : MonoBehaviour
     {
         if (spawnedObject == null) return;
 
-        OnDestroyed onDestroyedComponent = spawnedObject.GetComponent<OnDestroyed>();
+        TypeDetectable detectable = spawnedObject.GetComponent<TypeDetectable>();
 
-        if (onDestroyedComponent == null)
-            onDestroyedComponent = spawnedObject.AddComponent<OnDestroyed>();
-
-        onDestroyedComponent.onDestroyed.AddListener(_spawner.Spawn);
+        if (detectable == null) return;
+        
+        detectable.onDetected.AddListener(_spawner.Spawn);
     }
 }

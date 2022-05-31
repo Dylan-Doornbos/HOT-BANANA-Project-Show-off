@@ -13,9 +13,6 @@ public class TypeDetector : MonoBehaviour, IDetector
     [SerializeField] private UnityEvent<GameObject> _onIncorrectTypeDetected;
     [SerializeField] private UnityEvent<DetectionType> _onTypeChanged;
 
-    //TODO: Error Handling
-    //TODO: Implement onTrigger detection
-
     public void Detect(TypeDetectable pDetectable)
     {
         if (pDetectable == null || pDetectable.detectionType == null) return;
@@ -24,11 +21,13 @@ public class TypeDetector : MonoBehaviour, IDetector
         {
             _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
             _onCorrectTypeDetected?.Invoke(pDetectable.gameObject);
+            pDetectable.Detect();
         }
         else if (_detectIncorrectTypes)
         {
             _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
             _onIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
+            pDetectable.Detect();
         }
     }
 

@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07a0c3c7da62444ca51d2b8ff4effa2, type: 3}
   m_Name: On ROM Game Started
   m_EditorClassIdentifier: 
+  _chainedEvents: []

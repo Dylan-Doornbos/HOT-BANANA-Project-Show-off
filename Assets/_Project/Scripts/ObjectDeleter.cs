@@ -1,19 +1,18 @@
+using System.Collections;
 using UnityEngine;
 
 public class ObjectDeleter : MonoBehaviour
 {
     public void SafeDelete(GameObject pObj)
     {
+        StartCoroutine(delete(pObj));
+    }
+
+    private IEnumerator delete(GameObject pObj)
+    {
+        yield return null;
+        
         Destroy(pObj);
     }
 
-    public void ForceDelete(GameObject pObj)
-    {
-        if (pObj.TryGetComponent(out OnDestroyed component))
-        {
-            component.Stop();
-        }
-        
-        SafeDelete(pObj);
-    }
 }

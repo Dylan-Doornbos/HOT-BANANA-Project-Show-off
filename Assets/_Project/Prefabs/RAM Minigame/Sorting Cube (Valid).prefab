@@ -55,6 +55,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -242,3 +243,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <detectionType>k__BackingField: {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}
+  onDetected:
+    m_PersistentCalls:
+      m_Calls: []
