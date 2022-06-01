@@ -10,26 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: ROM Start Dialogue Shared Data
+  m_Name: ROM Greeting Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: ROM Start Dialogue
-  m_TableCollectionNameGuidString: 71921742f1f6ce44a897d39e0f7e1744
+  m_TableCollectionName: ROM Greeting
+  m_TableCollectionNameGuidString: 489812817e0cc7243a1c7666de84ba6d
   m_Entries:
-  - m_Id: 406074595532800
-    m_Key: The system has to read only special data objects.
+  - m_Id: 5276753920
+    m_Key: "Oh, it\u2019s you Micro Worker, are you able to help me?"
     m_Metadata:
       m_Items: []
-  - m_Id: 406145995169792
-    m_Key: Look here! This highlighted data object should go to the corresponding
-      tube.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 406204954501120
-    m_Key: Pretty straightforward - just match the right object with the right tube.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 406235853938688
-    m_Key: Alright here it comes, get ready my friend!
+  - m_Id: 585097338880
+    m_Key: "Our ROM station is malfunctioning \u2013 manual repairment is advised."
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -41,4 +32,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1653982167893
+        m_CustomEpoch: 1654078493851

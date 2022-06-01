@@ -12,7 +12,7 @@ public class ROMSequence : MonoBehaviour
 
     public List<ROMType> types { get; private set; } = new List<ROMType>();
 
-    private void Awake()
+    private void Start()
     {
         fill();
         Next();
@@ -28,11 +28,9 @@ public class ROMSequence : MonoBehaviour
 
     public void Next()
     {
-        ROMType poppedType = types[0];
         types.RemoveAt(0);
-        
-        onActiveTypeChanged?.Invoke(poppedType);
         fill();
+        onActiveTypeChanged?.Invoke(types[0]);
     }
 
     private ROMType getRandomType()
