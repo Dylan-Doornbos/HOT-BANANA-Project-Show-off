@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{42ba8d33-3d22-4e88-b158-2ba126b27538}">
+		<property name="name">
+			<value>SmallRobot</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7c32b5a4-7f94-450e-a704-6822180574a1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{44b2a9f1-7f68-4e8c-9b9e-6539c753a936}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{44b2a9f1-7f68-4e8c-9b9e-6539c753a936}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
