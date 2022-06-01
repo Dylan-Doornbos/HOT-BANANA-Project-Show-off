@@ -174,7 +174,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8046768671180159216}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ObjectSpawner, Assembly-CSharp
         m_MethodName: Spawn
         m_Mode: 1
@@ -240,7 +240,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8046768671180159119}
-  - component: {fileID: 8046768671180159216}
   m_Layer: 0
   m_Name: RAM Mini Game (1)
   m_TagString: Untagged
@@ -266,25 +265,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &8046768671180159216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8046768671180159118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905f9e532f7458f4297e04ce608c6eb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnPointOverride: {fileID: 8046768671601995634}
-  onObjectSpawned:
-    m_PersistentCalls:
-      m_Calls: []
-  _objectsToSpawn:
-  - {fileID: 1220128698902735727, guid: d270bf69972f6f041a7e58af7ef30c0c, type: 3}
-  - {fileID: 96737100372008832, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
 --- !u!1 &8046768671400194655
 GameObject:
   m_ObjectHideFlags: 0
@@ -5158,8 +5138,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8046768671601995634}
+  - component: {fileID: 7168719696878731286}
   m_Layer: 0
-  m_Name: Spawn Point
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5179,6 +5160,26 @@ Transform:
   m_Father: {fileID: 8046768671180159119}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7168719696878731286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046768671601995633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905f9e532f7458f4297e04ce608c6eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPosition: {fileID: 0}
+  _spawnedObjParent: {fileID: 0}
+  onObjectSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+  _objectsToSpawn:
+  - {fileID: 1220128698902735727, guid: d270bf69972f6f041a7e58af7ef30c0c, type: 3}
+  - {fileID: 96737100372008832, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
 --- !u!1 &8046768672005818763
 GameObject:
   m_ObjectHideFlags: 0
@@ -19945,7 +19946,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8046768671180159216}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ObjectSpawner, Assembly-CSharp
         m_MethodName: Spawn
         m_Mode: 1
@@ -20241,7 +20242,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8046768672971267276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf9afa83df1377f42ab64893e17c1087, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eea24390f0ce3d4a8f968803e69e944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <detectionType>k__BackingField: {fileID: 11400000, guid: dd4eea4249408c24fb3a979949eee100, type: 2}
+  <type>k__BackingField: {fileID: 0}
+  canDetectMoreThanOnce: 0
+  onDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  _iconUI: {fileID: 0}

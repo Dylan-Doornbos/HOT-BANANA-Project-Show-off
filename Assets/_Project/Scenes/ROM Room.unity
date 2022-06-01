@@ -2403,8 +2403,6 @@ GameObject:
   - component: {fileID: 1618750592}
   - component: {fileID: 1618750593}
   - component: {fileID: 1618750594}
-  - component: {fileID: 1618750595}
-  - component: {fileID: 1618750596}
   m_Layer: 0
   m_Name: Detector
   m_TagString: Untagged
@@ -2448,17 +2446,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618750591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9ba3c526bf9d64b8e9eaddaf9e5032, type: 3}
+  m_Script: {fileID: 11500000, guid: 211cc25fa605d3e4ea2ee1d00d848469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _typeToDetect: {fileID: 0}
-  _detectIncorrectTypes: 1
+  _detectIncorrectTypes: 0
   _onAnyTypeDetected:
     m_PersistentCalls:
       m_Calls: []
   _onCorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 813432769}
+        m_TargetAssemblyTypeName: TypeSequence, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1547865537}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: IncreaseCounter
@@ -2471,108 +2481,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 813432769}
-        m_TargetAssemblyTypeName: ROMSequence, Assembly-CSharp
-        m_MethodName: Next
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1618750595}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   _onIncorrectTypeDetected:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1618750595}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _onTypeChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1618750595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618750591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -732722053
-      Data2: 1333112390
-      Data3: -1770526588
-      Data4: 1395756583
-    Path: event:/NARRATOR/ROM_NegativeResponses
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1618750596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618750591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -205108325
-      Data2: 1302689364
-      Data3: 1446765246
-      Data4: -842992374
-    Path: event:/NARRATOR/ROM_PositiveResponses
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1652625113
 GameObject:
   m_ObjectHideFlags: 0

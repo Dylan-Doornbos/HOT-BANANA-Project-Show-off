@@ -64,6 +64,10 @@ PrefabInstance:
       value: ROM Cube 03
       objectReference: {fileID: 0}
     - target: {fileID: 4156576554754317707, guid: 92751408f508629488dc5a94e664783c, type: 3}
+      propertyPath: <type>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a3312a6fd803754f980ed2627fc3aec, type: 2}
+    - target: {fileID: 4156576554754317707, guid: 92751408f508629488dc5a94e664783c, type: 3}
       propertyPath: <detectionType>k__BackingField
       value: 
       objectReference: {fileID: 11400000, guid: 4a3312a6fd803754f980ed2627fc3aec, type: 2}

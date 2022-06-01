@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc44502067f5e524a9d1d900b72793d9, type: 3}
-  m_Name: DetectionType ROM 03
+  m_Name: RAM Invalid
   m_EditorClassIdentifier: 
-  <icon>k__BackingField: {fileID: 0}
-  <color>k__BackingField: {r: 0.23137257, g: 0.50980395, b: 0.36078432, a: 1}
+  <typeName>k__BackingField: Invalid
+  <material>k__BackingField: {fileID: 2100000, guid: db8ea6fb2c532b842a60c39c59d819f0, type: 2}

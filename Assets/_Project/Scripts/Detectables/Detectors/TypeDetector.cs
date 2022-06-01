@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class TypeDetector<T> : MonoBehaviour, IDetector where T : DetectionType
+public class TypeDetector : MonoBehaviour, IDetector
 {
     [SerializeField] private DetectionType _typeToDetect;
     [Tooltip("False = Types not specified in 'Detection Type' won't trigger any Unity Events.")]
@@ -13,11 +13,11 @@ public abstract class TypeDetector<T> : MonoBehaviour, IDetector where T : Detec
     [SerializeField] private UnityEvent<GameObject> _onIncorrectTypeDetected;
     [SerializeField] private UnityEvent<DetectionType> _onTypeChanged;
 
-    public void Detect(GenericDetectable<T> pDetectable)
+    public void Detect(DetectableType pDetectable)
     {
-        if (pDetectable == null || pDetectable.detectionType == null || !pDetectable.isDetectable) return;
+        if (pDetectable == null || pDetectable.type == null || !pDetectable.isDetectable) return;
 
-        if (_typeToDetect == pDetectable.detectionType)
+        if (_typeToDetect == pDetectable.type)
         {
             detectCorrectly(pDetectable);
         }
@@ -27,14 +27,14 @@ public abstract class TypeDetector<T> : MonoBehaviour, IDetector where T : Detec
         }
     }
 
-    protected virtual void detectCorrectly(GenericDetectable<T> pDetectable)
+    protected virtual void detectCorrectly(DetectableType pDetectable)
     {
         _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
         _onCorrectTypeDetected?.Invoke(pDetectable.gameObject);
         pDetectable.Detect();
     }
 
-    protected virtual void detectIncorrectly(GenericDetectable<T> pDetectable)
+    protected virtual void detectIncorrectly(DetectableType pDetectable)
     {
         _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
         _onIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
@@ -43,7 +43,7 @@ public abstract class TypeDetector<T> : MonoBehaviour, IDetector where T : Detec
 
     public void Detect(GameObject pObject)
     {
-        if (!pObject.TryGetComponent(out GenericDetectable<T> detectable)) return;
+        if (!pObject.TryGetComponent(out DetectableType detectable)) return;
 
         Detect(detectable);
     }

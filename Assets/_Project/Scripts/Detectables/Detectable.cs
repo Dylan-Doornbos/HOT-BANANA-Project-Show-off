@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class Detectable : MonoBehaviour
+public class Detectable : MonoBehaviour
 {
+    [field: SerializeField] public DetectionType type { get; private set; }
     [field: SerializeField] public bool canDetectMoreThanOnce = false;
     [field: SerializeField] public UnityEvent onDetected;
 

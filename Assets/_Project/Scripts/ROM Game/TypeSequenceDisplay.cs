@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
 
-public class ROMSequenceDisplay : MonoBehaviour
+public class TypeSequenceDisplay : MonoBehaviour
 {
-    [SerializeField] private ROMSequence _sequence;
-    [SerializeField] private ROMDisplay[] _displays;
+    [SerializeField] private TypeSequence _sequence;
+    [SerializeField] private TypeDisplay[] _displays;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class ROMSequenceDisplay : MonoBehaviour
         _sequence.onActiveTypeChanged.AddListener(updateDisplay);
     }
 
-    private void updateDisplay(ROMType pType)
+    private void updateDisplay(DetectionType pType)
     {
         for (int i = 0; i < _sequence.queueSize && i < _displays.Length; i++)
         {

@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
-public class ROMSequence : MonoBehaviour
+public class TypeSequence : MonoBehaviour
 {
     [field: SerializeField] public int queueSize { get; private set; }
-    [SerializeField] private ROMType[] _possibleTypes;
-    [field: SerializeField] public UnityEvent<ROMType> onActiveTypeChanged { get; private set; }
+    [SerializeField] private DetectionType[] _possibleTypes;
+    [field: SerializeField] public UnityEvent<DetectionType> onActiveTypeChanged { get; private set; }
 
-    public List<ROMType> types { get; private set; } = new List<ROMType>();
+    public List<DetectionType> types { get; private set; } = new List<DetectionType>();
 
     private void Start()
     {
@@ -33,7 +33,7 @@ public class ROMSequence : MonoBehaviour
         onActiveTypeChanged?.Invoke(types[0]);
     }
 
-    private ROMType getRandomType()
+    private DetectionType getRandomType()
     {
         int index = Random.Range(0, _possibleTypes.Length);
 

@@ -241,14 +241,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2728920666825230411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499703a6b99b3614a90174634200313e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eea24390f0ce3d4a8f968803e69e944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <type>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
   canDetectMoreThanOnce: 0
   onDetected:
     m_PersistentCalls:
       m_Calls: []
-  <detectionType>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
   _iconUI: {fileID: 0}
 --- !u!114 &-7242478468084054083
 MonoBehaviour:
