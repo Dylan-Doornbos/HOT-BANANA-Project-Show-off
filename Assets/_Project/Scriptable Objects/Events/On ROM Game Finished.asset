@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07a0c3c7da62444ca51d2b8ff4effa2, type: 3}
   m_Name: On ROM Game Finished
   m_EditorClassIdentifier: 
-  _chainedEvents: []
+  _chainedEvents:
+  - {fileID: 11400000, guid: c1a528af7f70d9842bd48091ed2faaec, type: 2}

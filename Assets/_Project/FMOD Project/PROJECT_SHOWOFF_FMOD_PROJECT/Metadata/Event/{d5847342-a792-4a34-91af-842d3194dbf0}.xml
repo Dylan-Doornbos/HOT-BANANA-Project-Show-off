@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{d5847342-a792-4a34-91af-842d3194dbf0}">
+<<<<<<< Updated upstream
 		<property name="color">
 			<value>Red</value>
 		</property>
+=======
+>>>>>>> Stashed changes
 		<property name="name">
 			<value>RTC_Greetings</value>
 		</property>
