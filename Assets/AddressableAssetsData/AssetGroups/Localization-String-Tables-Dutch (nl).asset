@@ -29,6 +29,42 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-nl
     - Preload
+  - m_GUID: e731a7163c0e6db4ab8e86837a2b15db
+    m_Address: RAM Greeting_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: 30066bd3a40bd984a86e8887644a9f2b
+    m_Address: RAM Tutorial_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: 41bef0d61aeaa24479ad14d1e44d3ae8
+    m_Address: UI_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: c8cf5434ea363274881ff85ec364b2a0
+    m_Address: RTC Greeting_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: 96a1ab2928194f64f9651ca43de16d12
+    m_Address: RTC Start_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
+  - m_GUID: 4598f9e6182412f4e8038c5154b902b8
+    m_Address: Minigame End_nl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-nl
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 889b8f8a2f5fb794aaefd4e1760c3809, type: 2}
   m_SchemaSet:

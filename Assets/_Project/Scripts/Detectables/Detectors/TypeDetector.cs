@@ -10,8 +10,13 @@ public class TypeDetector : MonoBehaviour, IDetector
     [Tooltip("Called when an object with any type is detected, Correct or Incorrect.")]
     [SerializeField] private UnityEvent<GameObject> _onAnyTypeDetected;
     [SerializeField] private UnityEvent<GameObject> _onCorrectTypeDetected;
+    [SerializeField] private UnityEvent<GameObject> _onFirstCorrectTypeDetected;
     [SerializeField] private UnityEvent<GameObject> _onIncorrectTypeDetected;
+    [SerializeField] private UnityEvent<GameObject> _onFirstIncorrectTypeDetected;
     [SerializeField] private UnityEvent<DetectionType> _onTypeChanged;
+
+    private bool _firstCorrectDetected;
+    private bool _firstIncorrectDetected;
 
     public void Detect(DetectableType pDetectable)
     {
@@ -29,6 +34,9 @@ public class TypeDetector : MonoBehaviour, IDetector
 
     protected virtual void detectCorrectly(DetectableType pDetectable)
     {
+        if (!_firstCorrectDetected) _onFirstCorrectTypeDetected?.Invoke(pDetectable.gameObject);
+
+        _firstCorrectDetected = true;
         _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
         _onCorrectTypeDetected?.Invoke(pDetectable.gameObject);
         pDetectable.Detect();
@@ -36,6 +44,9 @@ public class TypeDetector : MonoBehaviour, IDetector
 
     protected virtual void detectIncorrectly(DetectableType pDetectable)
     {
+        if(!_firstIncorrectDetected) _onFirstIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
+
+        _firstIncorrectDetected = true;
         _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
         _onIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
         pDetectable.Detect();

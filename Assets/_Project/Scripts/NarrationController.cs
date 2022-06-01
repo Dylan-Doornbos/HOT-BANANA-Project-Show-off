@@ -9,6 +9,7 @@ public class NarrationController : MonoBehaviour
     {
         if (_activeDirector != null) _activeDirector.Stop();
 
+        _activeDirector = pDirector;
         pDirector.Play();
     }
 }

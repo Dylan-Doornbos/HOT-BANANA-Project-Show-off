@@ -249,6 +249,7 @@ MonoBehaviour:
   onDetected:
     m_PersistentCalls:
       m_Calls: []
+  _overrideMaterialColor: 0
   _iconUI: {fileID: 0}
 --- !u!114 &-7242478468084054083
 MonoBehaviour:

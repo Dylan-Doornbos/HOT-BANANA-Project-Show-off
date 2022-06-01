@@ -8,7 +8,7 @@ public class TypeSequenceDisplay : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = _sequence.queueSize - 1; i < _displays.Length; i++)
+        for (int i = _sequence.queueSize; i < _displays.Length; i++)
         {
             _displays[i].gameObject.SetActive(false);
         }

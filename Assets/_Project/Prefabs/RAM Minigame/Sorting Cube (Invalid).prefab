@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -605712790934424169, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
+      propertyPath: <type>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e4a8d51707d85a4ab0e5fd476f21980, type: 2}
+    - target: {fileID: -605712790934424169, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
       propertyPath: <detectionType>k__BackingField
       value: 
       objectReference: {fileID: 11400000, guid: 4e4a8d51707d85a4ab0e5fd476f21980, type: 2}
@@ -67,5 +71,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8255113457219137154, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
+      propertyPath: m_text
+      value: $&@!#$&
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255113457219137154, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}

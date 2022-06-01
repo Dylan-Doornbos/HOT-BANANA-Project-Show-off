@@ -32,7 +32,7 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
     {
         if (_interactor == null) return;
         if (!_interactor.TryGetCurrent3DRaycastHit(out RaycastHit hit)) return;
-        if (_hitArea == null || hit.collider.gameObject != _hitArea) return;
+        //if (_hitArea == null || hit.collider.gameObject != _hitArea) return;
 
         Vector3 lookDirection = hit.point - transform.position;
 
