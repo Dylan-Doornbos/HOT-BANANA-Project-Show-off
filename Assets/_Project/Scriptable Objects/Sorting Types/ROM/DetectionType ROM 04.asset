@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc44502067f5e524a9d1d900b72793d9, type: 3}
-  m_Name: DetectionType ROM 01
+  m_Script: {fileID: 11500000, guid: d912f95e9963a6447a8e1421ae1eeb10, type: 3}
+  m_Name: DetectionType ROM 04
   m_EditorClassIdentifier: 
-  <typeName>k__BackingField: ROM 01
-  <material>k__BackingField: {fileID: 2100000, guid: bffd17556a2d7ad40894600132565197, type: 2}
+  <icon>k__BackingField: {fileID: 0}
+  <color>k__BackingField: {r: 1, g: 0.25943398, b: 0.25943398, a: 1}

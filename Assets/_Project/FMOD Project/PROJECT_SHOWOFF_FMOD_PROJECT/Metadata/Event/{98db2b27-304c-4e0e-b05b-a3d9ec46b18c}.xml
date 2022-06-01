@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{98db2b27-304c-4e0e-b05b-a3d9ec46b18c}">
+<<<<<<< Updated upstream
 		<property name="color">
 			<value>Red</value>
 		</property>
 		<property name="name">
 			<value>RAM_NegativeResponses</value>
+=======
+		<property name="name">
+			<value>RAM_Responses</value>
+>>>>>>> Stashed changes
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -30,6 +35,10 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{74833fbf-dc94-490b-b802-7a5be31b633b}</destination>
+<<<<<<< Updated upstream
+=======
+			<destination>{6e8e0d7c-c2fe-483a-8aee-49cad356a883}</destination>
+>>>>>>> Stashed changes
 		</relationship>
 		<relationship name="timeline">
 			<destination>{15e26d46-43ba-4b7d-8d01-ee9e43916391}</destination>
@@ -69,9 +78,24 @@
 			<destination>{5b8c1c99-af78-43e0-8dde-a0055f76cd96}</destination>
 		</relationship>
 	</object>
+<<<<<<< Updated upstream
 	<object class="Timeline" id="{15e26d46-43ba-4b7d-8d01-ee9e43916391}">
 		<relationship name="modules">
 			<destination>{ecb9aae6-4c73-4ecd-9764-c5c0475b727b}</destination>
+=======
+	<object class="GroupTrack" id="{6e8e0d7c-c2fe-483a-8aee-49cad356a883}">
+		<relationship name="modules">
+			<destination>{cf7ead30-534a-435d-be77-b9254e42fa97}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{ec1ed927-92c5-4243-9001-0e05e289171f}</destination>
+		</relationship>
+	</object>
+	<object class="Timeline" id="{15e26d46-43ba-4b7d-8d01-ee9e43916391}">
+		<relationship name="modules">
+			<destination>{ecb9aae6-4c73-4ecd-9764-c5c0475b727b}</destination>
+			<destination>{cf7ead30-534a-435d-be77-b9254e42fa97}</destination>
+>>>>>>> Stashed changes
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{60f8edde-3e51-4b29-acad-7686c04be26c}">
@@ -114,6 +138,35 @@
 			<destination>{60f8edde-3e51-4b29-acad-7686c04be26c}</destination>
 		</relationship>
 	</object>
+<<<<<<< Updated upstream
+=======
+	<object class="MultiSound" id="{cf7ead30-534a-435d-be77-b9254e42fa97}">
+		<property name="start">
+			<value>6</value>
+		</property>
+		<property name="length">
+			<value>2.5</value>
+		</property>
+		<relationship name="sounds">
+			<destination>{538ad500-0848-495c-9508-a5cfe5dcf7ed}</destination>
+			<destination>{5f334e9a-923c-4391-bf50-c13962c26088}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{ec1ed927-92c5-4243-9001-0e05e289171f}">
+		<property name="name">
+			<value>Audio 2</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{9e8659db-de03-4497-a715-ec0278795ffd}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{b9163c6a-ba64-4e73-a6a7-25c65d19a1d6}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{60f8edde-3e51-4b29-acad-7686c04be26c}</destination>
+		</relationship>
+	</object>
+>>>>>>> Stashed changes
 	<object class="MixerBusEffectChain" id="{2c4bf222-6b34-4695-b13c-9ce6f4fb5b66}">
 		<relationship name="effects">
 			<destination>{dfa940a5-9522-46cc-ac6b-384e4399dbe4}</destination>
@@ -137,6 +190,28 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e567bd42-abff-43cc-ab35-669c5f58382e}" />
+<<<<<<< Updated upstream
 	<object class="MixerBusFader" id="{dfa940a5-9522-46cc-ac6b-384e4399dbe4}" />
 	<object class="MixerBusFader" id="{619c4b0e-b275-43f4-999f-6e2c828c593c}" />
+=======
+	<object class="SingleSound" id="{538ad500-0848-495c-9508-a5cfe5dcf7ed}">
+		<relationship name="audioFile">
+			<destination>{99f57c7d-2dff-4e1c-9482-2ddb59c14dad}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{5f334e9a-923c-4391-bf50-c13962c26088}">
+		<relationship name="audioFile">
+			<destination>{daad485f-95ab-4eeb-9e81-af3cad0fa030}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{9e8659db-de03-4497-a715-ec0278795ffd}">
+		<relationship name="effects">
+			<destination>{1e42b7b1-4b35-440f-9420-0b445e5a3cce}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{b9163c6a-ba64-4e73-a6a7-25c65d19a1d6}" />
+	<object class="MixerBusFader" id="{dfa940a5-9522-46cc-ac6b-384e4399dbe4}" />
+	<object class="MixerBusFader" id="{619c4b0e-b275-43f4-999f-6e2c828c593c}" />
+	<object class="MixerBusFader" id="{1e42b7b1-4b35-440f-9420-0b445e5a3cce}" />
+>>>>>>> Stashed changes
 </objects>

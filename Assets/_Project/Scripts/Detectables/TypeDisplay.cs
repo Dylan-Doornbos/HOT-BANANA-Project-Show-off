@@ -11,14 +11,14 @@ public class TypeDisplay : MonoBehaviour
     {
         if (!isTypeValid(pType) || _meshRenderer == null) return;
 
-        _meshRenderer.sharedMaterial = pType.material;
+        //_meshRenderer.sharedMaterial = pType.material;
     }
 
     public void DisplayName(DetectionType pType)
     {
         if (!isTypeValid(pType) || _txtTypeName == null) return;
 
-        _txtTypeName.text = pType.typeName;
+        //_txtTypeName.text = pType.typeName;
     }
 
     public void DisplayInformation(DetectionType pType)
