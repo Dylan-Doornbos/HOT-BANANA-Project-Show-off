@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/RTC Room.unity
     guid: 353e958b223ae66429cca537691b98b3
+  - enabled: 1
+    path: Assets/_Project/Scenes/Menu Scene.unity
+    guid: 8a6bf519a467f554fb7c0a5578aec702
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b43a46f665096e54f92d2c17bec2eeb0, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c39edccf10ab7c5479131edfc08fe153, type: 2}
