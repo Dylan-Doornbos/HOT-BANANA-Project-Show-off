@@ -24,8 +24,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 356381134848
-    m_Localized: Je kunt nu terug gaan naar de stad, er is vast nog meer waar je
-      mee kan helpen.
+    m_Localized: Je kunt nu de deur gebruiken om terug te gaan naar de stad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167251944181760
+    m_Localized: Er zijn vast nog meer taken waar we je hulp nodig hebben.
     m_Metadata:
       m_Items: []
   references:

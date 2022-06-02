@@ -24,8 +24,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 356381134848
-    m_Localized: You can return to the city, I'm sure we can use your help for more
-      tasks.
+    m_Localized: You can use the door to return to the city.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167251944181760
+    m_Localized: I'm sure there are more tasks that we need your help with.
     m_Metadata:
       m_Items: []
   references:
