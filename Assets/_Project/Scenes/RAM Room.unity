@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6edca6b3a54774a93a8bf318a32d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _strength: 0.5
+  _strength: 0.25
 --- !u!65 &535264759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17850,7 +17850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aeedd99a4b61047982f737a8b5aae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _durationInSeconds: 2
+  _durationInSeconds: 3
   _startImmediately: 0
   _onCountdownStarted:
     m_PersistentCalls:

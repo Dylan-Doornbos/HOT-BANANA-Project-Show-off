@@ -33,7 +33,6 @@ MonoBehaviour:
   m_Name: MockDriver Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: Mock Driver
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.mockdriver
@@ -136,10 +135,10 @@ MonoBehaviour:
   features:
   - {fileID: 5180981811135252430}
   - {fileID: 8364733314208728652}
-  - {fileID: 1253500999557361114}
+  - {fileID: 0}
   - {fileID: 4695109928872063332}
   - {fileID: 7471603608460151673}
-  - {fileID: 8549068120661077472}
+  - {fileID: 0}
   - {fileID: 9148175838040268178}
   - {fileID: 199561550871932849}
   m_renderMode: 1
@@ -260,20 +259,20 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -5779888464171443358}
+  - {fileID: 0}
   - {fileID: -9063782695688284140}
   - {fileID: 2194930361565812865}
-  - {fileID: 8659476471470664448}
-  - {fileID: -5008394897981219184}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 508253819851998734}
   - {fileID: 1419721357181865008}
   - {fileID: 2626660500377959709}
   - {fileID: -5709647019651583912}
-  - {fileID: 2713494867211194120}
+  - {fileID: 0}
   - {fileID: 2699324809435229948}
-  - {fileID: 4964170636200145643}
+  - {fileID: 0}
   - {fileID: -5865037829510275061}
-  - {fileID: -1731131408291223131}
+  - {fileID: 0}
   - {fileID: 5658544155603043872}
   - {fileID: 415573969429674602}
   m_renderMode: 1
@@ -391,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8ec2975f18d5e479159feb34b4dc86, type: 3}
   m_Name: MixedRealityFeaturePlugin Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 1
+  m_enabled: 0
   nameUi: Mixed Reality Features
   version: 1.4.0
   featureIdInternal: com.microsoft.openxr.feature.hololens
@@ -404,6 +403,26 @@ MonoBehaviour:
   priority: 0
   required: 1
   disableFirstPersonObserver: 0
+--- !u!114 &3569338591522930217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96efa89124dda0941802f28ad8249b87, type: 3}
+  m_Name: MockDriver Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Mock Driver
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.mockdriver
+  openxrExtensionStrings: XR_UNITY_mock_driver
+  company: Unity
+  priority: 0
+  required: 0
 --- !u!114 &4472348309613792589
 MonoBehaviour:
   m_ObjectHideFlags: 0
