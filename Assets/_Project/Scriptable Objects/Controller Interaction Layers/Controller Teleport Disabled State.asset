@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07a0c3c7da62444ca51d2b8ff4effa2, type: 3}
-  m_Name: Set Left Controller To Teleport
+  m_Script: {fileID: 11500000, guid: 09125e9dcfb484c40bdaf621aafa4d67, type: 3}
+  m_Name: Controller Teleport Disabled State
   m_EditorClassIdentifier: 
-  _chainedEvents: []
+  <layerMask>k__BackingField:
+    m_Bits: 1
