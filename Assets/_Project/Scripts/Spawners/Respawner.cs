@@ -32,7 +32,7 @@ public class Respawner : MonoBehaviour
     {
         if (spawnedObject == null) return;
 
-        TypeDetectable detectable = spawnedObject.GetComponent<TypeDetectable>();
+        Detectable detectable = spawnedObject.GetComponent<Detectable>();
 
         if (detectable == null) return;
         

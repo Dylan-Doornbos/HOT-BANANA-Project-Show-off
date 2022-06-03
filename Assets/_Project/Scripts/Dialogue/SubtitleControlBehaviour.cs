@@ -23,11 +23,12 @@ public class SubtitleControlBehaviour : PlayableBehaviour
         if (_hasPlayed) return;
         _hasPlayed = true;
 
-        _controller = playerData as SubtitleController;
+        if (!(playerData is SubtitleController controller)) return;
+
+        _controller = controller;
+        
         var test = line.GetLocalizedString();
-
-        if (_controller != null) _controller.SetLine(test);
-
+        _controller.SetLine(test);
     }
 
     public override void OnBehaviourPause(Playable playable, FrameData info)

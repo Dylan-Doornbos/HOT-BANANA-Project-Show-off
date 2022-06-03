@@ -10,30 +10,51 @@ public class TypeDetector : MonoBehaviour, IDetector
     [Tooltip("Called when an object with any type is detected, Correct or Incorrect.")]
     [SerializeField] private UnityEvent<GameObject> _onAnyTypeDetected;
     [SerializeField] private UnityEvent<GameObject> _onCorrectTypeDetected;
+    [SerializeField] private UnityEvent<GameObject> _onFirstCorrectTypeDetected;
     [SerializeField] private UnityEvent<GameObject> _onIncorrectTypeDetected;
+    [SerializeField] private UnityEvent<GameObject> _onFirstIncorrectTypeDetected;
     [SerializeField] private UnityEvent<DetectionType> _onTypeChanged;
 
-    public void Detect(TypeDetectable pDetectable)
-    {
-        if (pDetectable == null || pDetectable.detectionType == null) return;
+    private bool _firstCorrectDetected;
+    private bool _firstIncorrectDetected;
 
-        if (_typeToDetect == pDetectable.detectionType)
+    public void Detect(DetectableType pDetectable)
+    {
+        if (pDetectable == null || pDetectable.type == null || !pDetectable.isDetectable) return;
+
+        if (_typeToDetect == pDetectable.type)
         {
-            _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
-            _onCorrectTypeDetected?.Invoke(pDetectable.gameObject);
-            pDetectable.Detect();
+            detectCorrectly(pDetectable);
         }
         else if (_detectIncorrectTypes)
         {
-            _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
-            _onIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
-            pDetectable.Detect();
+            detectIncorrectly(pDetectable);
         }
+    }
+
+    protected virtual void detectCorrectly(DetectableType pDetectable)
+    {
+        if (!_firstCorrectDetected) _onFirstCorrectTypeDetected?.Invoke(pDetectable.gameObject);
+
+        _firstCorrectDetected = true;
+        _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
+        _onCorrectTypeDetected?.Invoke(pDetectable.gameObject);
+        pDetectable.Detect();
+    }
+
+    protected virtual void detectIncorrectly(DetectableType pDetectable)
+    {
+        if(!_firstIncorrectDetected) _onFirstIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
+
+        _firstIncorrectDetected = true;
+        _onAnyTypeDetected?.Invoke(pDetectable.gameObject);
+        _onIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
+        pDetectable.Detect();
     }
 
     public void Detect(GameObject pObject)
     {
-        if (!pObject.TryGetComponent(out TypeDetectable detectable)) return;
+        if (!pObject.TryGetComponent(out DetectableType detectable)) return;
 
         Detect(detectable);
     }

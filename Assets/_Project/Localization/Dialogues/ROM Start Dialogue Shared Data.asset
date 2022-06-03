@@ -15,12 +15,21 @@ MonoBehaviour:
   m_TableCollectionName: ROM Start Dialogue
   m_TableCollectionNameGuidString: 71921742f1f6ce44a897d39e0f7e1744
   m_Entries:
-  - m_Id: 10154729472
-    m_Key: My programming tells me that these pieces of memory need special sorting.
+  - m_Id: 406074595532800
+    m_Key: The system has to read only special data objects.
     m_Metadata:
       m_Items: []
-  - m_Id: 384874217529344
-    m_Key: The good pieces need to go in the box on your left.
+  - m_Id: 406145995169792
+    m_Key: Look here! This highlighted data object should go to the corresponding
+      tube.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406204954501120
+    m_Key: Pretty straightforward - just match the right object with the right tube.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 406235853938688
+    m_Key: Alright here it comes, get ready my friend!
     m_Metadata:
       m_Items: []
   m_Metadata:
