@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9105027058024182718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCES/CITY_AMBIENCE
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCES/CITY_AMBIENCE
+  Guid:
+    Data1: -1525671478
+    Data2: 1300176722
+    Data3: 117528484
+    Data4: -228093809
+  Banks:
+  - {fileID: 919470416726278151}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1025076449268896854}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 136000
 --- !u!114 &-8671958345871146102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +55,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-8639599531207682956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ROBOT_CHATTER/TrainRobot
+  m_EditorClassIdentifier: 
+  Name: TrainRobot
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2674472889
+    data2: 4228815075
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-8465914940441540385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +353,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-3674950643836942925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ROBOT_CHATTER/SmallRobot
+  m_EditorClassIdentifier: 
+  Name: SmallRobot
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3137434748
+    data2: 1223976928
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3302375778769065068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +431,7 @@ MonoBehaviour:
   - {fileID: -4552363046439556125}
   MinDistance: 1
   MaxDistance: 20
-  Length: 61440
+  Length: 46080
 --- !u!114 &-1449377804499186532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +486,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-1025076449268896854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CITY_AMBIENCE/Music
+  m_EditorClassIdentifier: 
+  Name: Music
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2231742852
+    data2: 4168478934
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - No Music
+  - Music
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +553,8 @@ MonoBehaviour:
   - {fileID: 5251166497906707908}
   - {fileID: -4075841493219495286}
   - {fileID: 3467520074571258855}
+  - {fileID: 8585914156926733921}
+  - {fileID: -9105027058024182718}
   EditorParameters: []
   MasterBanks:
   - {fileID: 919470416726278151}
@@ -476,7 +580,31 @@ MonoBehaviour:
   lastModified: 637897024817678949
   FileSizes:
   - Name: Desktop
-    Value: 4913856
+    Value: 6221792
+  Exists: 1
+--- !u!114 &1424827155374725189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ROBOT_CHATTER/BigRobot
+  m_EditorClassIdentifier: 
+  Name: BigRobot
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 503539495
+    data2: 1040748600
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &1601558190911277713
 MonoBehaviour:
@@ -505,7 +633,7 @@ MonoBehaviour:
   - {fileID: -8465914940441540385}
   MinDistance: 1
   MaxDistance: 20
-  Length: 61553
+  Length: 46193
 --- !u!114 &2462717683515646593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,11 +657,10 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 8047216157770721511}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 84480
+  Length: 76800
 --- !u!114 &2787137876832731967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +679,7 @@ MonoBehaviour:
   lastModified: 637897024817353919
   FileSizes:
   - Name: Desktop
-    Value: 2042
+    Value: 2366
   Exists: 1
 --- !u!114 &3355063566005563090
 MonoBehaviour:
@@ -797,7 +924,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &8047216157770721511
+--- !u!114 &7207342781456428608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -807,24 +934,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUSIC_ROM/Music intensity
+  m_Name: parameter:/ROBOT_CHATTER/FlyingRobot
   m_EditorClassIdentifier: 
-  Name: Music intensity
+  Name: FlyingRobot
   StudioPath: 
   Min: 0
-  Max: 4
+  Max: 1
   Default: 0
   ID:
-    data1: 2251336101
-    data2: 4119451055
-  Type: 2
+    data1: 3262608197
+    data2: 1083304638
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+  Labels: []
   Exists: 1
 --- !u!114 &8261072052708599167
 MonoBehaviour:
@@ -853,3 +975,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &8585914156926733921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WORLD/ROBOT_CHATTER
+  m_EditorClassIdentifier: 
+  Path: event:/WORLD/ROBOT_CHATTER
+  Guid:
+    Data1: -103258945
+    Data2: 1236222551
+    Data3: 1754658960
+    Data4: -1566995815
+  Banks:
+  - {fileID: 919470416726278151}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8639599531207682956}
+  - {fileID: -3674950643836942925}
+  - {fileID: 1424827155374725189}
+  - {fileID: 7207342781456428608}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
