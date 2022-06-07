@@ -8,9 +8,10 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
 {
     [SerializeField] GameObject _hitArea;
 
-    private XRRayInteractor _interactor = null;
+    protected XRRayInteractor _interactor = null;
     private List<Collider> _childColliders = new List<Collider>();
     protected T _rotator;
+    protected bool _isRotating = false;
 
     private string _invalidRotatorError => string.Format("Object of type '{0}' could not be found on game object '{1}'.", typeof(T), gameObject.name);
 
@@ -30,13 +31,30 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
 
     protected virtual void Update()
     {
+        if (_isRotating)
+        {
+            updateRotating();
+        }
+    }
+
+    protected virtual void startRotating()
+    {
+        _isRotating = true;
+    }
+
+    protected virtual void updateRotating()
+    {
         if (_interactor == null) return;
         if (!_interactor.TryGetCurrent3DRaycastHit(out RaycastHit hit)) return;
-        //if (_hitArea == null || hit.collider.gameObject != _hitArea) return;
 
         Vector3 lookDirection = hit.point - transform.position;
 
         _rotator.SetRotation(lookDirection);
+    }
+
+    protected virtual void stopRotating()
+    {
+        _isRotating = false;
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
@@ -44,6 +62,7 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
         base.OnSelectEntered(args);
         _interactor = args.interactorObject as XRRayInteractor;
         toggleColliders(false);
+        startRotating();
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
@@ -51,6 +70,7 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
         base.OnSelectExited(args);
         _interactor = null;
         toggleColliders(true);
+        stopRotating();
     }
 
     /// <summary>
