@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(BoxCollider))]
 public class ConveyorBelt : MonoBehaviour
 {
-    [SerializeField] private float _strength;
+    [FormerlySerializedAs("_strength")] [SerializeField] private float _speed;
     
     private List<Rigidbody> _rigidbodiesInRange = new List<Rigidbody>();
 
@@ -26,7 +27,7 @@ public class ConveyorBelt : MonoBehaviour
                 continue;
             }
             
-            _rigidbodiesInRange[i].AddForce(transform.forward * _strength, ForceMode.Force);
+            _rigidbodiesInRange[i].AddForce(transform.forward * _speed, ForceMode.Force);
         }
     }
 
@@ -44,5 +45,10 @@ public class ConveyorBelt : MonoBehaviour
         {
             _rigidbodiesInRange.Remove(rb);
         }
+    }
+
+    public void SetSpeed(float pSpeed)
+    {
+        _speed = pSpeed;
     }
 }

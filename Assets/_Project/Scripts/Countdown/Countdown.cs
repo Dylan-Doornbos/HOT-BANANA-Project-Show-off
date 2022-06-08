@@ -51,6 +51,12 @@ public class Countdown : MonoBehaviour
         }
     }
 
+    public void SetDuration(float pDuration)
+    {
+        _durationInSeconds = pDuration;
+        Reset();
+    }
+
     public void Reset()
     {
         Pause();
