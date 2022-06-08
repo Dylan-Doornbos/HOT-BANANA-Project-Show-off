@@ -42,11 +42,11 @@ Material:
     m_Ints: []
     m_Floats:
     - AOC: 1
-    - Emission_Strength: 1.04
+    - Emission_Strength: 1.14
     - Fresnel_Power: 0
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
     - Base_Color: {r: 1.9766746, g: 1.9766746, b: 1.9766746, a: 0}
-    - _Emission: {r: 1.4142135, g: 0, b: 0.47348374, a: 1}
+    - _Emission: {r: 1, g: 0, b: 0.33507872, a: 1}
   m_BuildTextureStacks: []
