@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow-Emission 3
-  m_Shader: {fileID: -6465566751694194690, guid: c781f5236472e6c47b1963c402bdd214, type: 3}
+  m_Name: Glow Orange RAM
+  m_Shader: {fileID: -6465566751694194690, guid: f7d254e123cd5514fa40ee9bf0b68954, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,11 +19,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Image:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_ed355a4a6996416ea210bba1c3a349f0_Texture_1:
+    - _Texture2DAsset_1544636a41fd4b4ba471a2f7b68ca597_Out_0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -41,12 +37,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - AOC: 1
-    - Emission_Strength: 0.22
+    - AOC: 0.47
+    - Emission_Strength: 0.97
+    - Flicker_speed: 0
     - Fresnel_Power: 0
     - Metallic: 0
     - Smoothness: 0
     m_Colors:
-    - Base_Color: {r: 2.6082377, g: 2.6082377, b: 2.6082377, a: 0}
-    - _Emission: {r: 0, g: 1.2090139, b: 1.4142135, a: 1}
+    - _Color: {r: 5.3403134, g: 2.3276536, b: 0, a: 0}
+    - _Emission: {r: 1, g: 0.0399733, b: 0, a: 0}
   m_BuildTextureStacks: []
