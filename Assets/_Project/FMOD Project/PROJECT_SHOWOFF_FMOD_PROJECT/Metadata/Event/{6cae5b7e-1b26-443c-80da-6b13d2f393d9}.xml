@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{6cae5b7e-1b26-443c-80da-6b13d2f393d9}">
+		<property name="color">
+			<value>Yellow Light 1</value>
+		</property>
 		<property name="name">
-			<value>New Event</value>
+			<value>ROBOT_DRIVING</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -23,6 +26,8 @@
 			<destination>{48c934ef-e44a-44af-9345-e9d71ab163d4}</destination>
 		</relationship>
 		<relationship name="markerTracks">
+			<destination>{277c683d-f35b-4a6d-8c1f-488e6176f446}</destination>
+			<destination>{0cabde3e-1117-4cf5-98f0-9d41cfca7845}</destination>
 			<destination>{20c7f51f-28da-40e7-9a80-6265778694d8}</destination>
 		</relationship>
 		<relationship name="groupTracks">
@@ -30,6 +35,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{02bd0516-8a6d-4ccf-ba16-f83833863ada}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{d46870df-c7a1-433c-bf50-5ffdcdd82e37}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{352b6f0c-cc05-480b-8a14-814f9876777b}">
@@ -54,6 +62,8 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{48c934ef-e44a-44af-9345-e9d71ab163d4}" />
+	<object class="MarkerTrack" id="{277c683d-f35b-4a6d-8c1f-488e6176f446}" />
+	<object class="MarkerTrack" id="{0cabde3e-1117-4cf5-98f0-9d41cfca7845}" />
 	<object class="MarkerTrack" id="{20c7f51f-28da-40e7-9a80-6265778694d8}" />
 	<object class="GroupTrack" id="{70d0c805-4b63-4a26-9688-b57ce25f653c}">
 		<relationship name="modules">
@@ -69,6 +79,7 @@
 		</relationship>
 		<relationship name="markers">
 			<destination>{d23eae48-73be-4f10-bb0f-3afbf1a3005f}</destination>
+			<destination>{1a154d7f-f1fc-4d22-9cd6-7667ed3de1f9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8ab43a0f-fbee-4591-8c4d-a7584a36b69c}">
@@ -122,6 +133,17 @@
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{20c7f51f-28da-40e7-9a80-6265778694d8}</destination>
+		</relationship>
+	</object>
+	<object class="TempoMarker" id="{1a154d7f-f1fc-4d22-9cd6-7667ed3de1f9}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{02bd0516-8a6d-4ccf-ba16-f83833863ada}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{277c683d-f35b-4a6d-8c1f-488e6176f446}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{b471492f-7c85-4170-bc14-39ff808d9cb8}">
