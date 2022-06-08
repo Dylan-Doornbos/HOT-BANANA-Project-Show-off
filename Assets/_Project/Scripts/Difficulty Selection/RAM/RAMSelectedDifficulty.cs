@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Difficulties/Selected/RAM")]
-public class RAMSelectedDifficulty : ScriptableObject
+public class RAMSelectedDifficulty : SelectedDifficulty<RAMDifficultySettings>
 {
-    [HideInInspector] public RAMDifficultySettings activeSettings;
+    
 }

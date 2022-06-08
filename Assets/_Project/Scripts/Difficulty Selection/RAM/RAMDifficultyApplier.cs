@@ -1,36 +1,14 @@
 using UnityEngine;
 
-public class RAMDifficultyApplier : MonoBehaviour
+public class RAMDifficultyApplier : DifficultyApplier<RAMSelectedDifficulty, RAMDifficultySettings>
 {
-    [Header("Difficulties")] 
-    [SerializeField] private RAMSelectedDifficulty _selectedDifficulty;
-    [SerializeField] private RAMDifficultySettings _defaultDifficulty;
-
     [Header("References")]
     [SerializeField] private Countdown _respawnTimer;
     [SerializeField] private ConveyorBelt _conveyorBelt;
-
-    private void OnEnable()
+    
+    protected override void applyDifficulty()
     {
-        applyDifficulty();
-    }
-
-    private void applyDifficulty()
-    {
-        RAMDifficultySettings settingsToApply;
-        
-        if (_selectedDifficulty == null || _selectedDifficulty.activeSettings == null)
-        {
-            if(_defaultDifficulty == null) return;
-
-            settingsToApply = _defaultDifficulty;
-        }
-        else
-        {
-            settingsToApply = _selectedDifficulty.activeSettings;
-        }
-        
-        _respawnTimer.SetDuration(settingsToApply.spawnIntervalInSeconds);
-        _conveyorBelt.SetSpeed(settingsToApply.conveyorSpeed);
+        _respawnTimer.SetDuration(_settingsToApply.spawnIntervalInSeconds);
+        _conveyorBelt.SetSpeed(_settingsToApply.conveyorSpeed);
     }
 }

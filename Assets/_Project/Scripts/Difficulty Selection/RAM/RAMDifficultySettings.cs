@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Difficulties/RAM")]
-public class RAMDifficultySettings : Difficulty
+[CreateAssetMenu(menuName = "Difficulties/Settings/RAM")]
+public class RAMDifficultySettings : DifficultySettings
 {
     [field: SerializeField] public string difficultyName { get; private set; } = "Unspecified";
     [field: SerializeField] public float conveyorSpeed { get; private set; } = 0.25f;
