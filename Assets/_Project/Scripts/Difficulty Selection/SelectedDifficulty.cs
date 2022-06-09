@@ -3,14 +3,25 @@ using UnityEngine;
 
 public abstract class SelectedDifficulty<T> : ScriptableObject where T : DifficultySettings
 {
-    [field: SerializeField] public T difficulty { get; private set; }
+    [SerializeField] private T _defaultDifficulty;
+
+    [NonSerialized] private T _difficulty = null;
+
+    public T difficulty
+    {
+        get
+        {
+            if (_difficulty == null) SetDifficulty(_defaultDifficulty);
+            return _difficulty;
+        }
+    }
     public event Action<T> onDifficultyChanged;
 
     public void SetDifficulty(T pDifficulty)
     {
-        if(difficulty == pDifficulty) return;
+        if(_difficulty == pDifficulty) return;
 
-        difficulty = pDifficulty;
-        onDifficultyChanged?.Invoke(difficulty);
+        _difficulty = pDifficulty;
+        onDifficultyChanged?.Invoke(pDifficulty);
     }
 }
