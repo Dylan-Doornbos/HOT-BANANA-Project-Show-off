@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7605963463145384593}
   - component: {fileID: -8479372747282066653}
   - component: {fileID: -8107863669108441986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sorting Cube (Valid)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 6532184944174370309}
   - component: {fileID: 517536672716904361}
   - component: {fileID: 8255113457219137154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 5293498047771851476}
   - component: {fileID: 6571208053891288243}
   - component: {fileID: 4480590500992626905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
