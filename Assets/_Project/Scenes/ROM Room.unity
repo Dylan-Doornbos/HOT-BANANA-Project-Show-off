@@ -2561,7 +2561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c863497ea5d109142926cca65185b7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: 44dff86d37802324398f293ac022004d, type: 2}
+  _gameEvent: {fileID: 11400000, guid: e4b06701e425a9545a06583020281aa8, type: 2}
   _onEventRaised:
     m_PersistentCalls:
       m_Calls:
@@ -3653,7 +3653,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5428610894164698736}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3064553875324757843
 MeshRenderer:
@@ -3980,8 +3980,8 @@ Transform:
   m_LocalPosition: {x: -32.945778, y: -7.0212364, z: 6.7897635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1620084690806725237}
   - {fileID: 2384064412443165136}
+  - {fileID: 1620084690806725237}
   - {fileID: 7856401049605370100}
   m_Father: {fileID: 7304688819626644285}
   m_RootOrder: 0

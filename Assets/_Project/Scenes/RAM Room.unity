@@ -317,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535264757}
   m_LocalRotation: {x: -0, y: -0.044116274, z: -0, w: 0.9990264}
-  m_LocalPosition: {x: 1.4082406, y: -0.40637237, z: -0.22181886}
+  m_LocalPosition: {x: 1.488, y: -0.40637237, z: -0.087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 360641978}
@@ -2848,7 +2848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7021121107389217120}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8162804, y: 1.8252034, z: 0.4759686}
+  m_LocalPosition: {x: 3.15, y: 1.8252034, z: 1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7021121108652632603}
@@ -3790,6 +3790,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1997935296}
+        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
+        m_MethodName: IncreaseCounter
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onFirstIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls: []
@@ -3835,13 +3847,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8046768671607388278}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.3552406, y: -0.51503897, z: 1.7211777}
+  m_LocalRotation: {x: -0, y: 0.7073583, z: 0.7068552, w: 0}
+  m_LocalPosition: {x: 1.412, y: -1.06, z: 1.685}
   m_LocalScale: {x: 3.3333323, y: 3.333333, z: 3.3333323}
   m_Children: []
   m_Father: {fileID: 360641978}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.04, y: 180, z: 0}
 --- !u!114 &8046768672278658112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,6 +3928,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1997935296}
+        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
+        m_MethodName: IncreaseCounter
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onFirstIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls: []
@@ -3962,7 +3986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8046768672278658117}
   m_LocalRotation: {x: -0, y: 0.966563, z: -0, w: -0.25642943}
-  m_LocalPosition: {x: 2.6685734, y: -0.35037237, z: -1.9434875}
+  m_LocalPosition: {x: 2.6685734, y: -1.066, z: -1.9434875}
   m_LocalScale: {x: 3.3333323, y: 3.333333, z: 3.3333323}
   m_Children: []
   m_Father: {fileID: 360641978}
