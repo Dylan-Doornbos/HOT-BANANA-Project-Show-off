@@ -1,22 +1,44 @@
+using System;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public abstract class DifficultySelector<T1, T2> : MonoBehaviour where T1 : SelectedDifficulty<T2> where T2 : DifficultySettings
+[RequireComponent(typeof(XRBaseInteractable))]
+public class DifficultySelector<T1, T2> : MonoBehaviour where T1 : SelectedDifficulty<T2> where T2 : DifficultySettings
 {
-    [SerializeField] private T1 _selectedDifficulty;
-    [SerializeField] private T2 _difficultyToSelect;
+    [field: SerializeField] public T1 _selectedDifficulty { get; private set; }
+    [field: SerializeField] public T2 _difficultyToSelect { get; private set; }
+    [SerializeField] private OnOffDisplay _onOffDisplay;
+    
+    private bool _isActive;
+    private XRBaseInteractable _interactable;
 
-    private void OnValidate()
+    private void Awake()
     {
-        if(_selectedDifficulty == null || _difficultyToSelect == null) return;
-
-        if (_selectedDifficulty.GetType() != _difficultyToSelect.GetType())
-        {
-            DebugUtil.Log($"'{nameof(_difficultyToSelect)}' is not the same type ({_difficultyToSelect.GetType()}) of difficulty as '{nameof(_selectedDifficulty)}' ({_selectedDifficulty.GetType()}). Source: '{gameObject.name}'.", LogType.ERROR);
-        }
+        _interactable = GetComponent<XRBaseInteractable>();
     }
 
-    public void Select()
+    private void OnEnable()
     {
-        _selectedDifficulty.difficulty = _difficultyToSelect;
+        _selectedDifficulty.onDifficultyChanged += changeActiveState;
+        changeActiveState(_selectedDifficulty.difficulty);
+        _interactable.selectEntered.AddListener(Select);
     }
+
+    private void OnDisable()
+    {
+        _selectedDifficulty.onDifficultyChanged -= changeActiveState;
+        _interactable.selectEntered.RemoveListener(Select);
+    }
+
+    public void Select(SelectEnterEventArgs pArgs)
+    {
+        _selectedDifficulty.SetDifficulty(_difficultyToSelect);
+    }
+
+    private void changeActiveState(DifficultySettings pDifficulty)
+    {
+        _isActive = pDifficulty == _difficultyToSelect;
+        _onOffDisplay.SetState(_isActive);
+    }
+    
 }

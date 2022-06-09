@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a89930333a1fe4f87822b9a6b1ead7, type: 3}
   m_Name: RAM Selected Difficulty
   m_EditorClassIdentifier: 
-  <_activeSettings>k__BackingField: {fileID: 0}
+  _defaultDifficulty: {fileID: 11400000, guid: de3c6809161284b4aa95409632c8d347, type: 2}

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12a856f1c7ac7c94787c87310a0324a9, type: 3}
-  m_Name: RAM Difficulty - Extreme
+  m_Name: RAM Difficulty - Hard
   m_EditorClassIdentifier: 
-  <difficultyName>k__BackingField: Unspecified
+  <difficultyName>k__BackingField: Hard
   <conveyorSpeed>k__BackingField: 1
-  <spawnIntervalInSeconds>k__BackingField: 1.5
+  <spawnIntervalInSeconds>k__BackingField: 1

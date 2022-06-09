@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 2814147736127749852}
   - component: {fileID: 2814147736127749793}
   - component: {fileID: 2814147736127749854}
+  - component: {fileID: 1974402293134389807}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -619,6 +620,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _counter: {fileID: 2814147736127749793}
   _txtCounter: {fileID: 2814147735698632756}
+--- !u!114 &1974402293134389807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2814147736127749850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c863497ea5d109142926cca65185b7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: e4b06701e425a9545a06583020281aa8, type: 2}
+  _onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2814147736127749793}
+        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2814147736710251602
 GameObject:
   m_ObjectHideFlags: 0
