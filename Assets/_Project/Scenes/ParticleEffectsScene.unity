@@ -20816,6 +20816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 960140944168607255, guid: 5e49a0ecd9397c84da9b06cfb9d6fbf7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6831540239713009070, guid: 275fcff531813e442ac9dde938de7d19, type: 3}
     - target: {fileID: 1663172669712892816, guid: 5e49a0ecd9397c84da9b06cfb9d6fbf7, type: 3}
       propertyPath: m_Name
       value: Fire Effect (version 1)
@@ -20861,6 +20865,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4554932244777466159, guid: eba48b33b4ab4bd4c85c9845ff6c87b7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6831540239713009070, guid: 275fcff531813e442ac9dde938de7d19, type: 3}
     - target: {fileID: 6849950395745953294, guid: eba48b33b4ab4bd4c85c9845ff6c87b7, type: 3}
       propertyPath: m_Name
       value: Drop Effect
