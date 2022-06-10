@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Minigame End
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: bfe3f9c558f91ee448a71b0633506e5b, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 4598f9e6182412f4e8038c5154b902b8, type: 2}
+  - {fileID: 11400000, guid: a5307b68d3c3af7408b3adeed3b63cc8, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 1

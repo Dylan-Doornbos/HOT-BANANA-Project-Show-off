@@ -1,42 +1,13 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class TypeDisplay : MonoBehaviour
 {
-    [Header("Optional")]
-    [SerializeField] private MeshRenderer _meshRenderer;
-    [SerializeField] private TextMeshProUGUI _txtTypeName;
+    [SerializeField] private Image _imgIcon;
 
-    public void DisplayMaterial(DetectionType pType)
+    public void SetType(DetectionType pType)
     {
-        if (!isTypeValid(pType) || _meshRenderer == null) return;
-
-        _meshRenderer.sharedMaterial = pType.material;
-    }
-
-    public void DisplayName(DetectionType pType)
-    {
-        if (!isTypeValid(pType) || _txtTypeName == null) return;
-
-        _txtTypeName.text = pType.typeName;
-    }
-
-    public void DisplayInformation(DetectionType pType)
-    {
-        if (!isTypeValid(pType)) return;
-
-        DisplayMaterial(pType);
-        DisplayName(pType);
-    }
-
-    private bool isTypeValid(DetectionType pType)
-    {
-        if(pType == null)
-        {
-            DebugUtil.Log($"Sorting type is invalid in '{nameof(isTypeValid)}' on '{nameof(TypeDisplay)}'. Source object: '{gameObject.name}'.", LogType.ERROR);
-            return false;
-        }
-        
-        return true;
+        if(pType.icon != null) _imgIcon.sprite = pType.icon;
+        _imgIcon.color = pType.color;
     }
 }

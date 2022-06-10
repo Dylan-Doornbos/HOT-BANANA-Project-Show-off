@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 2728920666825230406}
   - component: {fileID: 2728920666825230407}
   - component: {fileID: 2728920666825230404}
-  - component: {fileID: 2728920666825230405}
   - component: {fileID: 2728920666825230400}
   - component: {fileID: 2728920666825230401}
   - component: {fileID: 4156576554754317707}
   - component: {fileID: -7242478468084054083}
   - component: {fileID: 1495707465996812469}
-  m_Layer: 0
+  - component: {fileID: 8220137756767389439}
+  - component: {fileID: 1460558861166570403}
+  m_Layer: 8
   m_Name: ROM Cube 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 2728920666825230411}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +46,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2728920666825230411}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2728920666825230404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88,19 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2728920666825230405
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728920666825230411}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2728920666825230400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -158,7 +146,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1460558861166570403}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -241,10 +241,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2728920666825230411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf9afa83df1377f42ab64893e17c1087, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eea24390f0ce3d4a8f968803e69e944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <detectionType>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
+  <type>k__BackingField: {fileID: 11400000, guid: 56578d80f615271428f4f59b66d4fa56, type: 2}
+  canDetectMoreThanOnce: 0
+  onDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  _overrideMaterialColor: 0
+  _iconUI: {fileID: 0}
 --- !u!114 &-7242478468084054083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,3 +291,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5cf08bfe016dc409182f55ae902dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &8220137756767389439
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728920666825230411}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.49999997
+  m_Center: {x: 0, y: -0.00000023841858, z: 0}
+--- !u!114 &1460558861166570403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728920666825230411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 224505925
+      Data2: 1085996488
+      Data3: -2005800027
+      Data4: -157270659
+    Path: event:/PLAYER/RAM_BoxPickup
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

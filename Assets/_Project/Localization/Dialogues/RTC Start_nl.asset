@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: RTC Start_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: 4e052528dec564b4da3bc95661a21b9f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 42190016512
+    m_Localized: Het lijkt erop dat we weer een stroomuitval hadden deze week.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92555218944
+    m_Localized: Nu is ons klok systeem kapot en moet het herstarten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127476994048
+    m_Localized: Kun jij degene zijn die dit probleem oplost? Ik denk het wel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369463169024
+    m_Localized: Zie je die twee draai knoppen voor je? Die beinvloeden de analoge
+      klok aan de muur.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 626578198528
+    m_Localized: Jouw taak is om er voor te zorgen dat de analoge klok gelijk staat
+      met de digitale klok aan de muur. Succes
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

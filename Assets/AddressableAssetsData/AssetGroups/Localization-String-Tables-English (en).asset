@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-English (en)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-English (en)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c40b3572bdd02e9499574461d94ebd61
+  m_SerializeEntries:
+  - m_GUID: 7e033bf6aa3325044a45996f76483de0
+    m_Address: ROM Start Dialogue_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: c8c61922a1afa704794b05b91d9fb1f8
+    m_Address: ROM Greeting_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 1b074be6d5541644094e3b0d81182dc2
+    m_Address: RAM Greeting_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 4f80842a9129d584397de6ef40bec75d
+    m_Address: RAM Tutorial_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: f5e56f2e88c7b484a9bc134fc1ec8028
+    m_Address: UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: bcbf4a86ff0d1674a866d89e8fe733d6
+    m_Address: RTC Greeting_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: bd3576ec90b7547439fe07844fbd9c52
+    m_Address: RTC Start_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: a5307b68d3c3af7408b3adeed3b63cc8
+    m_Address: Minigame End_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 889b8f8a2f5fb794aaefd4e1760c3809, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 56353ab2b1dff3a4fadf347e19208693, type: 2}
+    - {fileID: 11400000, guid: 5ffdbb75db6769741bfce672f4f95222, type: 2}

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptables/Sorting Type")]
+[CreateAssetMenu(menuName = "Detectables/Default")]
 public class DetectionType : ScriptableObject
 {
-    [field: SerializeField] public string typeName { get; private set; }
-    [field: SerializeField] public Material material { get; private set; }
+    [field: SerializeField] public Sprite icon { get; private set; }
+    [field: SerializeField] public Color color { get; private set; } = Color.white;
 }
