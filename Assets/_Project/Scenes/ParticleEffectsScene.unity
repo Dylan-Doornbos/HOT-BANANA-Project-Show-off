@@ -233,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254510891}
   m_LocalRotation: {x: -0.048592903, y: -0, z: -0, w: 0.9988187}
-  m_LocalPosition: {x: 22.43, y: 5, z: -7.56}
+  m_LocalPosition: {x: 22.87, y: 4.39, z: -6.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -682,7 +682,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 3
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 1
+  m_LengthScale: 3.5
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -837,7 +837,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 8.12
+      scalar: 7.43
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -889,9 +889,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.7198543, b: 0, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.9245283, g: 0.8161541, b: 0.047970813, a: 1}
+      maxColor: {r: 1, g: 0.43673247, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5443,7 +5443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488219201}
   m_LocalRotation: {x: -0.15026046, y: 0.702685, z: 0.15578143, w: 0.67778146}
-  m_LocalPosition: {x: 18.454, y: 3.368, z: -1.25}
+  m_LocalPosition: {x: 18.306, y: 3.368, z: -1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16209,6 +16209,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e49a0ecd9397c84da9b06cfb9d6fbf7, type: 3}
+--- !u!1001 &3110376186086236147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 839299028698945494, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_Name
+      value: Robot Happy Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.694
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.382
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9609468
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000017744433868618, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4798eec7630442b49a57701c80cbc602, type: 3}
 --- !u!1001 &4554932244512802142
 PrefabInstance:
   m_ObjectHideFlags: 0
