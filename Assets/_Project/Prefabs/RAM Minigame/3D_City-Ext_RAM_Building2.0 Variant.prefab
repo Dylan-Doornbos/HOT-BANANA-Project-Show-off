@@ -92,7 +92,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _sceneID: 2
+  _scene: 4
 --- !u!64 &2721232739047740296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _sceneID: 2
+  _scene: 4
 --- !u!1001 &312434991140865083
 PrefabInstance:
   m_ObjectHideFlags: 0

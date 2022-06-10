@@ -1457,7 +1457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149471666430483868, guid: 593215b3d4b36c34bbe7425af6dc1e18, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.6300006
+      value: -5.485
       objectReference: {fileID: 0}
     - target: {fileID: 5149471666430483868, guid: 593215b3d4b36c34bbe7425af6dc1e18, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2974,36 +2974,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1620084690806725240}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: e6a4aad4b19362d45829104614653644, type: 2}
+      objectReference: {fileID: 1620084690806725240}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 5840371861029184888, guid: 77113bc39a50c914d9c17acc550e22c6, type: 3}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: e6a4aad4b19362d45829104614653644, type: 2}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -3013,44 +3001,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: Raise
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: NarrationController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: GameEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1652625115}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Playables.PlayableDirector, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEngine.Playables.PlayableDirector, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4036,7 +4008,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _sceneID: 1
+  _scene: 2
 --- !u!4 &1620084690806725237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}

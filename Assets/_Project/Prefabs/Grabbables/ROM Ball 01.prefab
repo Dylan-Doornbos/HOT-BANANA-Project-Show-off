@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1752079908466692901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6560607703977302461}
+  - component: {fileID: 7298544472828718436}
+  m_Layer: 0
+  m_Name: Destroy FX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6560607703977302461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752079908466692901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8518901673119354120}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7298544472828718436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752079908466692901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062a825f247cb144ba18fec53b5e8036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attachToSelf: 0
+  _particlePrefab: {fileID: 5308104845188526194, guid: 2bc3abce809ea0d4286efd395e540524, type: 3}
 --- !u!135 &7200684285076316991
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7,7 +52,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426183934581905671}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9bbed275c3175d04a85acfbd2e1bf5be, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -69,7 +114,19 @@ MonoBehaviour:
   canDetectMoreThanOnce: 0
   onDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7298544472828718436}
+        m_TargetAssemblyTypeName: ParticlePlayer, Assembly-CSharp
+        m_MethodName: PlayAtSelf
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _iconUI: {fileID: 0}
 --- !u!1 &5815908457525088709
 GameObject:
@@ -174,6 +231,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5299720027683909530, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: m_ThrowVelocityScale
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5474339699919706429, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
       propertyPath: m_Name
       value: ROM Ball 01
@@ -239,6 +300,11 @@ PrefabInstance:
 --- !u!1 &8426183934581905671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5474339699919706429, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+  m_PrefabInstance: {fileID: 4546123612722282554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8518901673119354120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5273192591348813106, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
   m_PrefabInstance: {fileID: 4546123612722282554}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2638858368146016988 stripped
