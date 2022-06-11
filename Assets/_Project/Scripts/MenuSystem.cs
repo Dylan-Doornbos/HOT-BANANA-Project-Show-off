@@ -7,7 +7,6 @@ public class MenuSystem : MonoBehaviour
 {
     public void StartButton()
     {
-
-        SceneManager.LoadScene("ROM Room");
+        GameManager.instance.LoadScene(SceneIndex.CITY);
     }
 }

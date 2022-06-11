@@ -10,8 +10,6 @@ public class SubtitleControlBehaviour : PlayableBehaviour
 
     private bool _hasPlayed = false;
 
-    private SubtitleController _controller;
-
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
         base.OnBehaviourPlay(playable, info);
@@ -22,17 +20,12 @@ public class SubtitleControlBehaviour : PlayableBehaviour
     {
         if (_hasPlayed) return;
         _hasPlayed = true;
-
-        if (!(playerData is SubtitleController controller)) return;
-
-        _controller = controller;
         
-        var test = line.GetLocalizedString();
-        _controller.SetLine(test);
+        SubtitleController.instance.SetLine(line.GetLocalizedString());
     }
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
-        if (_controller != null) _controller.Hide();
+        SubtitleController.instance.Stop();
     }
 }
