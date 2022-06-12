@@ -231,6 +231,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1593182080574614539, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/PLAYER/ROM_BallDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593182080574614539, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 1799513823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593182080574614539, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1212119374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593182080574614539, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1090882225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593182080574614539, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1126915809
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901143008232737148, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/PLAYER/ROM_BallPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901143008232737148, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1290638196
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901143008232737148, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1101368160
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901143008232737148, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 71671710
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901143008232737148, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -388151557
+      objectReference: {fileID: 0}
     - target: {fileID: 5299720027683909530, guid: f8fca989f9f24b9498aef1b95e824ed7, type: 3}
       propertyPath: m_ThrowVelocityScale
       value: 1.75

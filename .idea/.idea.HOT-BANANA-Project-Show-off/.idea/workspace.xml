@@ -2,61 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7160e1f7-0095-45de-b247-ef5f07abee91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Spawn Point.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Spawn Point.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/NarrationPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/NarrationPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SpawnPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SpawnPoint.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Fade Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Fade Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/FadeShader.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/FadeShader.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/manifest.json.backup0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Open XR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Open XR Package Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Editor Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Editor Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Mini Game End Dialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Mini Game End Dialogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Localization/UI Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Localization/UI Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Localization/UI_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Localization/UI_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Localization/UI_nl.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Localization/UI_nl.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Grabbables/ROM Ball 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Grabbables/ROM Ball 01.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/3D_City-Ext_RAM_Building2.0 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/3D_City-Ext_RAM_Building2.0 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Manager Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Manager Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Props/Difficulty Buttons/Difficulty Buttons.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Props/Difficulty Buttons/Difficulty Buttons.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/Sorting Cube (Valid).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/Sorting Cube (Valid).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_2 Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_2 Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_3 Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_3 Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_4 Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/ROM Minigame/ROM_Ball_4 Variant.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Menu Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Menu Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/RAM Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/RAM Room.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/ROM Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/ROM Room.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/RTC Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/RTC Room.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleControlTrack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/SubtitleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/MenuSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/MenuSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NarrationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/NarrationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/NarrationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Dialogue/NarrationController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneIndex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneIndex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneIndex.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneIndex.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneTransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneTransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneTransition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneTransitionInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneTransitionInteractable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneTransitionInteractable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/SceneTransitionInteractable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/Billboard glow.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Billboard glow.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/Billboard glow.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Billboard glow.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/Glow-Emission.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Glow-Emission.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/Glow-Emission.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Glow-Emission.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/New Shader Graph.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/New Shader Graph.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shader Graph/New Shader Graph.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/New Shader Graph.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/MixedReality/com.microsoft.mixedreality.openxr-1.4.0.tgz" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/MixedReality/com.microsoft.mixedreality.openxr-1.4.1.tgz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Interactables/Dial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Interactables/Dial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Rotators/SingleAxisRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Rotators/SingleAxisRotator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Sound/Subtitle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Sound/Subtitle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Props/Difficulty Buttons/3d_City-Ext_DifficultyButtonsSelect Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Props/Difficulty Buttons/3d_City-Ext_DifficultyButtonsSelect Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,10 +106,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22540">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22540" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -165,7 +139,8 @@
       <workItem from="1654846906237" duration="11594000" />
       <workItem from="1654952382227" duration="800000" />
       <workItem from="1654953252365" duration="12416000" />
-      <workItem from="1654973321802" duration="2217000" />
+      <workItem from="1654973321802" duration="2488000" />
+      <workItem from="1655025162235" duration="1766000" />
     </task>
     <servers />
   </component>
