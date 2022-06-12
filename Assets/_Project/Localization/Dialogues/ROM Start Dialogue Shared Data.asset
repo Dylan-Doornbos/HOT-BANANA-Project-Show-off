@@ -16,20 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 71921742f1f6ce44a897d39e0f7e1744
   m_Entries:
   - m_Id: 406074595532800
-    m_Key: The system has to read only special data objects.
+    m_Key: Our ROM station needs to be repaired.
     m_Metadata:
       m_Items: []
   - m_Id: 406145995169792
-    m_Key: Look here! This highlighted data object should go to the corresponding
-      tube.
+    m_Key: The screen in front of you tells you which color ball it needs.
     m_Metadata:
       m_Items: []
   - m_Id: 406204954501120
-    m_Key: Pretty straightforward - just match the right object with the right tube.
+    m_Key: "It\u2019s your job to throw the correct colored ball into the hole."
     m_Metadata:
       m_Items: []
   - m_Id: 406235853938688
-    m_Key: Alright here it comes, get ready my friend!
+    m_Key: Here it goes!
     m_Metadata:
       m_Items: []
   m_Metadata:

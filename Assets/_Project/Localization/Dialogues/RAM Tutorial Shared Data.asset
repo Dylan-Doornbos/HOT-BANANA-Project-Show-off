@@ -16,19 +16,24 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 63ff85121922ae240a9df4d13c150f19
   m_Entries:
   - m_Id: 5892509696
-    m_Key: My programming says these memory chunks need special sorting.
+    m_Key: "We have received new data in boxes, but it\u2019s not sorted yet."
     m_Metadata:
       m_Items: []
   - m_Id: 74821701632
-    m_Key: The good chunks belong in that pipe on your left
+    m_Key: "It\u2019s your job to separate the bad data from the good data."
     m_Metadata:
       m_Items: []
   - m_Id: 110343262208
-    m_Key: The bad chunks must be destroyed in the furnace on your right.
+    m_Key: Boxes with only zeros and ones, can go into the pipe on your left.
     m_Metadata:
       m_Items: []
   - m_Id: 136180174848
-    m_Key: Just pick up the memory chunk and place it in the correct container.
+    m_Key: Boxes with other symbols or numbers on them must be thrown away in the
+      oven to your right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4038936267100160
+    m_Key: Ready? I hope so.
     m_Metadata:
       m_Items: []
   m_Metadata:
