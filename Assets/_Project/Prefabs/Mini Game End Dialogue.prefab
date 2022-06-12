@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2022546996027644437}
   - component: {fileID: 2022546996027644436}
   - component: {fileID: 2022546996027644439}
+  - component: {fileID: 8618367626266039555}
   m_Layer: 0
   m_Name: Mini Game End Dialogue
   m_TagString: Untagged
@@ -67,16 +68,27 @@ MonoBehaviour:
   _onEventRaised:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NarrationController, Assembly-CSharp
+      - m_Target: {fileID: 8618367626266039555}
+        m_TargetAssemblyTypeName: NarrationPlayer, Assembly-CSharp
         m_MethodName: Play
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2022546996027644436}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Playables.PlayableDirector,
-            UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8618367626266039555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022546996027644434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1b2c0c3450043409240b392e7a0ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

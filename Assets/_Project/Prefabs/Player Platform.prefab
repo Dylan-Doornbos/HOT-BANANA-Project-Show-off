@@ -106,7 +106,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7644578758223794246}
   - component: {fileID: 5758211966321865162}
-  - component: {fileID: 5577112541602672511}
   m_Layer: 0
   m_Name: Player Platform
   m_TagString: Untagged
@@ -213,28 +212,11 @@ MonoBehaviour:
   m_TeleportTrigger: 0
   m_Teleporting:
     m_PersistentCalls:
-      m_Calls: []
-  m_TeleportAnchorTransform: {fileID: 5063802391685569719}
---- !u!114 &5577112541602672511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388697815564192914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c863497ea5d109142926cca65185b7ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: e4b06701e425a9545a06583020281aa8, type: 2}
-  _onEventRaised:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7444057607262328134}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3075844017615078655}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -243,6 +225,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_TeleportAnchorTransform: {fileID: 5063802391685569719}
 --- !u!1 &2714190145381251334
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,19 +355,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ring Effect
       objectReference: {fileID: 0}
+    - target: {fileID: 3730839075047715167, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9090400937209684198, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
---- !u!1 &7444057607262328134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3730839075047715167, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
-  m_PrefabInstance: {fileID: 6091119231233418265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5042716900183542931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1257442070142609546, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
+  m_PrefabInstance: {fileID: 6091119231233418265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3075844017615078655 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9090400937209684198, guid: 3754abf7e0a0f854ab9f9d5a7734306a, type: 3}
   m_PrefabInstance: {fileID: 6091119231233418265}
   m_PrefabAsset: {fileID: 0}
