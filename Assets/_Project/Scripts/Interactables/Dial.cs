@@ -1,16 +1,20 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(SingleAxisRotator))]
 public class Dial : RotateInteractor<SingleAxisRotator>
 {
+    [SerializeField] private UnityEvent _onRotated;
+
     private Vector2 _startUpRotation;
     private Vector2 _startRightRotation;
     private float _startProgress;
 
     public void SetSteps(int pSteps)
     {
-        _rotator.SetPrecision(_rotator.maxRotation / (float)pSteps);
+        _rotator.SetPrecision(_rotator.maxRotation / (float) pSteps);
     }
 
     protected override void startRotating()
@@ -18,7 +22,7 @@ public class Dial : RotateInteractor<SingleAxisRotator>
         base.startRotating();
 
         _startProgress = GetProgress();
-        
+
         if (_interactor != null)
         {
             _startUpRotation = getControllerRotation(_interactor);
@@ -47,7 +51,7 @@ public class Dial : RotateInteractor<SingleAxisRotator>
         {
             progress %= 1;
         }
-        
+
         SetProgress(progress);
     }
 

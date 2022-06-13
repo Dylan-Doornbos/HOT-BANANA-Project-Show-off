@@ -19,21 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 406074595532800
-    m_Localized: The system has to read only special data objects.
+    m_Localized: Our ROM station needs to be repaired.
     m_Metadata:
       m_Items: []
   - m_Id: 406145995169792
-    m_Localized: Look here! This highlighted data object should go to the corresponding
-      tube.
+    m_Localized: The screen in front of you tells you which color ball it needs.
     m_Metadata:
       m_Items: []
   - m_Id: 406204954501120
-    m_Localized: Pretty straightforward - just match the right object with the right
-      tube.
+    m_Localized: "It\u2019s your job to throw the correct colored ball into the hole."
     m_Metadata:
       m_Items: []
   - m_Id: 406235853938688
-    m_Localized: Alright here it comes, get ready my friend!
+    m_Localized: Here it goes!
     m_Metadata:
       m_Items: []
   references:

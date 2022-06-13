@@ -19,19 +19,24 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 5892509696
-    m_Localized: My programming says these memory chunks need special sorting.
+    m_Localized: "We have received new data in boxes, but it\u2019s not sorted yet."
     m_Metadata:
       m_Items: []
   - m_Id: 74821701632
-    m_Localized: The good chunks belong in that pipe on your left
+    m_Localized: "It\u2019s your job to separate the bad data from the good data."
     m_Metadata:
       m_Items: []
   - m_Id: 110343262208
-    m_Localized: The bad chunks must be destroyed in the furnace on your right.
+    m_Localized: Boxes with only zeros and ones, can go into the pipe on your left.
     m_Metadata:
       m_Items: []
   - m_Id: 136180174848
-    m_Localized: Just pick up the memory chunk and place it in the correct container.
+    m_Localized: Boxes with other symbols or numbers on them must be thrown away
+      in the oven to your right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4038936267100160
+    m_Localized: Ready? I hope so.
     m_Metadata:
       m_Items: []
   references:

@@ -19,25 +19,24 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 42190016512
-    m_Localized: Looks like we had another power outage this week.
+    m_Localized: "The time on this clock isn\u2019t set correctly."
     m_Metadata:
       m_Items: []
   - m_Id: 92555218944
-    m_Localized: Now our clock system is busted and needs a reboot.
+    m_Localized: I think that you will be able to fix this.
     m_Metadata:
       m_Items: []
   - m_Id: 127476994048
-    m_Localized: Could you be the one to fix this problem? I think you are.
+    m_Localized: Use your hands to turn the two knobs in front of you.
     m_Metadata:
       m_Items: []
   - m_Id: 369463169024
-    m_Localized: You see those two dials in front of you? They control the analog
-      clock on the wall.
+    m_Localized: Make sure that the time on the analog clock is the same as the time
+      on the digital clock.
     m_Metadata:
       m_Items: []
   - m_Id: 626578198528
-    m_Localized: I need you to change the analog clock so it matches the digital
-      clock on the wall. Good luck.
+    m_Localized: "Try it. Time\u2019s ticking my friend."
     m_Metadata:
       m_Items: []
   references:

@@ -1,7 +1,11 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SingleAxisRotator : Rotator
 {
+    [SerializeField] private UnityEvent _onRotated;
+    
     public Vector3 rotateAxis { get; private set; }
     public Vector3 defaultForwardDirection { get; private set; }
     public Vector3 defaultLeftDirection { get; private set; }
@@ -42,6 +46,11 @@ public class SingleAxisRotator : Rotator
     {
         //Snap the angle to fit the precision
         float angle = Mathf.RoundToInt(pAngle / precisionInDegrees) * precisionInDegrees;
+
+        if (Math.Abs(GetAngle() - angle) > 0.1f && Math.Abs(GetAngle() - angle) < 359.5f)
+        {
+            _onRotated?.Invoke();
+        }
 
         Vector3 newForwardDirection = Quaternion.AngleAxis(angle, -rotateAxis) * defaultForwardDirection;
         Vector3 newLeftDirection = Quaternion.AngleAxis(-90, -rotateAxis) * newForwardDirection;

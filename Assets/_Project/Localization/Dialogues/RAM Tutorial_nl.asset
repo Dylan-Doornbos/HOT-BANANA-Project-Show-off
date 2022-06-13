@@ -19,20 +19,26 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 5892509696
-    m_Localized: Mijn programmering zegt dat deze stukjes geheugen speciale sortering
-      nodig hebben.
+    m_Localized: We hebben nieuwe data ontvangen in dozen, maar die is nog niet netjes
+      gesorteerd.
     m_Metadata:
       m_Items: []
   - m_Id: 74821701632
-    m_Localized: De goede stukken horen in die doos daar.
+    m_Localized: Aan jou de taak om de slechte data van de goede te scheiden.
     m_Metadata:
       m_Items: []
   - m_Id: 110343262208
-    m_Localized: De slechte stukken moeten worden vernietigd in de oven aan die kant.
+    m_Localized: Dozen met alleen nullen en eenen, mogen door naar de buis links
+      van je.
     m_Metadata:
       m_Items: []
   - m_Id: 136180174848
-    m_Localized: Pak het stuk geheugen op en plaats het in de juiste container.
+    m_Localized: Dozen met andere symbolen of getallen erop, moet je weggooien in
+      de oven rechts van je.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4038936267100160
+    m_Localized: Klaar? Ik hoop het.
     m_Metadata:
       m_Items: []
   references:
