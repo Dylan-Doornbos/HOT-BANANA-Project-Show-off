@@ -15,3 +15,6 @@ MonoBehaviour:
   <difficultyName>k__BackingField: Medium
   <conveyorSpeed>k__BackingField: 0.5
   <spawnIntervalInSeconds>k__BackingField: 1.5
+  <detectables>k__BackingField:
+  - {fileID: 6414189730497121203, guid: a11188a726bb57a40b8e41745b430557, type: 3}
+  - {fileID: 2018349190601654937, guid: e67eda1e36a231e47bb6e76fdb9a427b, type: 3}

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{acd027c7-6e62-417d-8f53-5717cef614bf}">
 		<property name="color">
-			<value>Purple</value>
+			<value>Magenta</value>
 		</property>
 		<property name="name">
 			<value>RAM_AMBIENCE</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{30398e5d-0bdd-4849-870a-566a092fa877}</destination>
+			<destination>{38deba07-b044-45b4-8f69-03229366f14c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{98d8679f-98bb-4fd3-93eb-8a7af3ff49d7}</destination>

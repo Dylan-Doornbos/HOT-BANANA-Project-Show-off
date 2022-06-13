@@ -1049,7 +1049,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _selectedDifficulty: {fileID: 11400000, guid: 03014a4035622144b85c711dab5c171a, type: 2}
-  _defaultDifficulty: {fileID: 11400000, guid: 561c7b60839dbdb48807dfc5ee595f78, type: 2}
+  _defaultDifficulty: {fileID: 11400000, guid: de3c6809161284b4aa95409632c8d347, type: 2}
+  _spawner: {fileID: 7168719698112505826}
   _respawnTimer: {fileID: 8046768672767658119}
   _conveyorBelt: {fileID: 535264758}
 --- !u!4 &1028101100
@@ -2386,14 +2387,6 @@ PrefabInstance:
     - target: {fileID: 2022546996027644434, guid: c84c0f3d4654604459667a22535df28a, type: 3}
       propertyPath: m_Name
       value: Mini Game End Dialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 2022546996027644436, guid: c84c0f3d4654604459667a22535df28a, type: 3}
-      propertyPath: m_SceneBindings.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2022546996027644436, guid: c84c0f3d4654604459667a22535df28a, type: 3}
-      propertyPath: m_SceneBindings.Array.data[0].value
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2022546996027644437, guid: c84c0f3d4654604459667a22535df28a, type: 3}
       propertyPath: m_RootOrder
@@ -4007,8 +4000,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _objectsToSpawn:
-  - {fileID: 96737100372008832, guid: 9ce7200e30aff1240af8ebe0e8af49e3, type: 3}
-  - {fileID: 1220128698902735727, guid: d270bf69972f6f041a7e58af7ef30c0c, type: 3}
+  - {fileID: 7136197728404508019, guid: a11188a726bb57a40b8e41745b430557, type: 3}
+  - {fileID: 1758604292138414769, guid: b2a509075ab1253428b6ccb6c61e22ae, type: 3}
+  - {fileID: 2740867464974763097, guid: e67eda1e36a231e47bb6e76fdb9a427b, type: 3}
 --- !u!108 &7585325368198044756
 Light:
   m_ObjectHideFlags: 0

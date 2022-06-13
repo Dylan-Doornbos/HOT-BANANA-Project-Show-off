@@ -18,7 +18,7 @@ public class TypeDetector : MonoBehaviour, IDetector
     private bool _firstCorrectDetected;
     private bool _firstIncorrectDetected;
 
-    public void Detect(DetectableType pDetectable)
+    public void Detect(Detectable pDetectable)
     {
         if (pDetectable == null || pDetectable.type == null || !pDetectable.isDetectable) return;
 
@@ -32,7 +32,7 @@ public class TypeDetector : MonoBehaviour, IDetector
         }
     }
 
-    protected virtual void detectCorrectly(DetectableType pDetectable)
+    protected virtual void detectCorrectly(Detectable pDetectable)
     {
         if (!_firstCorrectDetected) _onFirstCorrectTypeDetected?.Invoke(pDetectable.gameObject);
 
@@ -42,7 +42,7 @@ public class TypeDetector : MonoBehaviour, IDetector
         pDetectable.Detect();
     }
 
-    protected virtual void detectIncorrectly(DetectableType pDetectable)
+    protected virtual void detectIncorrectly(Detectable pDetectable)
     {
         if(!_firstIncorrectDetected) _onFirstIncorrectTypeDetected?.Invoke(pDetectable.gameObject);
 
@@ -54,7 +54,7 @@ public class TypeDetector : MonoBehaviour, IDetector
 
     public void Detect(GameObject pObject)
     {
-        if (!pObject.TryGetComponent(out DetectableType detectable)) return;
+        if (!pObject.TryGetComponent(out Detectable detectable)) return;
 
         Detect(detectable);
     }
