@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{95363607-cb88-44b3-8155-3e5366cca02d}">
 		<property name="color">
-			<value>Blue Light 1</value>
+			<value>Magenta</value>
 		</property>
 		<property name="name">
 			<value>RTC_BatteryPickup</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{be0f8d44-303f-4f23-b6e0-99e115a49242}</destination>
+			<destination>{38deba07-b044-45b4-8f69-03229366f14c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{8f63231f-0283-44f5-b70c-03015e04ca22}</destination>
