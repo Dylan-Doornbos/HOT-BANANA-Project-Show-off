@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3103080986767143438}
   - component: {fileID: 4928509661328116431}
   - component: {fileID: 3851246363387086177}
+  - component: {fileID: -2818812604938121512}
   m_Layer: 0
   m_Name: 3D-City-Ext-SidewalkCorner3
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2818812604938121512
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860741427993511894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7515993502489423277, guid: e09bb21db9aaf3b40b1c6b877a5afcb5, type: 3}

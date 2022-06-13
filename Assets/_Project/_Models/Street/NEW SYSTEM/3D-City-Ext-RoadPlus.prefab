@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4516196238849602981}
   - component: {fileID: 5997998294951334892}
   - component: {fileID: 1989090496260845692}
+  - component: {fileID: -4424142591587966796}
   m_Layer: 0
   m_Name: 3D-City-Ext-RoadPlus
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4424142591587966796
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300743151558185416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6398869337045209882, guid: e09bb21db9aaf3b40b1c6b877a5afcb5, type: 3}
