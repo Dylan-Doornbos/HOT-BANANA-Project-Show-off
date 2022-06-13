@@ -40,4 +40,9 @@ public class ObjectSpawner_Random : ObjectSpawner
         pObjectToSpawn = _objectsToSpawn[index];
         return true;
     }
+
+    public void SetObjectsToSpawn(List<GameObject> pObjects)
+    {
+        _objectsToSpawn = pObjects;
+    }
 }
