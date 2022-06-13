@@ -4,7 +4,6 @@ using UnityEngine;
 public abstract class SelectedDifficulty<T> : ScriptableObject where T : DifficultySettings
 {
     [SerializeField] private T _defaultDifficulty;
-
     [NonSerialized] private T _difficulty = null;
 
     public T difficulty
@@ -15,6 +14,7 @@ public abstract class SelectedDifficulty<T> : ScriptableObject where T : Difficu
             return _difficulty;
         }
     }
+    
     public event Action<T> onDifficultyChanged;
 
     public void SetDifficulty(T pDifficulty)
