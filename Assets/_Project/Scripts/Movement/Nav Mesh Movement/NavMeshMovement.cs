@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -8,12 +9,19 @@ public class NavMeshMovement : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent _navAgent;
     [SerializeField] private Vector2 _minMaxIdleTime;
-    [SerializeField] private Transform[] _waypoints;
+    [SerializeField] private Transform _waypointContainer;
     [SerializeField] private UnityEvent _onDestinationReached;
+
+    private List<Transform> _waypoints = new List<Transform>();
 
 
     private void Awake()
     {
+        for (int i = _waypointContainer.childCount - 1; i >= 0; i--)
+        {
+            _waypoints.Add(_waypointContainer.GetChild(i));
+        }
+        
         moveToNextPoint();
     }
 
@@ -51,7 +59,7 @@ public class NavMeshMovement : MonoBehaviour
     {
         pDestination = Vector3.zero;
         
-        Vector3 position = _waypoints[Random.Range(0, _waypoints.Length)].position;
+        Vector3 position = _waypoints[Random.Range(0, _waypoints.Count)].position;
 
         if (NavMesh.SamplePosition(position, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
         {
