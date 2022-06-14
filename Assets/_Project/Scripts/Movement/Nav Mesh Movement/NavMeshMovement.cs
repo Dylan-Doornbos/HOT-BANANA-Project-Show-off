@@ -1,10 +1,68 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
-public class NavMeshMovement : Movement
+public class NavMeshMovement : MonoBehaviour
 {
-    [SerializeField] NavMeshAgent _navAgent;
+    [SerializeField] private NavMeshAgent _navAgent;
+    [SerializeField] private Vector2 _minMaxIdleTime;
+    [SerializeField] private Transform[] _waypoints;
+    [SerializeField] private UnityEvent _onDestinationReached;
+
+
+    private void Awake()
+    {
+        moveToNextPoint();
+    }
+
+    private void moveToNextPoint()
+    {
+        if (tryGetDestination(out Vector3 destination))
+        {
+            NavMeshPath path = new NavMeshPath();
+            _navAgent.CalculatePath(destination, path);
+
+            if (path.status == NavMeshPathStatus.PathInvalid) return;
+
+            _navAgent.path = path;
+            StartCoroutine(waitTillDestination());
+        }
+    }
+
+    private IEnumerator waitTillDestination()
+    {
+        yield return null;
+        
+        while (_navAgent.remainingDistance > 0.001f && _navAgent.hasPath)
+        {
+            yield return null;
+        }
+
+        _onDestinationReached?.Invoke();
+
+        yield return new WaitForSeconds(Random.Range(_minMaxIdleTime.x, _minMaxIdleTime.y));
+        
+        moveToNextPoint();
+    }
+
+    private bool tryGetDestination(out Vector3 pDestination)
+    {
+        pDestination = Vector3.zero;
+        
+        Vector3 position = _waypoints[Random.Range(0, _waypoints.Length)].position;
+
+        if (NavMesh.SamplePosition(position, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
+        {
+            pDestination = hit.position;
+            return true;
+        }
+
+        return false;
+    }
+
+    /*[SerializeField] NavMeshAgent _navAgent;
     private bool _isMoving = false;
 
     public override float moveSpeed => _navAgent.velocity.magnitude;
@@ -58,5 +116,5 @@ public class NavMeshMovement : Movement
         }
 
         return false;
-    }
+    }*/
 }
