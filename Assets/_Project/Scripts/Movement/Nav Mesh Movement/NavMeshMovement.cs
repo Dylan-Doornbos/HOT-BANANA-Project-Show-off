@@ -11,6 +11,7 @@ public class NavMeshMovement : MonoBehaviour
     [SerializeField] private Vector2 _minMaxIdleTime;
     [SerializeField] private Transform _waypointContainer;
     [SerializeField] private UnityEvent _onDestinationReached;
+    [SerializeField] private UnityEvent _onStartedMoving;
 
     private List<Transform> _waypoints = new List<Transform>();
 
@@ -34,6 +35,7 @@ public class NavMeshMovement : MonoBehaviour
 
             if (path.status == NavMeshPathStatus.PathInvalid) return;
 
+            _onStartedMoving?.Invoke();
             _navAgent.path = path;
             StartCoroutine(waitTillDestination());
         }
