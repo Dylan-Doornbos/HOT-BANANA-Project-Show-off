@@ -1,6 +1,54 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8556736891291166940
+--- !u!114 &-8187770546556896000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
+  m_Name: SubtitleControlClip
+  m_EditorClassIdentifier: 
+  _template:
+    line:
+      m_TableReference:
+        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
+      m_TableEntryReference:
+        m_KeyId: 681365004288
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 1
+--- !u!114 &-5297624498208771244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
+  m_Name: SubtitleControlClip
+  m_EditorClassIdentifier: 
+  _template:
+    line:
+      m_TableReference:
+        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
+      m_TableEntryReference:
+        m_KeyId: 779016790016
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 1
+--- !u!114 &-120860463456845677
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,11 +71,11 @@ MonoBehaviour:
   m_Clips:
   - m_Version: 1
     m_Start: 0
-    m_ClipIn: 0.23333333333333334
-    m_Asset: {fileID: -5240182528671228856}
-    m_Duration: 8.48333333333333
+    m_ClipIn: 0.2
+    m_Asset: {fileID: 4965682720039584274}
+    m_Duration: 9.216666666666667
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -8556736891291166940}
+    m_ParentTrack: {fileID: -120860463456845677}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -89,38 +137,36 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: SFX_Narrator_RAM_LevelComplete
+    m_DisplayName: SFX_Narrator_ROM_LevelComplete
   m_Markers:
     m_Objects: []
   m_TrackProperties:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &-5999606116828777491
+--- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
-  m_Name: SubtitleControlClip
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: ROM End
   m_EditorClassIdentifier: 
-  _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:bfe3f9c558f91ee448a71b0633506e5b
-      m_TableEntryReference:
-        m_KeyId: 9172455424
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
---- !u!114 &-5240182528671228856
+  m_Version: 0
+  m_Tracks:
+  - {fileID: -120860463456845677}
+  - {fileID: 5607041991625500170}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    m_Framerate: 60
+    m_ScenePreview: 1
+  m_DurationMode: 0
+  m_MarkerTrack: {fileID: 0}
+--- !u!114 &4965682720039584274
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,82 +178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 0b3254a1ed7c8ff45b65261716efb6f0, type: 3}
+  m_Clip: {fileID: 8300000, guid: 4232ed80c2b23de439be9a20cc7715fd, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
---- !u!114 &-5217419337320619437
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
-  m_Name: SubtitleControlClip
-  m_EditorClassIdentifier: 
-  _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: RAM End
-  m_EditorClassIdentifier: 
-  m_Version: 0
-  m_Tracks:
-  - {fileID: -8556736891291166940}
-  - {fileID: 2229218525618239047}
-  m_FixedDuration: 0
-  m_EditorSettings:
-    m_Framerate: 60
-    m_ScenePreview: 1
-  m_DurationMode: 0
-  m_MarkerTrack: {fileID: 0}
---- !u!114 &418419786310114505
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
-  m_Name: SubtitleControlClip
-  m_EditorClassIdentifier: 
-  _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:bfe3f9c558f91ee448a71b0633506e5b
-      m_TableEntryReference:
-        m_KeyId: 356381134848
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
---- !u!114 &2229218525618239047
+--- !u!114 &5607041991625500170
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,10 +207,10 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -5999606116828777491}
-    m_Duration: 2.033333333333333
+    m_Asset: {fileID: -8187770546556896000}
+    m_Duration: 1.9803191008511933
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 2229218525618239047}
+    m_ParentTrack: {fileID: 5607041991625500170}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0
@@ -298,12 +274,12 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: SubtitleControlClip
   - m_Version: 1
-    m_Start: 2.033333333333333
+    m_Start: 1.9803191008511931
     m_ClipIn: 0
-    m_Asset: {fileID: 418419786310114505}
-    m_Duration: 2.3833333333333337
+    m_Asset: {fileID: -5297624498208771244}
+    m_Duration: 3.2863475658154737
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 2229218525618239047}
+    m_ParentTrack: {fileID: 5607041991625500170}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0
@@ -367,12 +343,12 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: SubtitleControlClip
   - m_Version: 1
-    m_Start: 4.416666666666667
+    m_Start: 5.266666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: -5217419337320619437}
-    m_Duration: 4.066666666666663
+    m_Asset: {fileID: 8287578029475208917}
+    m_Duration: 3.9499999999999993
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 2229218525618239047}
+    m_ParentTrack: {fileID: 5607041991625500170}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0
@@ -437,3 +413,44 @@ MonoBehaviour:
     m_DisplayName: SubtitleControlClip
   m_Markers:
     m_Objects: []
+--- !u!114 &6648949522118260809
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 10aaee8cbf1f72a47bfc5ec9a44f22bc, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &8287578029475208917
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070484869e39da14d8f6ba6d51f1a31a, type: 3}
+  m_Name: SubtitleControlClip
+  m_EditorClassIdentifier: 
+  _template:
+    line:
+      m_TableReference:
+        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
+      m_TableEntryReference:
+        m_KeyId: 842455638016
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 1

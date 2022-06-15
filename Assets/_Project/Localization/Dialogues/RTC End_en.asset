@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Minigame End_nl
+  m_Name: RTC End_en
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: nl
-  m_SharedData: {fileID: 11400000, guid: bfe3f9c558f91ee448a71b0633506e5b, type: 2}
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 0b82d9ec2311a2a4297ee2d540af8f5c, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 9172455424
-    m_Localized: Heel goed gedaan, micro werker!
+  - m_Id: 5473886208
+    m_Localized: Well done, micro werker!
     m_Metadata:
       m_Items: []
-  - m_Id: 356381134848
-    m_Localized: Je hebt onze data goed gesorteerd.
+  - m_Id: 8024023040
+    m_Localized: You correctly set up the times for the RTC.
     m_Metadata:
       m_Items: []
-  - m_Id: 167251944181760
-    m_Localized: Je kunt deze ruimte nu weer verlaten door op de deur te klikken.
+  - m_Id: 10674823168
+    m_Localized: You can now leave this room by clicking on the door.
     m_Metadata:
       m_Items: []
   references:

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Minigame End Shared Data
+  m_Name: ROM End Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: RAM End
-  m_TableCollectionNameGuidString: bfe3f9c558f91ee448a71b0633506e5b
+  m_TableCollectionName: ROM End
+  m_TableCollectionNameGuidString: 40f5d44f15552bb44a3f8fcc866600ed
   m_Entries:
-  - m_Id: 9172455424
+  - m_Id: 681365004288
     m_Key: Well done, micro worker!
     m_Metadata:
       m_Items: []
-  - m_Id: 356381134848
-    m_Key: You correctly sorted our data.
+  - m_Id: 779016790016
+    m_Key: You got the ROM station working again.
     m_Metadata:
       m_Items: []
-  - m_Id: 167251944181760
+  - m_Id: 842455638016
     m_Key: You can now leave this room by clicking on the door.
     m_Metadata:
       m_Items: []
@@ -36,4 +36,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1654118596026
+        m_CustomEpoch: 1655282342078

@@ -60,7 +60,19 @@ MonoBehaviour:
     - Locale-en
     - Preload
   - m_GUID: a5307b68d3c3af7408b3adeed3b63cc8
-    m_Address: Minigame End_en
+    m_Address: RAM End_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 029b9b8fd13f89a48b2bf3d437bbb1b8
+    m_Address: ROM End_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: f24743f0b0fb4c948b8e1e2de3d4f813
+    m_Address: RTC End_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

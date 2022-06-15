@@ -19,16 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9172455424
-    m_Localized: Thank you for helping, micro worker. We couldn't have done it without
-      you.
+    m_Localized: Well done, micro worker!
     m_Metadata:
       m_Items: []
   - m_Id: 356381134848
-    m_Localized: You can use the door to return to the city.
+    m_Localized: You correctly sorted our data.
     m_Metadata:
       m_Items: []
   - m_Id: 167251944181760
-    m_Localized: I'm sure there are more tasks that we need your help with.
+    m_Localized: You can now leave this room by clicking on the door.
     m_Metadata:
       m_Items: []
   references:
