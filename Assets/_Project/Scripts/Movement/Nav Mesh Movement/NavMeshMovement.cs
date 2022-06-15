@@ -5,46 +5,100 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class NavMeshMovement : MonoBehaviour
 {
-    [SerializeField] private NavMeshAgent _navAgent;
     [SerializeField] private Vector2 _minMaxIdleTime;
-    [SerializeField] private Transform _waypointContainer;
     [SerializeField] private UnityEvent _onDestinationReached;
     [SerializeField] private UnityEvent _onStartedMoving;
 
-    private List<Transform> _waypoints = new List<Transform>();
-
+    private NavMeshAgent _navAgent;
+    private NavigationArea _navigationArea;
 
     private void Awake()
     {
-        for (int i = _waypointContainer.childCount - 1; i >= 0; i--)
-        {
-            _waypoints.Add(_waypointContainer.GetChild(i));
-        }
-        
+        _navAgent = GetComponent<NavMeshAgent>();
+        setNavMeshLayer();
+    }
+
+    private void Start()
+    {
+        findNavigationArea();
         moveToNextPoint();
+    }
+
+    private void findNavigationArea()
+    {
+        List<NavigationArea> overlappingAreas = getOverlappingNavigationAreas();
+        _navigationArea = highestpriorityArea(overlappingAreas);
+    }
+
+    private List<NavigationArea> getOverlappingNavigationAreas()
+    {
+        List<NavigationArea> overlappingAreas = new List<NavigationArea>();
+
+        //Find all overlapping colliders
+        Collider[] colliders = new Collider[10];
+        int size = Physics.OverlapSphereNonAlloc(transform.position, 0.01f, colliders, -1, QueryTriggerInteraction.Collide);
+
+        //Filter for colliders that are only part of a navigation area
+        for (int i = 0; i < size; i++)
+        {
+            if (NavigationArea.colliderArea.TryGetValue(colliders[i], out NavigationArea area))
+            {
+                if (!overlappingAreas.Contains(area)) overlappingAreas.Add(area);
+            }
+        }
+
+        return overlappingAreas;
+    }
+
+    private NavigationArea highestpriorityArea(List<NavigationArea> pArea)
+    {
+        if (pArea == null || pArea.Count == 0) return null;
+
+        NavigationArea highestArea = pArea[0];
+
+        for (int i = 1; i < pArea.Count; i++)
+        {
+            if (pArea[i].priority > highestArea.priority)
+                highestArea = pArea[i];
+        }
+
+        return highestArea;
+    }
+
+    private void setNavMeshLayer()
+    {
+        if (NavMesh.SamplePosition(_navAgent.transform.position, out NavMeshHit hit, Mathf.Infinity, -1))
+        {
+            _navAgent.areaMask = hit.mask;
+        }
     }
 
     private void moveToNextPoint()
     {
-        if (tryGetDestination(out Vector3 destination))
-        {
-            NavMeshPath path = new NavMeshPath();
-            _navAgent.CalculatePath(destination, path);
+        if (!tryGetDestination(out Vector3 destination)) return;
 
-            if (path.status == NavMeshPathStatus.PathInvalid) return;
+        if (!NavMesh.SamplePosition(destination, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
+            return;
 
-            _onStartedMoving?.Invoke();
-            _navAgent.path = path;
-            StartCoroutine(waitTillDestination());
-        }
+        destination = hit.position;
+
+        NavMeshPath path = new NavMeshPath();
+        _navAgent.CalculatePath(destination, path);
+
+        if (path.status == NavMeshPathStatus.PathInvalid) return;
+
+        _onStartedMoving?.Invoke();
+        _navAgent.path = path;
+        StartCoroutine(waitTillDestination());
     }
 
     private IEnumerator waitTillDestination()
     {
         yield return null;
-        
+
         while (_navAgent.remainingDistance > 0.001f && _navAgent.hasPath)
         {
             yield return null;
@@ -53,78 +107,17 @@ public class NavMeshMovement : MonoBehaviour
         _onDestinationReached?.Invoke();
 
         yield return new WaitForSeconds(Random.Range(_minMaxIdleTime.x, _minMaxIdleTime.y));
-        
+
         moveToNextPoint();
     }
 
     private bool tryGetDestination(out Vector3 pDestination)
     {
         pDestination = Vector3.zero;
-        
-        Vector3 position = _waypoints[Random.Range(0, _waypoints.Count)].position;
+        if (_navigationArea == null) return false;
 
-        if (NavMesh.SamplePosition(position, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
-        {
-            pDestination = hit.position;
-            return true;
-        }
+        pDestination = _navigationArea.GetRandomPosition();
 
-        return false;
+        return true;
     }
-
-    /*[SerializeField] NavMeshAgent _navAgent;
-    private bool _isMoving = false;
-
-    public override float moveSpeed => _navAgent.velocity.magnitude;
-
-    private void Update()
-    {
-        if (_isMoving)
-        {
-            handleDestinationCheck();
-        }
-    }
-
-    private void handleDestinationCheck()
-    {
-        if (_navAgent.remainingDistance > 0.001f && _navAgent.hasPath) return;
-
-        _isMoving = false;
-        onDestinationReached?.Invoke();
-    }
-
-    protected override void moveToPosition(Vector3 pPosition)
-    {
-        if (!_navAgent.isOnNavMesh) return;
-        if (!tryGetNearestNavMeshPoint(pPosition, out Vector3 point)) return;
-
-        NavMeshPath path = new NavMeshPath();
-        _navAgent.CalculatePath(point, path);
-
-        if (path.status == NavMeshPathStatus.PathInvalid) return;
-
-        _isMoving = true;
-        _navAgent.path = path;
-    }
-
-    public override void SetPosition(Vector3 pPosition)
-    {
-        if (tryGetNearestNavMeshPoint(pPosition, out Vector3 point))
-        {
-            transform.position = point;
-        }
-    }
-
-    private bool tryGetNearestNavMeshPoint(Vector3 pSource, out Vector3 pResult)
-    {
-        pResult = Vector3.zero;
-
-        if (NavMesh.SamplePosition(pSource, out NavMeshHit hit, Mathf.Infinity, -1))
-        {
-            pResult = hit.position;
-            return true;
-        }
-
-        return false;
-    }*/
 }

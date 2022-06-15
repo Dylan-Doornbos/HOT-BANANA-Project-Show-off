@@ -13,11 +13,11 @@ NavMeshProjectSettings:
     cost: 2
   - name: Street
     cost: 1
-  - name: Sidewalk
+  - name: Outer Sidewalk
     cost: 1
-  - name: 
+  - name: Inner Sidewalk 01
     cost: 1
-  - name: 
+  - name: Inner Sidewalk 02
     cost: 1
   - name: 
     cost: 1

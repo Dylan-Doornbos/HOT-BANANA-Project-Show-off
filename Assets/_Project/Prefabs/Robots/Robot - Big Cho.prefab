@@ -220,7 +220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3126502043505844144, guid: f8f308b6418803b4ea76bb3dc86135da, type: 3}
       propertyPath: m_WalkableMask
-      value: 8
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 3507101453457318623, guid: f8f308b6418803b4ea76bb3dc86135da, type: 3}
       propertyPath: _onStartedMoving.m_PersistentCalls.m_Calls.Array.size

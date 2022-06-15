@@ -34,9 +34,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cef006ea33d2174696ccd869823363b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _navAgent: {fileID: 3126502043505844144}
   _minMaxIdleTime: {x: 1, y: 5}
   _onDestinationReached:
+    m_PersistentCalls:
+      m_Calls: []
+  _onStartedMoving:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1001 &5676735012431063617
