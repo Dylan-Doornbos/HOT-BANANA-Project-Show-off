@@ -83,6 +83,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b64c7dce8bc76934fad46914cf76c573, type: 2}
+    - target: {fileID: -4767028990906104261, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4767028990906104261, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4578553963693920680, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -127,10 +135,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b64c7dce8bc76934fad46914cf76c573, type: 2}
+    - target: {fileID: 4376398596657754341, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376398596657754341, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445484344494258953, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445484344494258953, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5538734174755162218, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b64c7dce8bc76934fad46914cf76c573, type: 2}
+    - target: {fileID: 6381147642723030920, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381147642723030920, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8907274541059242887, guid: cf3ff61f070e3764cbb44ff32fe05877, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

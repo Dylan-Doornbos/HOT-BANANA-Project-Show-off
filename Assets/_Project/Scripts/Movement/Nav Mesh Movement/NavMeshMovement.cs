@@ -55,7 +55,11 @@ public class NavMeshMovement : MonoBehaviour
 
     private NavigationArea highestpriorityArea(List<NavigationArea> pArea)
     {
-        if (pArea == null || pArea.Count == 0) return null;
+        if (pArea == null || pArea.Count == 0)
+        {
+            DebugUtil.Log($"no '{nameof(NavigationArea)}' provided for '{nameof(highestpriorityArea)}' on '{gameObject.name}'.", LogType.WARNING);
+            return null;
+        }
 
         NavigationArea highestArea = pArea[0];
 
@@ -78,10 +82,14 @@ public class NavMeshMovement : MonoBehaviour
 
     private void moveToNextPoint()
     {
+        if(_navAgent == null) return;
         if (!tryGetDestination(out Vector3 destination)) return;
 
         if (!NavMesh.SamplePosition(destination, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
-            return;
+        {
+            DebugUtil.Log($"Could not sample position on Navmesh for '{gameObject.name}.'", LogType.WARNING);
+            return;   
+        }
 
         destination = hit.position;
 
@@ -114,7 +122,11 @@ public class NavMeshMovement : MonoBehaviour
     private bool tryGetDestination(out Vector3 pDestination)
     {
         pDestination = Vector3.zero;
-        if (_navigationArea == null) return false;
+        if (_navigationArea == null)
+        {
+            DebugUtil.Log($"No '{nameof(NavigationArea)}' specified for '{nameof(tryGetDestination)}' on '{gameObject.name}'.", LogType.WARNING);
+            return false;
+        }
 
         pDestination = _navigationArea.GetRandomPosition();
 
