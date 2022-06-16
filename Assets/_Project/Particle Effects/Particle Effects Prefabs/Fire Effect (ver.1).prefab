@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 960140944993249748}
   - component: {fileID: 960140944993249754}
   - component: {fileID: 960140944993249749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4817,7 +4817,7 @@ GameObject:
   - component: {fileID: 244936155788688125}
   - component: {fileID: 960140944168607252}
   - component: {fileID: 960140944168607255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fire Effect (ver.1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9567,7 +9567,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 282742fb7b28b874bae5d13663b7ac16, type: 2}
+  - {fileID: 2100000, guid: 2c2430a616484764fb238e3f5b5b7093, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

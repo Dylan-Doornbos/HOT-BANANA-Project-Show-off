@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class NavigationArea : MonoBehaviour
 {
-    [field: SerializeField] public int priority { get; private set; }
-    
+    [field: SerializeField] public AreaMaskEnum layer { get; private set; }
+
     public static Dictionary<Collider, NavigationArea> colliderArea = new Dictionary<Collider, NavigationArea>();
 
     private Collider[] _colliders;

@@ -29,8 +29,20 @@ public class NavMeshMovement : MonoBehaviour
 
     private void findNavigationArea()
     {
-        List<NavigationArea> overlappingAreas = getOverlappingNavigationAreas();
-        _navigationArea = highestpriorityArea(overlappingAreas);
+        //Get overlapping colliders
+        Collider[] colliders = new Collider[10];
+        int size = Physics.OverlapSphereNonAlloc(transform.position, 0.01f, colliders, -1,
+            QueryTriggerInteraction.Collide);
+
+        for (int i = 0; i < size; i++)
+        {
+            //Filter for navigation areas
+            if (!NavigationArea.colliderArea.TryGetValue(colliders[i], out NavigationArea area)) continue;
+            
+            if ((int)area.layer != _navAgent.areaMask) continue;
+            _navigationArea = area;
+            return;
+        }
     }
 
     private List<NavigationArea> getOverlappingNavigationAreas()
@@ -39,7 +51,8 @@ public class NavMeshMovement : MonoBehaviour
 
         //Find all overlapping colliders
         Collider[] colliders = new Collider[10];
-        int size = Physics.OverlapSphereNonAlloc(transform.position, 0.01f, colliders, -1, QueryTriggerInteraction.Collide);
+        int size = Physics.OverlapSphereNonAlloc(transform.position, 0.01f, colliders, -1,
+            QueryTriggerInteraction.Collide);
 
         //Filter for colliders that are only part of a navigation area
         for (int i = 0; i < size; i++)
@@ -53,25 +66,6 @@ public class NavMeshMovement : MonoBehaviour
         return overlappingAreas;
     }
 
-    private NavigationArea highestpriorityArea(List<NavigationArea> pArea)
-    {
-        if (pArea == null || pArea.Count == 0)
-        {
-            DebugUtil.Log($"no '{nameof(NavigationArea)}' provided for '{nameof(highestpriorityArea)}' on '{gameObject.name}'.", LogType.WARNING);
-            return null;
-        }
-
-        NavigationArea highestArea = pArea[0];
-
-        for (int i = 1; i < pArea.Count; i++)
-        {
-            if (pArea[i].priority > highestArea.priority)
-                highestArea = pArea[i];
-        }
-
-        return highestArea;
-    }
-
     private void setNavMeshLayer()
     {
         if (NavMesh.SamplePosition(_navAgent.transform.position, out NavMeshHit hit, Mathf.Infinity, -1))
@@ -82,13 +76,13 @@ public class NavMeshMovement : MonoBehaviour
 
     private void moveToNextPoint()
     {
-        if(_navAgent == null) return;
+        if (_navAgent == null) return;
         if (!tryGetDestination(out Vector3 destination)) return;
 
         if (!NavMesh.SamplePosition(destination, out NavMeshHit hit, Mathf.Infinity, _navAgent.areaMask))
         {
             DebugUtil.Log($"Could not sample position on Navmesh for '{gameObject.name}.'", LogType.WARNING);
-            return;   
+            return;
         }
 
         destination = hit.position;
@@ -124,7 +118,9 @@ public class NavMeshMovement : MonoBehaviour
         pDestination = Vector3.zero;
         if (_navigationArea == null)
         {
-            DebugUtil.Log($"No '{nameof(NavigationArea)}' specified for '{nameof(tryGetDestination)}' on '{gameObject.name}'.", LogType.WARNING);
+            DebugUtil.Log(
+                $"No '{nameof(NavigationArea)}' specified for '{nameof(tryGetDestination)}' on '{gameObject.name}'.",
+                LogType.WARNING);
             return false;
         }
 

@@ -7,7 +7,7 @@ public class RAMDifficultyApplier : DifficultyApplier<RAMSelectedDifficulty, RAM
     private ObjectSpawner_Random _spawner;
     [SerializeField] private Countdown _respawnTimer;
     [SerializeField] private ConveyorBelt _conveyorBelt;
-    
+
     protected override void applyDifficulty()
     {
         List<GameObject> objectsToSpawn = new List<GameObject>();

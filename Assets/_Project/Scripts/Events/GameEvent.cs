@@ -11,23 +11,25 @@ public class GameEvent : ScriptableObject
 
     public void Raise()
     {
-        for (int i = _listeners.Count - 1; i >= 0; i--)
+        foreach (GameEvent gameEvent in _chainedEvents)
         {
+            if(gameEvent == this) continue;
+            
             try
             {
-                _listeners[i]?.OnEventRaised();
+                gameEvent.Raise();
             }
             catch (Exception e)
             {
                 DebugUtil.Log(e.Message, LogType.ERROR);
             }
         }
-
-        foreach (GameEvent gameEvent in _chainedEvents)
+        
+        for (int i = _listeners.Count - 1; i >= 0; i--)
         {
             try
             {
-                gameEvent.Raise();
+                _listeners[i]?.OnEventRaised();
             }
             catch (Exception e)
             {

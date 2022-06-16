@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class AreaMaskEnum : MonoBehaviour
+[Serializable]
+public enum AreaMaskEnum
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    None = 0,
+    Street = 8,
+    Outer_Sidewalk = 16,
+    Inner_Sidewalk_01 = 32,
+    Inner_Sidewalk_02 = 64,
+    Sky = 128
 }

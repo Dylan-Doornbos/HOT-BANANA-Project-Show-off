@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2131278348423677034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5130697156715123168, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_Name
+      value: Robot - Lil Henkjan 02 NEW
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+--- !u!4 &3597866955765351777 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3205967767056728331, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+  m_PrefabInstance: {fileID: 2131278348423677034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8449429068898212301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3597866955765351777}
+    m_Modifications:
+    - target: {fileID: 3905418867505302918, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_Name
+      value: RobotCharacter_Henkjan 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429577653576750908, guid: 788335d6068d2514f9e824a7834ed816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 788335d6068d2514f9e824a7834ed816, type: 3}

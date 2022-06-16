@@ -6,27 +6,27 @@ public class Counter : MonoBehaviour
 {
     [SerializeField] private bool _startActive = true;
     public UnityEvent onCounterIncreased;
-    
+
+    public int count { get; protected set; }
     private bool _isCounting;
+
 
     private void Awake()
     {
         _isCounting = _startActive;
     }
 
-    public int count { get; protected set; }
-
     public void IncreaseCounter(int pAmount)
     {
         if (_isCounting) setCount(count + pAmount);
     }
 
-    public void Reset()
+    public virtual void Reset()
     {
         setCount(0);
     }
 
-    private void setCount(int pCount)
+    protected virtual void setCount(int pCount)
     {
         count = pCount;
         onCounterIncreased?.Invoke();

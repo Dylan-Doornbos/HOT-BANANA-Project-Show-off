@@ -1,54 +1,24 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
-public class Countdown : MonoBehaviour
+public class Countdown : Timer
 {
     [SerializeField] float _durationInSeconds = 1;
-    [SerializeField] bool _startImmediately = false;
-    [SerializeField] UnityEvent _onCountdownStarted;
-    [SerializeField] UnityEvent _onCountdownFinished;
-
-    public event Action onTimeChanged;
-
-    public float timeLeft { get; private set; }
-    public bool isCounting { get; private set; }
+    [FormerlySerializedAs("_onTimerFinished")] [SerializeField] UnityEvent _onCountdownFinished;
 
     private void Awake()
     {
-        isCounting = _startImmediately;
+        _isRunning = _startImmediately;
         Reset();
     }
 
-    private void Update()
+    protected override void tick()
     {
-        if (isCounting && timeLeft > 0)
-        {
-            setTime(timeLeft - Time.deltaTime);
-            if (timeLeft <= 0) _onCountdownFinished?.Invoke();
-        }
-    }
-
-    public void Begin()
-    {
-        Reset();
-        Continue();
-    }
-
-    public void Pause()
-    {
-        if(isCounting)
-        {
-            isCounting = false;
-        }
-    }
-
-    public void Continue()
-    {
-        if(!isCounting)
-        {
-            isCounting = true;
-        }
+        if (time <= 0) return;
+        
+        setTime(time - Time.deltaTime);
+        if (time <= 0) _onCountdownFinished?.Invoke();
     }
 
     public void SetDuration(float pDuration)
@@ -57,15 +27,9 @@ public class Countdown : MonoBehaviour
         Reset();
     }
 
-    public void Reset()
+    public override void Reset()
     {
         Pause();
         setTime(_durationInSeconds);
-    }
-
-    private void setTime(float pTime)
-    {
-        timeLeft = pTime;
-        onTimeChanged?.Invoke();
     }
 }

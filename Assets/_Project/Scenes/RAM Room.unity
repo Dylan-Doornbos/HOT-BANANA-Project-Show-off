@@ -1167,6 +1167,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1231588531 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6419376208354472734, guid: 7bbbb2006aa4e0c43bea2262ad600def, type: 3}
+  m_PrefabInstance: {fileID: 2814147736344669281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f01818e8f81204f90024687229eca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1274101996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1184,15 +1195,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1200,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2059,17 +2070,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889553546}
   m_CullTransparentMesh: 1
---- !u!114 &1997935296 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2814147736127749793, guid: 7bbbb2006aa4e0c43bea2262ad600def, type: 3}
-  m_PrefabInstance: {fileID: 2814147736344669281}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f01818e8f81204f90024687229eca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2058251389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4135,7 +4135,7 @@ MonoBehaviour:
   _onCorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1997935296}
+      - m_Target: {fileID: 1231588531}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: IncreaseCounter
         m_Mode: 3
@@ -4165,7 +4165,7 @@ MonoBehaviour:
   _onIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1997935296}
+      - m_Target: {fileID: 1231588531}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: IncreaseCounter
         m_Mode: 3
@@ -4273,7 +4273,7 @@ MonoBehaviour:
   _onCorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1997935296}
+      - m_Target: {fileID: 1231588531}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: IncreaseCounter
         m_Mode: 3
@@ -4303,7 +4303,7 @@ MonoBehaviour:
   _onIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1997935296}
+      - m_Target: {fileID: 1231588531}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: IncreaseCounter
         m_Mode: 3
@@ -4439,11 +4439,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aeedd99a4b61047982f737a8b5aae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _durationInSeconds: 3
   _startImmediately: 0
-  _onCountdownStarted:
-    m_PersistentCalls:
-      m_Calls: []
+  time: 0
+  _durationInSeconds: 3
   _onCountdownFinished:
     m_PersistentCalls:
       m_Calls:

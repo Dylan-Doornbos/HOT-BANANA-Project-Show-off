@@ -1,7 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &9031883637488232830
-MeshCollider:
+--- !u!65 &7170455770595715450
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,12 +10,11 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2830912015524444482, guid: 083dd227a9bfbc248badd4f14187537a, type: 3}
---- !u!64 &7756506476746643519
-MeshCollider:
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 0.9999999, z: 0.9999993}
+  m_Center: {x: -2.6945148, y: -0.000000044703484, z: -0.0000004768373}
+--- !u!65 &3587709524048152802
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24,11 +23,10 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7864942920957863239, guid: 083dd227a9bfbc248badd4f14187537a, type: 3}
---- !u!65 &6123137829272206935
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9999998, z: 0.99999905}
+  m_Center: {x: 0, y: 0.000000014901165, z: -3.9730408}
+--- !u!65 &5567807021767309335
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
