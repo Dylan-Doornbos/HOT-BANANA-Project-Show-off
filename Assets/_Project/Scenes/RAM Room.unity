@@ -2388,6 +2388,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mini Game End Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 2022546996027644436, guid: c84c0f3d4654604459667a22535df28a, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 41d62ade849293546b57f3ef1611e7c8, type: 2}
+    - target: {fileID: 2022546996027644436, guid: c84c0f3d4654604459667a22535df28a, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022546996027644436, guid: c84c0f3d4654604459667a22535df28a, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].key
+      value: 
+      objectReference: {fileID: -8556736891291166940, guid: 41d62ade849293546b57f3ef1611e7c8, type: 2}
     - target: {fileID: 2022546996027644437, guid: c84c0f3d4654604459667a22535df28a, type: 3}
       propertyPath: m_RootOrder
       value: 2

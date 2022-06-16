@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: ROM End
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 40f5d44f15552bb44a3f8fcc866600ed, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 1688a205fc3bc7e479f0ec395175f384, type: 2}
+  - {fileID: 11400000, guid: 029b9b8fd13f89a48b2bf3d437bbb1b8, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 1

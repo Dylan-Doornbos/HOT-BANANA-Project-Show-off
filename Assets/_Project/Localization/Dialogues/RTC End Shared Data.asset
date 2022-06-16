@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: RTC End Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: RTC End
+  m_TableCollectionNameGuidString: 0b82d9ec2311a2a4297ee2d540af8f5c
+  m_Entries:
+  - m_Id: 5473886208
+    m_Key: Well done, micro werker!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8024023040
+    m_Key: You correctly set up the times for the RTC.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10674823168
+    m_Key: You can now leave this room by clicking on the door.
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1655282848118

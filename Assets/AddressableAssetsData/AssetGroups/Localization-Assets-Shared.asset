@@ -53,6 +53,14 @@ MonoBehaviour:
     m_Address: Assets/_Project/Localization/Dialogues/RAM End Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 40f5d44f15552bb44a3f8fcc866600ed
+    m_Address: Assets/_Project/Localization/Dialogues/ROM End Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 0b82d9ec2311a2a4297ee2d540af8f5c
+    m_Address: Assets/_Project/Localization/Dialogues/RTC End Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 889b8f8a2f5fb794aaefd4e1760c3809, type: 2}
   m_SchemaSet:
