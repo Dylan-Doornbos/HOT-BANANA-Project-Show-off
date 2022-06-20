@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot - Lil Henkjan 01 NEW
       objectReference: {fileID: 0}
+    - target: {fileID: 7045324739763532374, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -66,60 +70,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3205967767056728331, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
   m_PrefabInstance: {fileID: 352669430096989661}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4981123852460088828
+--- !u!1001 &1663779215782796682
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2925382939901873366}
     m_Modifications:
-    - target: {fileID: 4859185343117746743, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
-      propertyPath: m_Name
-      value: RobotCharacter_Henkjan 01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 5198451391707822221, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+    - target: {fileID: 7452683460243701063, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7793075301100120061, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
+      propertyPath: m_Name
+      value: RobotCharacter_Henkjan 01 NEW
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 674cb873dd1e6494288d5694cf9dfc46, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5419c53c33ee1ee4e9af10b5272894c7, type: 3}
