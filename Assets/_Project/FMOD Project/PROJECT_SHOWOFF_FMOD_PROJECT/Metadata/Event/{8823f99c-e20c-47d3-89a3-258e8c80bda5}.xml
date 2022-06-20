@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{8823f99c-e20c-47d3-89a3-258e8c80bda5}">
 		<property name="color">
-			<value>Purple Light 2</value>
+			<value>Purple Light 1</value>
 		</property>
 		<property name="name">
 			<value>MUSIC_ROM</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{12f83a66-1d9b-4a49-b1d8-6da142b9c70b}</destination>
+			<destination>{4310c25e-5302-46cd-b128-7018b9682101}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{89d6ee22-0230-40f6-a3d3-2a2fd6505909}</destination>
