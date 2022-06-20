@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 4835174933346922822}
   - component: {fileID: 6907170843640234490}
   m_Layer: 0
-  m_Name: LeftHand Interact
+  m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
-  m_HitClosestOnly: 0
+  m_HitClosestOnly: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
@@ -2065,7 +2065,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
-  m_HitClosestOnly: 0
+  m_HitClosestOnly: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
@@ -2622,6 +2622,7 @@ GameObject:
   - component: {fileID: 7550427655488602794}
   - component: {fileID: 4991039428074877568}
   - component: {fileID: 2961710312264224499}
+  - component: {fileID: 3118721710039549765}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -2716,6 +2717,19 @@ MonoBehaviour:
   _interactors:
   - {fileID: 6351496188798353358}
   - {fileID: 5149471668166264379}
+--- !u!114 &3118721710039549765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768666790397114091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6978554d840b4de44b224cca5d1ff758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _outlineMaterial: {fileID: 11400000, guid: 0a34b2c14d45959468b9a0eeac0e2df7, type: 2}
 --- !u!1 &7907007262946856132
 GameObject:
   m_ObjectHideFlags: 0

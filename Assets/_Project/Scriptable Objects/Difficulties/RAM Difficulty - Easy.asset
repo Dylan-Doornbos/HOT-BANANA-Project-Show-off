@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a856f1c7ac7c94787c87310a0324a9, type: 3}
   m_Name: RAM Difficulty - Easy
   m_EditorClassIdentifier: 
-  <difficultyName>k__BackingField: Easy
+  <durationInSeconds>k__BackingField: 90
+  <enableConveyorBelt>k__BackingField: 0
   <conveyorSpeed>k__BackingField: 0.25
   <spawnIntervalInSeconds>k__BackingField: 3
   <detectables>k__BackingField:

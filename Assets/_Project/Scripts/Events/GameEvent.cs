@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Events/Game Event", fileName = "New Event")]
 public class GameEvent : ScriptableObject
 {
-    [NonSerialized] private List<IGameEventListener> _listeners = new List<IGameEventListener>();
     [SerializeField] private List<GameEvent> _chainedEvents;
+    
+    [NonSerialized] private List<IGameEventListener> _listeners = new List<IGameEventListener>();
+    [NonSerialized] private List<Action> _actions = new List<Action>();
 
     public void Raise()
     {
@@ -36,6 +37,8 @@ public class GameEvent : ScriptableObject
                 DebugUtil.Log(e.Message, LogType.ERROR);
             }
         }
+        
+        _actions.ForEach(x => x?.Invoke());
     }
 
     public void AddListener(IGameEventListener pListener)
@@ -46,11 +49,21 @@ public class GameEvent : ScriptableObject
         }
     }
 
+    public void AddListener(Action pAction)
+    {
+        if (!_actions.Contains(pAction)) _actions.Add(pAction);
+    }
+
     public void RemoveListener(IGameEventListener pListener)
     {
         if (_listeners.Contains(pListener))
         {
             _listeners.Remove(pListener);
         }
+    }
+
+    public void RemoveListener(Action pAction)
+    {
+        if (_actions.Contains(pAction)) _actions.Remove(pAction);
     }
 }
