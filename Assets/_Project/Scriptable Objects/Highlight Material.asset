@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad05255bdf05e1248ae06400d1bade74, type: 3}
+  m_Name: Highlight Material
+  m_EditorClassIdentifier: 
+  <material>k__BackingField: {fileID: 2100000, guid: 54375b11c6525e54393a2f9ba2f61881, type: 2}
