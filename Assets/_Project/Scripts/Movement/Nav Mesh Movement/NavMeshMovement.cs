@@ -21,13 +21,12 @@ public class NavMeshMovement : MonoBehaviour
         setNavMeshLayer();
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        findNavigationArea();
         moveToNextPoint();
     }
 
-    private void findNavigationArea()
+    private bool tryFindNavigationArea()
     {
         //Get overlapping colliders
         Collider[] colliders = new Collider[10];
@@ -41,8 +40,10 @@ public class NavMeshMovement : MonoBehaviour
             
             if ((int)area.layer != _navAgent.areaMask) continue;
             _navigationArea = area;
-            return;
+            return true;
         }
+
+        return false;
     }
 
     private List<NavigationArea> getOverlappingNavigationAreas()
@@ -116,7 +117,7 @@ public class NavMeshMovement : MonoBehaviour
     private bool tryGetDestination(out Vector3 pDestination)
     {
         pDestination = Vector3.zero;
-        if (_navigationArea == null)
+        if (_navigationArea == null && !tryFindNavigationArea())
         {
             DebugUtil.Log(
                 $"No '{nameof(NavigationArea)}' specified for '{nameof(tryGetDestination)}' on '{gameObject.name}'.",
