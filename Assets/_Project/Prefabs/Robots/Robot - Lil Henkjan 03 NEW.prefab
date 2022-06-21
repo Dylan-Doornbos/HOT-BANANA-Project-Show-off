@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 439217889460015085, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: _culledObject
+      value: 
+      objectReference: {fileID: 6509920783816588842}
     - target: {fileID: 1378933630807466461, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -127,3 +131,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87e60cc9f6069e4287f1fc63f066486, type: 3}
+--- !u!23 &6509920783816588842 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3774652791306818332, guid: a87e60cc9f6069e4287f1fc63f066486, type: 3}
+  m_PrefabInstance: {fileID: 7941430267704929590}
+  m_PrefabAsset: {fileID: 0}

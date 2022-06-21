@@ -110,7 +110,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260323258912679871}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -825,23 +825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3eb9860e3fda20409ab664f76a1600c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loadingScreen: {fileID: 1012996053770834034}
-  _fadeDuration: 1
-  _onSceneChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7996628669027784747}
-        m_TargetAssemblyTypeName: NarrationController, Assembly-CSharp
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2301581107550757300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,7 +920,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fe44e35890e02249b62a508d91a8686, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2281200365061251387, guid: 4fe44e35890e02249b62a508d91a8686, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1526,7 +1509,7 @@ MonoBehaviour:
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
-  m_StopNaN: 0
+  m_StopNaN: 1
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
@@ -1628,6 +1611,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784c049fb4c7f894ea3453d144928841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interactionManager: {fileID: 5149471667948402538}
+  _camera: {fileID: 5149471666357813380}
+  _loadingScreen: {fileID: 1012996053770834034}
+  _fadeDuration: 1
 --- !u!54 &3474628758549168102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2870,7 +2857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
