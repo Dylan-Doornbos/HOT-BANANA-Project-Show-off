@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 34369e932a907514e8ff4e2745987ab1, type: 2}
+    - target: {fileID: 5440004259945589270, guid: 1b9238321f488b24ea2139864b64b402, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78b0ca4b6cd2d384f8ad7efc5fd70c3e, type: 2}
     - target: {fileID: 6952420458622171067, guid: 1b9238321f488b24ea2139864b64b402, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -344,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5446344271525800578, guid: f8f308b6418803b4ea76bb3dc86135da, type: 3}
       propertyPath: m_Name
-      value: Robot - Big Cho
+      value: Robot - Big Cho 01
       objectReference: {fileID: 0}
     - target: {fileID: 8270166077033160612, guid: f8f308b6418803b4ea76bb3dc86135da, type: 3}
       propertyPath: m_LocalPosition.x
