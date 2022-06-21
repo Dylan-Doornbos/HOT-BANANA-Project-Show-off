@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ad5a3072-2138-43de-83bc-b37b14c9bf26}">
+		<property name="assetPath">
+			<value>BGM_World_Muffled_Music_4.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.1641950113378687</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec83a9d5-e456-4e7a-8f57-29101a37ede6}</destination>
+		</relationship>
+	</object>
+</objects>
