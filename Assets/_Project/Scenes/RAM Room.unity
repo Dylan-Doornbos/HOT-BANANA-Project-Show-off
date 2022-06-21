@@ -828,10 +828,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Platform
       objectReference: {fileID: 0}
-    - target: {fileID: 1388697815564192914, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5758211966321865162, guid: 4492c54dc8c022c41922e5093f8933bf, type: 3}
       propertyPath: m_Teleporting.m_PersistentCalls.m_Calls.Array.size
       value: 3

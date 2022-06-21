@@ -23,7 +23,7 @@ public class InteractiveOutline : MonoBehaviour
     private void OnEnable()
     {
         _interactors.ForEach(x => x.hoverEntered.AddListener(onHoverEnter));
-        //_interactors.ForEach(x => x.hoverExited.AddListener(onHoverExit));
+        _interactors.ForEach(x => x.hoverExited.AddListener(onHoverExit));
     }
 
     private void OnDisable()
