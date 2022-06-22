@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1WMHHA488G2013",
+    "m_SelectedDeviceId": "145.76.27.40:5555",
     "m_SelectedPackage": {
-        "deviceId": "1WMHHA488G2013",
+        "deviceId": "145.76.27.40:5555",
         "name": "com.HotBananaGames.MicroWorker",
-        "processId": 5808,
+        "processId": 10007,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -36,6 +36,12 @@
             "deviceId": "1WMHHA488G2013",
             "name": "com.HotBananaGames.MicroWorker",
             "processId": 5808,
+            "exited": false
+        },
+        {
+            "deviceId": "145.76.27.40:5555",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 10007,
             "exited": false
         }
     ],

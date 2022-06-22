@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 42190016512
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "The time on this clock isn\u2019t set correctly."
 --- !u!114 &-6252744049868710192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -37,17 +27,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 127476994048
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Use your hands to turn the two knobs in front of you.
 --- !u!114 &-5766188192381207382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -574,17 +554,8 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 369463169024
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Make sure that the time on the analog clock is the same as the time on
+      the digital clock.
 --- !u!114 &1795073295820420565
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -615,17 +586,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 92555218944
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: I think that you will be able to fix this.
 --- !u!114 &3790907159545195470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,17 +600,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 626578198528
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "Try it. Time\u2019s ticking my friend."
 --- !u!114 &4452912068811183973
 MonoBehaviour:
   m_ObjectHideFlags: 1

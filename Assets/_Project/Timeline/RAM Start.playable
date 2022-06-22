@@ -13,17 +13,8 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:63ff85121922ae240a9df4d13c150f19
-      m_TableEntryReference:
-        m_KeyId: 136180174848
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Boxes with other symbols or numbers on them must be thrown away in the
+      oven to your right.
 --- !u!114 &-8707608211966545296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -472,17 +463,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:63ff85121922ae240a9df4d13c150f19
-      m_TableEntryReference:
-        m_KeyId: 4038936267100160
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Ready? I hope so.
 --- !u!114 &-1712717337997726420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -537,17 +518,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:63ff85121922ae240a9df4d13c150f19
-      m_TableEntryReference:
-        m_KeyId: 110343262208
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Boxes with only zeros and ones, can go into the pipe on your left.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,17 +923,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:63ff85121922ae240a9df4d13c150f19
-      m_TableEntryReference:
-        m_KeyId: 5892509696
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "We have received new data in boxes, but it\u2019s not sorted yet."
 --- !u!114 &5593514154305063621
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -976,17 +937,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:63ff85121922ae240a9df4d13c150f19
-      m_TableEntryReference:
-        m_KeyId: 74821701632
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "It\u2019s your job to separate the bad data from the good data."
 --- !u!114 &6267971456773177964
 MonoBehaviour:
   m_ObjectHideFlags: 1

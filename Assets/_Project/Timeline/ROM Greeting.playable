@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:489812817e0cc7243a1c7666de84ba6d
-      m_TableEntryReference:
-        m_KeyId: 5276753920
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "Oh, it\u2019s you Micro Worker, are you able to help me?"
 --- !u!114 &-2944719674609212162
 MonoBehaviour:
   m_ObjectHideFlags: 1
