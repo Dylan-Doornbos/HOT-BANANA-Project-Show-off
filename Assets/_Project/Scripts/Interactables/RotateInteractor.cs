@@ -47,9 +47,9 @@ public class RotateInteractor<T> : XRBaseInteractable where T : Rotator
         if (_interactor == null) return;
         if (!_interactor.TryGetCurrent3DRaycastHit(out RaycastHit hit)) return;
 
-        Vector3 lookDirection = hit.point - transform.position;
+        Vector3 transformToPoint = hit.point - transform.position;
 
-        _rotator.SetRotation(lookDirection);
+        _rotator.SetRotation(transformToPoint);
     }
 
     protected virtual void stopRotating()

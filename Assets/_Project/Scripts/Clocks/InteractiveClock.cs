@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -11,20 +10,20 @@ public class InteractiveClock : Clock
 
     private void OnEnable()
     {
-        _hourHand.selectEntered.AddListener(onDialsStartMoving);
-        _minuteHand.selectEntered.AddListener(onDialsStartMoving);
+        _hourHand.selectEntered.AddListener(onDialStartMoving);
+        _minuteHand.selectEntered.AddListener(onDialStartMoving);
 
-        _hourHand.selectExited.AddListener(onDialsStopMoving);
-        _minuteHand.selectExited.AddListener(onDialsStopMoving);
+        _hourHand.selectExited.AddListener(onDialStopMoving);
+        _minuteHand.selectExited.AddListener(onDialStopMoving);
     }
 
     private void OnDisable()
     {
-        _hourHand.selectEntered.RemoveListener(onDialsStartMoving);
-        _minuteHand.selectEntered.RemoveListener(onDialsStartMoving);
+        _hourHand.selectEntered.RemoveListener(onDialStartMoving);
+        _minuteHand.selectEntered.RemoveListener(onDialStartMoving);
 
-        _hourHand.selectExited.RemoveListener(onDialsStopMoving);
-        _minuteHand.selectExited.RemoveListener(onDialsStopMoving);
+        _hourHand.selectExited.RemoveListener(onDialStopMoving);
+        _minuteHand.selectExited.RemoveListener(onDialStopMoving);
     }
 
     private void Start()
@@ -32,8 +31,16 @@ public class InteractiveClock : Clock
         _hourHand.SetSteps(totalHours);
         _minuteHand.SetSteps(totalMinutes / minuteStepSize);
     }
-
+    
     private void Update()
+    {
+        snapTime();
+    }
+
+    /// <summary>
+    /// Snaps the current time to the steps IF dials are being rotated
+    /// </summary>
+    private void snapTime()
     {
         if (_movingDialsCount <= 0) return;
 
@@ -43,27 +50,27 @@ public class InteractiveClock : Clock
         TrySetTime(newHours, newMinutes);
     }
 
+    /// <summary>
+    /// Sets the time of the clock
+    /// </summary>
+    /// <param name="pHours"></param>
+    /// <param name="pMinutes"></param>
     protected override void setTime(int pHours, int pMinutes)
     {
         base.setTime(pHours, pMinutes);
 
-        //Update the hour and minute hand to match the current time
+        //Update the hour and minute hand to match the new time
         _hourHand.SetProgress(hours / (float)totalHours);
         _minuteHand.SetProgress(minutes / (float)totalMinutes);
     }
 
-    private void onDialsStartMoving(SelectEnterEventArgs pArgs)
+    private void onDialStartMoving(SelectEnterEventArgs pArgs)
     {
         _movingDialsCount++;
     }
 
-    private void onDialsStopMoving(SelectExitEventArgs pArgs)
+    private void onDialStopMoving(SelectExitEventArgs pArgs)
     {
         _movingDialsCount--;
-    }
-
-    public override void RandomizeTime()
-    {
-        base.RandomizeTime();
     }
 }
