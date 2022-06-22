@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHHA488G2013",
         "name": "com.HotBananaGames.MicroWorker",
-        "processId": 5635,
+        "processId": 5808,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,12 +12,30 @@
             "deviceId": "1WMHHA488G2013",
             "name": "com.oculus.shellenv",
             "processId": 3604,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHHA488G2013",
             "name": "com.HotBananaGames.MicroWorker",
             "processId": 5635,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.shellenv",
+            "processId": 2056,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 4695,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 5808,
             "exited": false
         }
     ],

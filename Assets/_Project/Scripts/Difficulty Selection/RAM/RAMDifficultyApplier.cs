@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class RAMDifficultyApplier : DifficultyApplier<RAMSelectedDifficulty, RAMDifficultySettings>
@@ -10,6 +8,9 @@ public class RAMDifficultyApplier : DifficultyApplier<RAMSelectedDifficulty, RAM
     [SerializeField] private Countdown _respawnTimer;
     [SerializeField] private GameObject _conveyorBelt;
     [SerializeField] private Countdown _gameTimer;
+
+    [SerializeField] private GameObject _easyContainer;
+    [SerializeField] private GameObject _mediumHardContainer;
 
     protected override void applyDifficulty()
     {
@@ -23,7 +24,9 @@ public class RAMDifficultyApplier : DifficultyApplier<RAMSelectedDifficulty, RAM
         _spawner.SetObjectsToSpawn(objectsToSpawn);
         _respawnTimer.SetDuration(_settingsToApply.spawnIntervalInSeconds);
         _conveyorBelt.GetComponentInChildren<ConveyorBelt>().SetSpeed(_settingsToApply.conveyorSpeed);
-        _conveyorBelt.SetActive(_settingsToApply.enableConveyorBelt);
         _gameTimer.SetDuration(_settingsToApply.durationInSeconds);
+
+        _mediumHardContainer.SetActive(_settingsToApply.enableConveyorBelt);
+        _easyContainer.SetActive(!_settingsToApply.enableConveyorBelt);
     }
 }
