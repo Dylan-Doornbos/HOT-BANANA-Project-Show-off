@@ -58,13 +58,18 @@ public class SingleAxisRotator : Rotator
         transform.rotation = Quaternion.LookRotation(newForwardDirection, newLeftDirection);
     }
 
-    public override void SetRotation(Vector3 pLookDirection)
+    public override void SetRotation(Vector3 pTransformToPoint)
     {
+        Debug.DrawLine(transform.position, transform.position + pTransformToPoint.normalized, Color.red);
+        
         //Modifies the look direction to make sure it's on the same plane as the rotate axis
-        float dot = Vector3.Dot(pLookDirection.normalized, rotateAxis);
-        pLookDirection -= dot * rotateAxis;
+        float dot = Vector3.Dot(pTransformToPoint, rotateAxis.normalized);
+        pTransformToPoint -= dot * rotateAxis;
+        
+        //TODO: Delete
+        Debug.DrawLine(transform.position, transform.position + pTransformToPoint.normalized, Color.green);
 
-        float angle = getRelativeAngle(pLookDirection);
+        float angle = getRelativeAngle(pTransformToPoint);
 
         SetRotation(angle);
     }

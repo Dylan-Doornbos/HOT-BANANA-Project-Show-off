@@ -1,16 +1,24 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class Clock : MonoBehaviour
 {
     public static int totalHours = 12;
     public static int totalMinutes = 60;
-
+    
     [field: SerializeField] public int minuteStepSize { get; private set; } = 5;
+    [SerializeField] private bool _randomizeOnStart;
+    [SerializeField] public UnityEvent onTimeChanged;
 
     public int hours { get; private set; }
     public int minutes { get; private set; }
-    public UnityEvent onTimeChanged;
+
+    private void Awake()
+    {
+        if(_randomizeOnStart) RandomizeTime();
+    }
 
     public void TrySetTime(int pHours, int pMinutes)
     {
