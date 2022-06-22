@@ -1,15 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup _loadingScreen;
-    [SerializeField] private float _fadeDuration;
-    [SerializeField] private UnityEvent _onSceneChange;
+    public static event Action onSceneChangeBegin;
+    public static event Action onSceneChangeEnd;
 
     public static GameManager instance;
 
@@ -17,24 +15,31 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         instance = this;
     }
 
-    public void LoadScene(SceneIndex pScene)
+    public void LoadScene(SceneIndex pScene, bool pStartFaded = false)
     {
         if(_isLoading) return;
         
-         StartCoroutine(load(pScene));
+         StartCoroutine(load(pScene, pStartFaded));
     }
 
-    private IEnumerator load(SceneIndex pScene)
+    private IEnumerator load(SceneIndex pScene, bool pStartFaded)
     {
         _isLoading = true;
         
+        onSceneChangeBegin?.Invoke();
+        
         //Fade in the loading screen
-        yield return StartCoroutine(fade(1, _fadeDuration));
+        yield return StartCoroutine(Player.instance.FadeIn());
 
-        _onSceneChange?.Invoke();
 
         List<AsyncOperation> operations = new List<AsyncOperation>();
 
@@ -49,16 +54,9 @@ public class GameManager : MonoBehaviour
                 yield return null;
             }
         }
-
-        //Fade out the loading screen
-        yield return StartCoroutine(fade(0, _fadeDuration));
+        
+        onSceneChangeEnd?.Invoke();
 
         _isLoading = false;
-    }
-
-    private IEnumerator fade(float pValue, float pDuration)
-    {
-        DOTween.To(() => _loadingScreen.alpha, x => _loadingScreen.alpha = x, pValue, pDuration);
-        yield return new WaitForSeconds(pDuration);
     }
 }

@@ -14,6 +14,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1676661790328744283, guid: 0956618555e7b634e9f35ce1a6e6db93, type: 3}
+--- !u!1 &7373250682499077592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8950984645030959284}
+  m_Layer: 0
+  m_Name: FMODObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8950984645030959284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7373250682499077592}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.38720685, y: 2.24, z: -1.5867121}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 817140295127014676}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927083713027209983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1095,6 +1125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0956618555e7b634e9f35ce1a6e6db93, type: 3}
+--- !u!4 &817140295127014676 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0956618555e7b634e9f35ce1a6e6db93, type: 3}
+  m_PrefabInstance: {fileID: 927083713027209983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1401242395180991125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6940153466191710102, guid: 0956618555e7b634e9f35ce1a6e6db93, type: 3}
