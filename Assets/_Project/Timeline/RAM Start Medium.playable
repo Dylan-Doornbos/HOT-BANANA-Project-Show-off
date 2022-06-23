@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line: 
+    line: "We have received new data in boxes, but it\u2019s not sorted yet."
 --- !u!114 &5593514154305063621
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line: 
+    line: "It\u2019s your job to separate the bad data from the good data."
 --- !u!114 &6267971456773177964
 MonoBehaviour:
   m_ObjectHideFlags: 1
