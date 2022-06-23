@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -989848008690592517, guid: c3cb4516bb1f9ef489196c77b34b7b2f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -962789282770155294, guid: c3cb4516bb1f9ef489196c77b34b7b2f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -78,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c3cb4516bb1f9ef489196c77b34b7b2f, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAM-Box_Wrong_2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3cb4516bb1f9ef489196c77b34b7b2f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3918900067747939348, guid: c3cb4516bb1f9ef489196c77b34b7b2f, type: 3}
       propertyPath: m_Materials.Array.data[0]

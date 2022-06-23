@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c65c070123555be4eae2d68d494e70ee, type: 2}
+    - target: {fileID: -5474092068896973635, guid: b539586d61314884e900b97da85d30ba, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -5213117415146695122, guid: b539586d61314884e900b97da85d30ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -74,6 +78,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b539586d61314884e900b97da85d30ba, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAM-Box_Right_2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b539586d61314884e900b97da85d30ba, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6520248301595214907, guid: b539586d61314884e900b97da85d30ba, type: 3}
       propertyPath: m_Layer

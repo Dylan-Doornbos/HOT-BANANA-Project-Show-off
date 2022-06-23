@@ -51,6 +51,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7162754244671163914, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -5018963313039086772, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -59,9 +63,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -989848008690592517, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -931469796241619357, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAMEasyBoxWrong_1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1022734559046616266, guid: 333a20208e3c23b41b588b85de8586da, type: 3}
       propertyPath: m_Materials.Array.data[0]
