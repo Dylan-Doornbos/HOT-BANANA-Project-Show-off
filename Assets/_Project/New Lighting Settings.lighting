@@ -27,9 +27,9 @@ LightingSettings:
   m_CompAOExponentDirect: 2.36
   m_ExtractAO: 0
   m_MixedBakeMode: 0
-  m_LightmapsBakeMode: 1
+  m_LightmapsBakeMode: 0
   m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: 6fd92dac610cb3e4aa300737ee0257de, type: 2}
   m_ExportTrainingData: 0
   m_TrainingDataDestination: TrainingData
   m_RealtimeResolution: 2

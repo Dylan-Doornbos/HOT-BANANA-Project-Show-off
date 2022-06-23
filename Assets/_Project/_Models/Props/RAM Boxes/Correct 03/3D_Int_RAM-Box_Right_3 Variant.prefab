@@ -51,10 +51,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7820477746472791161, guid: 6ca515923e870e44184c5492328f1204, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -6313108277012205860, guid: 6ca515923e870e44184c5492328f1204, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b2fbd73b791342f43bd04eed01d43e4c, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
+    - target: {fileID: -3309883875248348427, guid: 6ca515923e870e44184c5492328f1204, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6ca515923e870e44184c5492328f1204, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAM-Box_Right_3 Variant
@@ -62,14 +70,18 @@ PrefabInstance:
     - target: {fileID: 3342914503287845284, guid: 6ca515923e870e44184c5492328f1204, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b2fbd73b791342f43bd04eed01d43e4c, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
     - target: {fileID: 4234103048706701402, guid: 6ca515923e870e44184c5492328f1204, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b2fbd73b791342f43bd04eed01d43e4c, type: 2}
+    - target: {fileID: 4660875107987291685, guid: 6ca515923e870e44184c5492328f1204, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6680664232755172354, guid: 6ca515923e870e44184c5492328f1204, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b2fbd73b791342f43bd04eed01d43e4c, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ca515923e870e44184c5492328f1204, type: 3}

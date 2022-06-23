@@ -54,11 +54,11 @@ PrefabInstance:
     - target: {fileID: -8042017867910545827, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6cb0ccb57fde5c346aa2ab85835179eb, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
     - target: {fileID: -7390474636250206846, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6cb0ccb57fde5c346aa2ab85835179eb, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
     - target: {fileID: -7137384240775230854, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -66,10 +66,22 @@ PrefabInstance:
     - target: {fileID: -2375062653614186957, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6cb0ccb57fde5c346aa2ab85835179eb, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a160cf8f9476743b0fb97730dba638, type: 2}
+    - target: {fileID: 381112069241151255, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAM-Box_Wrong_8 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491690787082288381, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841006702319939871, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1d608d5c0cad04fa9f4777041cbc2c, type: 3}
