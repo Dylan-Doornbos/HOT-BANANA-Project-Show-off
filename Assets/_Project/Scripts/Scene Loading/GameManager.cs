@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
         //Fade in the loading screen
         yield return StartCoroutine(Player.instance.FadeIn());
 
+        Player.instance.SetLoadingTextVisibility(true);
+
 
         List<AsyncOperation> operations = new List<AsyncOperation>();
 

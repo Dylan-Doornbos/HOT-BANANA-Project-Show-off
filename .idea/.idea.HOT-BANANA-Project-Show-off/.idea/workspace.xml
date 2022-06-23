@@ -4,26 +4,12 @@
     <list default="true" id="7160e1f7-0095-45de-b247-ef5f07abee91" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HOT-BANANA-Project-Show-off/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/RAM Box Incorrect (Hard).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/RAM Box Incorrect (Hard).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/RAM Box Incorrect (Medium).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/RAM Minigame/RAM Box Incorrect (Medium).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Robots/Robot (Template).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Robots/Robot (Template).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Robots/Robot - Benjamin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Robots/Robot - Benjamin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout/OcclusionCullingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Map Layout/OcclusionCullingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Difficulties/RAM Difficulty - Hard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Difficulties/RAM Difficulty - Hard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Difficulties/RAM Difficulty - Medium.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scriptable Objects/Difficulties/RAM Difficulty - Medium.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/UniversalRenderPipelineAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/Big Cho/Big_Cho Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/Big Cho/Big_Cho Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/Lil Henk Jan/RobotCharacter_Henkjan Template.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/Lil Henk Jan/RobotCharacter_Henkjan Template.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new1/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new1/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new2/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new2/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new3/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new3/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new4/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/_Models/Robots/lil cho 2/new4/3D_UV_City-Ext_lilcho_3.0_lambert1_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scene Loading/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shaders/Triplanar-Transporter/Shader Graphs_Tri-planar-blend.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Triplanar-Transporter/Shader Graphs_Tri-planar-blend.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Shaders/Triplanar-Transporter/Tri-planar-blend.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Shaders/Triplanar-Transporter/Tri-planar-blend.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Displays/On-Off Displays/OnOffDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/InteractiveOutline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/MaterialRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/MaterialSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Movement/Nav Mesh Movement/WaypointMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Movement/NavigationArea.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,15 +82,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.3659091",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.3659091&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Build\Oculus Project.exe" />
@@ -131,10 +118,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17332">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17332" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -175,6 +162,8 @@
       <workItem from="1655709447987" duration="16083000" />
       <workItem from="1655796607415" duration="10661000" />
       <workItem from="1655882737597" duration="11049000" />
+      <workItem from="1655981232255" duration="933000" />
+      <workItem from="1655983377638" duration="3225000" />
     </task>
     <servers />
   </component>

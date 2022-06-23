@@ -280,12 +280,13 @@ GameObject:
   - component: {fileID: 5895676278797918022}
   - component: {fileID: 6191884722050980815}
   - component: {fileID: 178463969389339829}
+  - component: {fileID: 7363645749420172707}
   m_Layer: 0
   m_Name: pasted__pasted__Pillar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5895676278797918022
 Transform:
@@ -351,6 +352,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7363645749420172707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710421596150478665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15285975, y: 3.9423752, z: 0.55}
+  m_Center: {x: 0.42357054, y: 0.98353386, z: -0.035018273}
 --- !u!1 &6343889808965131420
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,12 +407,13 @@ GameObject:
   - component: {fileID: 5837182829320726104}
   - component: {fileID: 6099623551380789043}
   - component: {fileID: 4852189491191195909}
+  - component: {fileID: 8594514290364360814}
   m_Layer: 0
   m_Name: pasted__pasted__pasted__Pillar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5837182829320726104
 Transform:
@@ -464,6 +479,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8594514290364360814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524266885499073939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15285975, y: 3.9423752, z: 0.55}
+  m_Center: {x: 0.4235629, y: 0.98353386, z: -0.035003014}
 --- !u!1 &8296159955555598670
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,12 +503,13 @@ GameObject:
   - component: {fileID: 2993547458886831434}
   - component: {fileID: 8890177577250013591}
   - component: {fileID: 3281349694371455602}
+  - component: {fileID: 9158151017345800105}
   m_Layer: 0
   m_Name: couch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2993547458886831434
 Transform:
@@ -546,6 +575,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9158151017345800105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296159955555598670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.88065255, y: 0.9828692, z: 2.496812}
+  m_Center: {x: -0.05966618, y: 0.008565396, z: 0.00000017881396}
 --- !u!1 &8297144809329933159
 GameObject:
   m_ObjectHideFlags: 0
