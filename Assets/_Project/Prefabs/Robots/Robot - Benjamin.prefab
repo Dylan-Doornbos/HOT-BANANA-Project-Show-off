@@ -311,9 +311,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6726615986570039458, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6726615986570039458, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3054754682398020331, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3054754682398020331, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
       propertyPath: m_Name
       value: Benjamin_Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133168925949710677, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133168925949710677, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221103866354829164, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221103866354829164, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154522364370868373, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154522364370868373, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad422d4592cf8a9439a4d90b6125f9ec, type: 3}

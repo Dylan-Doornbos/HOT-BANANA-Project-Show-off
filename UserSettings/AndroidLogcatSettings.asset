@@ -1,31 +1,13 @@
 {
-    "m_SelectedDeviceId": "145.76.27.40:5555",
+    "m_SelectedDeviceId": "1WMHHA488G2013",
     "m_SelectedPackage": {
-        "deviceId": "145.76.27.40:5555",
-        "name": "com.HotBananaGames.MicroWorker",
-        "processId": 10007,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "1WMHHA488G2013",
-            "name": "com.oculus.shellenv",
-            "processId": 3604,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHHA488G2013",
-            "name": "com.HotBananaGames.MicroWorker",
-            "processId": 5635,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHHA488G2013",
-            "name": "com.oculus.shellenv",
-            "processId": 2056,
-            "exited": false
-        },
         {
             "deviceId": "1WMHHA488G2013",
             "name": "com.HotBananaGames.MicroWorker",
@@ -36,12 +18,54 @@
             "deviceId": "1WMHHA488G2013",
             "name": "com.HotBananaGames.MicroWorker",
             "processId": 5808,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.xrstreamingclient",
+            "processId": 4642,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.xrstreamingclient",
+            "processId": 7466,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.shellenv",
+            "processId": 2003,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 4487,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.xrstreamingclient",
+            "processId": 6330,
             "exited": false
         },
         {
             "deviceId": "145.76.27.40:5555",
             "name": "com.HotBananaGames.MicroWorker",
             "processId": 10007,
+            "exited": true
+        },
+        {
+            "deviceId": "145.76.27.40:5555",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 18863,
+            "exited": true
+        },
+        {
+            "deviceId": "145.76.27.40:5555",
+            "name": "com.oculus.xrstreamingclient",
+            "processId": 25046,
             "exited": false
         }
     ],

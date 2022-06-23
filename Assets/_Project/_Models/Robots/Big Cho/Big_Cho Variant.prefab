@@ -91,6 +91,14 @@ PrefabInstance:
       value: 3D_UV_city-ext_bigCho_4.0
       objectReference: {fileID: 0}
     - target: {fileID: 2347315328264930719, guid: 6a0e66d65596d884094c58b59e337aa6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347315328264930719, guid: 6a0e66d65596d884094c58b59e337aa6, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347315328264930719, guid: 6a0e66d65596d884094c58b59e337aa6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3ae304e60335b3240a6dc9405c9c8af1, type: 2}
