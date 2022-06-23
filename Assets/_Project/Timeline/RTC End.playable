@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:0b82d9ec2311a2a4297ee2d540af8f5c
-      m_TableEntryReference:
-        m_KeyId: 10674823168
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You can now leave this room by clicking on the door.
 --- !u!114 &-7227785704101435939
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -402,17 +392,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:0b82d9ec2311a2a4297ee2d540af8f5c
-      m_TableEntryReference:
-        m_KeyId: 5473886208
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Well done, micro werker!
 --- !u!114 &149836486921202371
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,14 +406,4 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:0b82d9ec2311a2a4297ee2d540af8f5c
-      m_TableEntryReference:
-        m_KeyId: 8024023040
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You correctly set up the times for the RTC.

@@ -109,17 +109,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:bfe3f9c558f91ee448a71b0633506e5b
-      m_TableEntryReference:
-        m_KeyId: 9172455424
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Well done, micro worker!
 --- !u!114 &-5240182528671228856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,17 +140,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: 
-      m_TableEntryReference:
-        m_KeyId: 0
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You can now leave this room by clicking on the door.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,17 +176,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:bfe3f9c558f91ee448a71b0633506e5b
-      m_TableEntryReference:
-        m_KeyId: 356381134848
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You correctly sorted our data.
 --- !u!114 &2229218525618239047
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
-      m_TableEntryReference:
-        m_KeyId: 681365004288
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Well done, micro worker!
 --- !u!114 &-5297624498208771244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -37,17 +27,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
-      m_TableEntryReference:
-        m_KeyId: 779016790016
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You got the ROM station working again.
 --- !u!114 &-226101295732736899
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -452,14 +432,4 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:40f5d44f15552bb44a3f8fcc866600ed
-      m_TableEntryReference:
-        m_KeyId: 842455638016
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: You can now leave this room by clicking on the door.

@@ -1,16 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
-using UnityEngine.UI;
 
 public class LocaleSelector : MonoBehaviour
 {
-    [SerializeField] private Locale _locale;
-
-    public void SetLocale()
-    {
-        LocalizationSettings.SelectedLocale = _locale;
-    }
+    
 }

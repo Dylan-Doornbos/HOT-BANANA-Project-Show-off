@@ -46,7 +46,7 @@ public class Dial : RotateInteractor<SingleAxisRotator>
     /// <param name="pProgress">The progress between 0 and 1 where 0 = 0% and 1 = 100%</param>
     public void SetProgress(float pProgress)
     {
-        if (_rotator == null || _interactor == null) return;
+        if (_rotator == null) return;
 
         pProgress = Mathf.Clamp(pProgress, 0, 1);
 
