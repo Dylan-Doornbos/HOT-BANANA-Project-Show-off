@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 42190016512
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "The time on this clock isn\u2019t set correctly."
 --- !u!114 &-6252744049868710192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -37,17 +27,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 127476994048
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Use your hands to turn the arms of the clock in front of you.
 --- !u!114 &-5766188192381207382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,9 +188,60 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: SFX_NARRATOR_RTC_Tutorial_2
   - m_Version: 1
+    m_Start: 20.05
+    m_ClipIn: 0
+    m_Asset: {fileID: -4381276912689083154}
+    m_Duration: 2.75
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -5766188192381207382}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_5
+  - m_Version: 1
     m_Start: 7.25
     m_ClipIn: 0
-    m_Asset: {fileID: -5038689887546901470}
+    m_Asset: {fileID: 7789417093576273186}
     m_Duration: 3.5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5766188192381207382}
@@ -275,12 +306,12 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_3
+    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_3_V2
   - m_Version: 1
     m_Start: 11.25
     m_ClipIn: 0
-    m_Asset: {fileID: -441816186313673436}
-    m_Duration: 6
+    m_Asset: {fileID: 365177867866035865}
+    m_Duration: 8.25
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5766188192381207382}
     m_EaseInDuration: 0
@@ -313,25 +344,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -344,76 +357,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_4
-  - m_Version: 1
-    m_Start: 18
-    m_ClipIn: 0
-    m_Asset: {fileID: -4381276912689083154}
-    m_Duration: 2.75
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -5766188192381207382}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_5
+    m_DisplayName: SFX_NARRATOR_RTC_Tutorial_4_V2
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -449,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 20.5
+  m_Time: 23.25
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: a6991dd10355b0848bd09805896f971c, type: 2}
@@ -574,17 +518,25 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 369463169024
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Make sure that the time on the analog clock is the same as the time on
+      the digital clock that stands in front of you on the wall.
+--- !u!114 &365177867866035865
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: ddd5a58e92aa8744ab0f9acbf6d2a2c5, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
 --- !u!114 &1795073295820420565
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -615,17 +567,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 92555218944
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: I think that you will be able to fix this.
 --- !u!114 &3790907159545195470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,17 +581,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:4e052528dec564b4da3bc95661a21b9f
-      m_TableEntryReference:
-        m_KeyId: 626578198528
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "Try it. Time\u2019s ticking my friend."
 --- !u!114 &4452912068811183973
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -882,7 +814,7 @@ MonoBehaviour:
     m_Start: 11.25
     m_ClipIn: 0
     m_Asset: {fileID: 76371239298051129}
-    m_Duration: 6.75
+    m_Duration: 8.8
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4452912068811183973}
     m_EaseInDuration: 0
@@ -948,10 +880,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: SubtitleControlClip
   - m_Version: 1
-    m_Start: 18
+    m_Start: 20.05
     m_ClipIn: 0
     m_Asset: {fileID: 3790907159545195470}
-    m_Duration: 2.75
+    m_Duration: 3.1999999999999993
     m_TimeScale: 1
     m_ParentTrack: {fileID: 4452912068811183973}
     m_EaseInDuration: 0
@@ -1031,6 +963,23 @@ MonoBehaviour:
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 8300000, guid: c003df594d111e640be1ea45eb6e5122, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &7789417093576273186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 8b1ec046a09207f4e82ca1ba9c9faf2c, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:

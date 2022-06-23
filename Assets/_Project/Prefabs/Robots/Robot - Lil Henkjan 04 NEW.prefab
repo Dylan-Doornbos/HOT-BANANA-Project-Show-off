@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 439217889460015085, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: _culledObject
       value: 
-      objectReference: {fileID: 1731026889145495898}
+      objectReference: {fileID: 0}
     - target: {fileID: 1378933630807466461, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -74,7 +74,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3205967767056728331, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
   m_PrefabInstance: {fileID: 2164969478233393834}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2323378949782952012
+--- !u!1001 &4285424102994703036
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -127,12 +127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7920757149122407788, guid: 0f45b4d12cf9b9044a5770a126dc601f, type: 3}
       propertyPath: m_Name
-      value: RobotCharacter_Henkjan 04 NEW
+      value: RobotCharacter_Henkjan 04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f45b4d12cf9b9044a5770a126dc601f, type: 3}
---- !u!23 &1731026889145495898 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4052002785393404182, guid: 0f45b4d12cf9b9044a5770a126dc601f, type: 3}
-  m_PrefabInstance: {fileID: 2323378949782952012}
-  m_PrefabAsset: {fileID: 0}

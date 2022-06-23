@@ -60,15 +60,10 @@ public class SingleAxisRotator : Rotator
 
     public override void SetRotation(Vector3 pTransformToPoint)
     {
-        Debug.DrawLine(transform.position, transform.position + pTransformToPoint.normalized, Color.red);
-        
         //Modifies the look direction to make sure it's on the same plane as the rotate axis
         float dot = Vector3.Dot(pTransformToPoint, rotateAxis.normalized);
         pTransformToPoint -= dot * rotateAxis;
         
-        //TODO: Delete
-        Debug.DrawLine(transform.position, transform.position + pTransformToPoint.normalized, Color.green);
-
         float angle = getRelativeAngle(pTransformToPoint);
 
         SetRotation(angle);

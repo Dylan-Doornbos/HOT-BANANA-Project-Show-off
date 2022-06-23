@@ -54,17 +54,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:71921742f1f6ce44a897d39e0f7e1744
-      m_TableEntryReference:
-        m_KeyId: 406235853938688
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Here it goes!
 --- !u!114 &-6206745572115801004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -730,17 +720,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:71921742f1f6ce44a897d39e0f7e1744
-      m_TableEntryReference:
-        m_KeyId: 406074595532800
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: Our ROM station needs to be repaired.
 --- !u!114 &-1405993956399944217
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,17 +840,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:71921742f1f6ce44a897d39e0f7e1744
-      m_TableEntryReference:
-        m_KeyId: 406145995169792
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: The screen in front of you tells you which color ball it needs.
 --- !u!114 &6302714654101305998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -901,17 +871,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:71921742f1f6ce44a897d39e0f7e1744
-      m_TableEntryReference:
-        m_KeyId: 406204954501120
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: "It\u2019s your job to throw the correct colored ball into the hole."
 --- !u!114 &8354096340427970026
 MonoBehaviour:
   m_ObjectHideFlags: 1

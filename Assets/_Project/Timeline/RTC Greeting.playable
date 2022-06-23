@@ -13,17 +13,7 @@ MonoBehaviour:
   m_Name: SubtitleControlClip
   m_EditorClassIdentifier: 
   _template:
-    line:
-      m_TableReference:
-        m_TableCollectionName: GUID:8924aac903a2f6949924e9db44cf64f3
-      m_TableEntryReference:
-        m_KeyId: 15795261440
-        m_Key: 
-      m_FallbackState: 0
-      m_WaitForCompletion: 0
-      m_LocalVariables: []
-  references:
-    version: 1
+    line: No time to waste friend, come and help me.
 --- !u!114 &-1495295014087680540
 MonoBehaviour:
   m_ObjectHideFlags: 1
