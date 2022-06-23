@@ -23,63 +23,165 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/ROM Start Dialogue_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: c8c61922a1afa704794b05b91d9fb1f8
     m_Address: ROM Greeting_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/ROM Greeting_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 1b074be6d5541644094e3b0d81182dc2
     m_Address: RAM Greeting_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/RAM Greeting_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4f80842a9129d584397de6ef40bec75d
     m_Address: RAM Tutorial_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/RAM Tutorial_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: f5e56f2e88c7b484a9bc134fc1ec8028
     m_Address: UI_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/UI_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: bcbf4a86ff0d1674a866d89e8fe733d6
     m_Address: RTC Greeting_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/RTC Greeting_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: bd3576ec90b7547439fe07844fbd9c52
     m_Address: RTC Start_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/RTC Start_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: a5307b68d3c3af7408b3adeed3b63cc8
     m_Address: RAM End_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/Minigame End_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 029b9b8fd13f89a48b2bf3d437bbb1b8
     m_Address: ROM End_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/ROM End_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: f24743f0b0fb4c948b8e1e2de3d4f813
     m_Address: RTC End_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     - Preload
+    <IsFolder>k__BackingField: 0
+    <BundleFileId>k__BackingField: 
+    <IsInResources>k__BackingField: 0
+    <IsInSceneList>k__BackingField: 0
+    <IsSubAsset>k__BackingField: 0
+    m_CheckedIsScene: 0
+    m_IsScene: 0
+    m_cachedAssetPath: Assets/_Project/Localization/Dialogues/RTC End_en.asset
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 889b8f8a2f5fb794aaefd4e1760c3809, type: 2}
   m_SchemaSet:
     m_Schemas:
     - {fileID: 11400000, guid: 56353ab2b1dff3a4fadf347e19208693, type: 2}
     - {fileID: 11400000, guid: 5ffdbb75db6769741bfce672f4f95222, type: 2}
+  m_FolderEntryCache: []
+  m_AssetCollectionEntryCache: []
