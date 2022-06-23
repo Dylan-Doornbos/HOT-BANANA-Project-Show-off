@@ -1093,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalScale.x
@@ -1109,11 +1109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.215
+      value: -5.2150006
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.40000004
       objectReference: {fileID: 0}
     - target: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3571,21 +3571,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onCorrectTypeDetected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1231588531}
-        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
-        m_MethodName: IncreaseCounter
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: ad64c6c288b8ffc4d92dcff72da04bdc, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onCorrectTypeDetected:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 408778885}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
@@ -3604,18 +3604,6 @@ MonoBehaviour:
   _onIncorrectTypeDetected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231588531}
-        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
-        m_MethodName: IncreaseCounter
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 574153937}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <durationInSeconds>k__BackingField: 90
   <enableConveyorBelt>k__BackingField: 1
-  <conveyorSpeed>k__BackingField: 0.75
-  <spawnIntervalInSeconds>k__BackingField: 1.25
+  <conveyorSpeed>k__BackingField: 0.5
+  <spawnIntervalInSeconds>k__BackingField: 1.5
   <detectables>k__BackingField:
   - {fileID: 8607383517190451329, guid: 1927c8d5590e25442939b5e0f61cdaf4, type: 3}
   - {fileID: 838443265017158311, guid: e10b692ba58f90d49ab3f3fefc1de840, type: 3}
