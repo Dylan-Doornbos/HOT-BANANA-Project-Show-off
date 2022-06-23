@@ -52,6 +52,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3206939675190508958, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a64b3b87fa218b4da614ef66e4851f9, type: 2}
     - target: {fileID: 4071441225342650836, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -96,10 +100,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4385840452216790422, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a64b3b87fa218b4da614ef66e4851f9, type: 2}
     - target: {fileID: 4662410086038073937, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
       propertyPath: m_Name
       value: ROM Difficulty Buttons
       objectReference: {fileID: 0}
+    - target: {fileID: 5783026808459227827, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a64b3b87fa218b4da614ef66e4851f9, type: 2}
+    - target: {fileID: 6232934442608090515, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a64b3b87fa218b4da614ef66e4851f9, type: 2}
     - target: {fileID: 7665703154386830277, guid: e55420db2092c8f4d985ad87e49b35b2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071069

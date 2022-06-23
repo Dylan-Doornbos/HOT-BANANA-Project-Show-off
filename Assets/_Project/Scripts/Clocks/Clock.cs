@@ -15,7 +15,7 @@ public class Clock : MonoBehaviour
     public int hours { get; private set; }
     public int minutes { get; private set; }
 
-    private void Awake()
+    private void Start()
     {
         if(_randomizeOnStart) RandomizeTime();
     }
