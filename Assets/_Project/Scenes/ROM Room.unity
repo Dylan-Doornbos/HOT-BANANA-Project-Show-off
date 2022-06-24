@@ -4515,7 +4515,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _scene: 1
+  _scene: {fileID: 11400000, guid: ef76b5abb7c90974cb71cb10055b83c2, type: 2}
 --- !u!114 &1620084690806725238
 MonoBehaviour:
   m_ObjectHideFlags: 0

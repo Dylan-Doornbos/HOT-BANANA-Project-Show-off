@@ -10,24 +10,6 @@
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "1WMHHA488G2013",
-            "name": "com.HotBananaGames.MicroWorker",
-            "processId": 4695,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHHA488G2013",
-            "name": "com.HotBananaGames.MicroWorker",
-            "processId": 5808,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHHA488G2013",
-            "name": "com.oculus.xrstreamingclient",
-            "processId": 4642,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHHA488G2013",
             "name": "com.oculus.xrstreamingclient",
             "processId": 7466,
             "exited": true
@@ -36,7 +18,7 @@
             "deviceId": "1WMHHA488G2013",
             "name": "com.oculus.shellenv",
             "processId": 2003,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHHA488G2013",
@@ -48,6 +30,24 @@
             "deviceId": "1WMHHA488G2013",
             "name": "com.oculus.xrstreamingclient",
             "processId": 6330,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.os.clearactivity",
+            "processId": 24704,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.HotBananaGames.MicroWorker",
+            "processId": 30709,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHHA488G2013",
+            "name": "com.oculus.shellenv",
+            "processId": 1948,
             "exited": false
         },
         {

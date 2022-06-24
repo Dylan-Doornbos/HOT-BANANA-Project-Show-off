@@ -92,7 +92,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _scene: 2
+  _scene: {fileID: 11400000, guid: 0129841e5f899fd4c83411d81380cfd4, type: 2}
 --- !u!64 &2721232739047740296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  _scene: 2
+  _scene: {fileID: 11400000, guid: 0129841e5f899fd4c83411d81380cfd4, type: 2}
 --- !u!65 &3558961663229279643
 BoxCollider:
   m_ObjectHideFlags: 0

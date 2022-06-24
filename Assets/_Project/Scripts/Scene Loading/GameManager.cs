@@ -24,14 +24,14 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void LoadScene(SceneIndex pScene, bool pStartFaded = false)
+    public void LoadScene(int pScene, bool pStartFaded = false)
     {
         if(_isLoading) return;
         
          StartCoroutine(load(pScene, pStartFaded));
     }
 
-    private IEnumerator load(SceneIndex pScene, bool pStartFaded)
+    private IEnumerator load(int pScene, bool pStartFaded)
     {
         _isLoading = true;
         
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         List<AsyncOperation> operations = new List<AsyncOperation>();
 
         //Load the new scene
-        operations.Add(SceneManager.LoadSceneAsync((int)pScene));
+        operations.Add(SceneManager.LoadSceneAsync(pScene));
 
         //Wait for loading and unloading to be finished
         foreach (var operation in operations)

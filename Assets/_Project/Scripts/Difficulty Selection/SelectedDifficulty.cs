@@ -24,4 +24,9 @@ public abstract class SelectedDifficulty<T> : ScriptableObject where T : Difficu
         _difficulty = pDifficulty;
         onDifficultyChanged?.Invoke(pDifficulty);
     }
+
+    public void Reset()
+    {
+        SetDifficulty(_defaultDifficulty);
+    }
 }

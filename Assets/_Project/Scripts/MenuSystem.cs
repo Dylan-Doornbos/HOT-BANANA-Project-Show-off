@@ -5,8 +5,5 @@ using UnityEngine.SceneManagement;
 
 public class MenuSystem : MonoBehaviour
 {
-    public void StartButton()
-    {
-        GameManager.instance.LoadScene(SceneIndex.CITY);
-    }
+    
 }
