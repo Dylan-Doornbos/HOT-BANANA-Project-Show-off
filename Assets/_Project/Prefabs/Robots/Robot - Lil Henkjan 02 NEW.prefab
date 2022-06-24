@@ -10,10 +10,18 @@ PrefabInstance:
     - target: {fileID: 439217889460015085, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: _culledObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1010326492870450158}
     - target: {fileID: 1378933630807466461, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378933630807466461, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0039999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378933630807466461, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08699999
       objectReference: {fileID: 0}
     - target: {fileID: 5130697156715123168, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_Name
@@ -22,6 +30,14 @@ PrefabInstance:
     - target: {fileID: 7045324739763532374, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045324739763532374, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045324739763532374, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.187
       objectReference: {fileID: 0}
     - target: {fileID: 9107158717267698886, guid: c456da31f3b506c48bbc58bb0e00a630, type: 3}
       propertyPath: m_RootOrder
@@ -131,3 +147,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db1994c63e34b18499050a087ce750be, type: 3}
+--- !u!23 &1010326492870450158 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6044578174705399625, guid: db1994c63e34b18499050a087ce750be, type: 3}
+  m_PrefabInstance: {fileID: 6766589465815248039}
+  m_PrefabAsset: {fileID: 0}

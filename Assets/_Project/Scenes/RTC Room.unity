@@ -7282,20 +7282,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _scene: {fileID: 11400000, guid: ef76b5abb7c90974cb71cb10055b83c2, type: 2}
---- !u!64 &1480663023
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480663021}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3861202813800034234, guid: daf5956c57f17f546a8dcb7fbc806936, type: 3}
 --- !u!4 &1480663024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6798025613162736963, guid: 1c1f08147d6f5e3498802c34dba6ace4, type: 3}
