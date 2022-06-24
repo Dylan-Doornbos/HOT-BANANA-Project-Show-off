@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &8124073719941004582
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7268599651825452220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0499998, y: 1.299868, z: 1.3008691}
-  m_Center: {x: -0.17093186, y: -0.62117916, z: 0.38403413}
 --- !u!1001 &7529347951785718174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,6 +67,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 910535053393868066, guid: 067296408d7211742af583eb58fc922d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 910535053393868066, guid: 067296408d7211742af583eb58fc922d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 067296408d7211742af583eb58fc922d, type: 3}
       propertyPath: m_Name
       value: 3D_Int_RAM-Box_Wrong_6 Variant
@@ -106,8 +101,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 067296408d7211742af583eb58fc922d, type: 3}
---- !u!1 &7268599651825452220 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 910535053393868066, guid: 067296408d7211742af583eb58fc922d, type: 3}
-  m_PrefabInstance: {fileID: 7529347951785718174}
-  m_PrefabAsset: {fileID: 0}
